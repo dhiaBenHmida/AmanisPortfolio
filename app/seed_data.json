@@ -283,7 +283,8 @@
       "image": "/images/hero-banner.jpg",
       "alt": "Soft natural light through window blinds",
       "title": "From raw tables to decisions",
-      "subtitle": "SQL · Python · Clear storytelling"
+      "subtitle": "SQL · Python · Clear storytelling",
+      "relatedSlug": "retail-kpi-storytelling"
     },
     "resourcesTitlePrefix": "Selected work for",
     "rotatingAudiences": [
