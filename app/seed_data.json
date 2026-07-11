@@ -1,0 +1,384 @@
+{
+  "site": {
+    "name": "Amani Medini",
+    "email": "amani.benslah.medini@gmail.com",
+    "phone": "+216 92495755",
+    "location": "Ariana, Tunisia",
+    "linkedin": "https://www.linkedin.com/in/amani-medini-9a0791149/",
+    "linkedinLabel": "linkedin.com/in/amani-medini-9a0791149",
+    "fofUrl": "https://friends.figma.com/tunisia/",
+    "fofLabel": "Friends of Figma Tunisia",
+    "cvEn": "/cv/Amani_Medini_Data_Analyst_CV.pdf",
+    "cvFr": "/cv/Amani_Medini_Data_Analyst_CV_FR.docx"
+  },
+  "projects": [
+    {
+      "slug": "retail-kpi-storytelling",
+      "title": "Retail KPI Storytelling",
+      "tagline": "Sales, customers, and stores turned into RFM segments and YTD/MTD KPIs.",
+      "category": "Data analysis",
+      "summary": "Formation Data & Business Intelligence project on a retail dataset covering Sales, Product, Customer, and Store tables. I built the full analytical path from relational modeling and advanced SQL through cleaning, RFM segmentation, time-based KPIs, and visual storytelling for business questions.",
+      "problem": "Stakeholders needed a clear view of who buys, what sells, and how performance moves month-to-month — not a pile of raw retail tables.",
+      "approach": "Modeled the four-table retail schema, wrote advanced SQL (joins, CTEs, window functions, views), cleaned and transformed sales data in Python, built RFM customer segments, and designed YTD/MTD KPI views with Matplotlib and Seaborn so trends were scannable.",
+      "impact": "Delivered a repeatable analytics path: RFM segments for customer prioritization, YTD/MTD KPI views for recurring review, and charts framed for stakeholder decisions rather than exploratory notebooks alone.",
+      "highlights": [
+        "Queried a 4-table retail schema with joins, subqueries, CTEs, window functions, views, and stored procedures.",
+        "Built RFM customer segments and Year-to-Date / Month-to-Date KPI views from cleaned sales data.",
+        "Used pandas and NumPy for exploration, then Matplotlib and Seaborn to present trends stakeholders could act on — hierarchy of KPIs first, detail second."
+      ],
+      "tools": [
+        "SQL",
+        "Python",
+        "pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "RFM",
+        "YTD/MTD KPIs"
+      ],
+      "image": "/images/project-retail.jpg",
+      "externalUrl": "",
+      "externalLabel": ""
+    },
+    {
+      "slug": "trusted-test-data-reporting",
+      "title": "Trusted Test Data Reporting",
+      "tagline": "Large validation datasets cleaned, tracked, and turned into decisions.",
+      "category": "Data quality",
+      "summary": "At Capgemini Engineering and KPIT Engineering, I analyzed and validated large Hardware-in-the-Loop and system test datasets, automated collection workflows in JIRA, and delivered clear reports for hardware, software, and systems teams.",
+      "problem": "Cross-functional engineering teams needed faster, trustworthy answers from high-volume test and diagnostic data — manual collation slowed decisions and hid anomalies.",
+      "approach": "Validated large-scale HiL and system test datasets, automated data collection and defect tracking in JIRA, and wrote Python scripts to generate result data and reporting for hardware, software, and systems stakeholders.",
+      "impact": "Moved reporting from ad-hoc manual collation to a repeatable JIRA-backed workflow with clearer anomaly visibility and faster turnaround for cross-functional reviews.",
+      "highlights": [
+        "Validated large-scale Hardware-in-the-Loop and system test datasets, surfacing performance trends and anomalies for engineering teams.",
+        "Automated data collection and defect-tracking workflows in JIRA to improve traceability and cut analysis turnaround.",
+        "Built Python scripts to generate and analyze result data, improving reporting accuracy for hardware, software, and systems stakeholders."
+      ],
+      "tools": [
+        "Python",
+        "JIRA",
+        "SQL",
+        "Data validation",
+        "Defect metrics",
+        "Reporting"
+      ],
+      "image": "/images/project-validation.jpg",
+      "externalUrl": "",
+      "externalLabel": ""
+    },
+    {
+      "slug": "friends-of-figma-tunis",
+      "title": "Friends of Figma (FoF) Tunisia",
+      "tagline": "Official Friends of Figma Tunisia chapter - 290 members and growing.",
+      "category": "Community",
+      "summary": "I founded and lead Friends of Figma (FoF) Tunisia, listed on the official Friends of Figma network as Tunisia’s chapter for Africa. As Figma Community Advocate and organizer, I grow a local space for designers and builders through meetups, Config watch parties, speaker programs, and learning in public — the same communication craft I bring to stakeholder-facing data work.",
+      "problem": "Tunisia lacked an official Figma-affiliated community space for designers and builders to learn together in public.",
+      "approach": "Founded and organized FoF Tunisia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG — connecting design practice with clear public storytelling.",
+      "impact": "290 members on the official FoF network; hosted Tunisia Config Watch Party 2026 and recurring meetups; speaking at DevFest, GDG MENAT Summit, and Women Techmakers.",
+      "highlights": [
+        "Official organizer of Friends of Figma Tunisia (290 members on friends.figma.com/tunisia).",
+        "Hosted Tunisia Config Watch Party 2026 and meetups such as Vibe Right with Figma and Ramadhan Bytes: Design Edition.",
+        "Connect design and data storytelling through talks at DevFest, GDG MENAT Summit 2025, and Women Techmakers."
+      ],
+      "tools": [
+        "Community building",
+        "Event design",
+        "Public speaking",
+        "Figma"
+      ],
+      "image": "/images/project-community.jpg",
+      "externalUrl": "https://friends.figma.com/tunisia/",
+      "externalLabel": "Visit FoF Tunisia →"
+    }
+  ],
+  "experience": [
+    {
+      "company": "KPIT Engineering",
+      "title": "Data validation & reporting",
+      "dates": "2025 — Present",
+      "bullets": [
+        "Analyze and validate large test and diagnostic datasets for engineering stakeholders.",
+        "Deliver clear reporting that surfaces trends, anomalies, and decision-ready summaries.",
+        "Continue SQL, Python, and process-focused data quality work in a high-reliability environment."
+      ]
+    },
+    {
+      "company": "Capgemini Engineering",
+      "title": "Test data analysis & reporting",
+      "dates": "2022 — 2024",
+      "bullets": [
+        "Validated Hardware-in-the-Loop and system test datasets for hardware, software, and systems teams.",
+        "Automated collection and defect-tracking workflows in JIRA to improve traceability.",
+        "Built Python scripts to generate and analyze result data for cross-functional reports."
+      ]
+    },
+    {
+      "company": "UTIK",
+      "title": "Product Owner",
+      "dates": "2021",
+      "bullets": [
+        "Translated stakeholder needs into data-informed product specs and backlog priorities.",
+        "Worked across product and delivery to keep requirements clear and actionable."
+      ]
+    }
+  ],
+  "nowItems": [
+    {
+      "title": "Data Analyst & Storyteller",
+      "body": "Open to new opportunities. Working with SQL, Python (pandas, NumPy), and BI workflows to turn complex datasets into KPI narratives people can trust."
+    },
+    {
+      "title": "Design-minded communication",
+      "body": "I bring a designer’s eye to hierarchy, clarity, and stakeholder framing — so analysis lands as decisions, not dashboards nobody opens."
+    },
+    {
+      "title": "Friends of Figma (FoF) Tunisia",
+      "body": "Figma Community Advocate and organizer of Tunisia’s Friends of Figma chapter - 290 members on the official FoF network."
+    },
+    {
+      "title": "Women Techmakers & GDG",
+      "body": "WTM Ambassador since 2019; co-organizing GDG meetups, workshops, and talks for the Tunisian developer community."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Top 10 AI Artathon Qualified Team",
+      "detail": "Global AI Summit, Riyadh (2020)"
+    },
+    {
+      "title": "Women Developer Academy graduate",
+      "detail": "Women Techmakers (2024)"
+    },
+    {
+      "title": "Capgemini Tech Talk Presenter",
+      "detail": "Internal tech talk (2024)"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2019",
+      "text": "Started co-organizing Google Developer Group meetups and became a Women Techmakers Ambassador."
+    },
+    {
+      "year": "2020",
+      "text": "Qualified Top 10 at the AI Artathon during the Global AI Summit in Riyadh."
+    },
+    {
+      "year": "2021",
+      "text": "Product Owner at UTIK - translating stakeholder needs into data-informed product specs and backlog priorities."
+    },
+    {
+      "year": "2022",
+      "text": "Completed a Master’s in Electronics (Microelectronics & Instrumentation) at Monastir University. Joined Capgemini Engineering."
+    },
+    {
+      "year": "2023",
+      "text": "Founded Friends of Figma (FoF) Tunisia - Tunisia’s only Figma-affiliated community chapter."
+    },
+    {
+      "year": "2024",
+      "text": "Completed Women Developer Academy. Presented a Capgemini Tech Talk and kept growing community programs."
+    },
+    {
+      "year": "2025",
+      "text": "Spoke at DevFest and GDG MENAT Summit in Dubai. Continued data validation, reporting, and storytelling work at KPIT Engineering."
+    },
+    {
+      "year": "2026",
+      "text": "Completed Formation Data & Business Intelligence (SQL, Python, RFM, visualization). Hosted Tunisia Config Watch Party 2026 with Friends of Figma Tunisia. Joined Technovation WTM Media Council."
+    }
+  ],
+  "speaking": [
+    "DevFest speaker",
+    "GDG MENAT Summit 2025 - Dubai",
+    "Capgemini Tech Talk Presenter (2024)",
+    "Friends of Figma Tunisia - Config Watch Party 2026 & speaker programs",
+    "Women Techmakers and GDG community sessions"
+  ],
+  "certifications": [
+    "Formation Data & Business Intelligence - Manel Hamdi (2026)",
+    "Women Developer Academy (WDA) - Women Techmakers (2024)",
+    "Google Cloud Data Analytics Certificate - Google (Coursera)",
+    "Google Cloud Professional Data Engineer Certification - Google (Coursera)",
+    "Google Project Management Professional Certificate (v2) - Google (Coursera)"
+  ],
+  "highlights": [
+    {
+      "slug": "retail-kpi-storytelling",
+      "title": "Retail KPIs, RFM & YTD/MTD views",
+      "meta": "SQL · pandas · Visualization",
+      "image": "/images/guide-1.jpg"
+    },
+    {
+      "slug": "trusted-test-data-reporting",
+      "title": "Faster, clearer validation reporting",
+      "meta": "Python · JIRA · Data quality",
+      "image": "/images/guide-3.jpg"
+    },
+    {
+      "slug": "friends-of-figma-tunis",
+      "title": "Friends of Figma (FoF) - only affiliated org in Tunisia",
+      "meta": "Community lead · Config · Speakers",
+      "image": "/images/guide-2.jpg"
+    }
+  ],
+  "nav": {
+    "monogram": "AM",
+    "moreLabel": "Contact",
+    "homeLabel": "Home",
+    "cvEnLabel": "CV EN",
+    "cvFrLabel": "CV FR",
+    "linkedinLabel": "LinkedIn",
+    "links": [
+      {
+        "to": "/work",
+        "label": "Work"
+      },
+      {
+        "to": "/about",
+        "label": "About"
+      }
+    ]
+  },
+  "hero": {
+    "lead": "🏕️ Hi, I’m Amani Medini",
+    "rest": "Data Analyst who turns messy data into decisions people trust ✨ With the eye of a designer 🌱 Building Friends of Figma (FoF) Tunisia 🎉 Open to new opportunities",
+    "avatarImage": "/images/Main_picture.jpg"
+  },
+  "home": {
+    "banner": {
+      "image": "/images/hero-banner.jpg",
+      "alt": "Soft natural light through window blinds",
+      "title": "From raw tables to decisions",
+      "subtitle": "SQL · Python · Clear storytelling"
+    },
+    "resourcesTitlePrefix": "Selected work for",
+    "rotatingAudiences": [
+      "Hiring managers",
+      "Data teams",
+      "Product leaders",
+      "Communities"
+    ],
+    "darkHeadline": "I turn complex data into stories people can act on.",
+    "features": [
+      {
+        "to": "/work",
+        "label": "Data analysis & storytelling",
+        "title": "SQL, Python, and KPI views that make decisions clearer.",
+        "cta": "See my work →",
+        "image": ""
+      },
+      {
+        "to": "/about",
+        "label": "How I communicate",
+        "title": "Design taste and community leadership — so analysis lands with clarity, not noise.",
+        "cta": "About me →",
+        "image": ""
+      }
+    ],
+    "communityCard": {
+      "eyebrow": "Friends of Figma Tunisia",
+      "title": "Config Watch Party 2026",
+      "meta": "Official FoF chapter - 290 members",
+      "badge": "Figma Community Advocate - Organizer",
+      "chips": [
+        "290 members",
+        "WTM Ambassador",
+        "GDG · DevFest"
+      ]
+    },
+    "highlightsTitle": "Highlights",
+    "highlightsLead": "Proof first: retail KPI storytelling, trusted validation reporting at engineering employers, then Friends of Figma Tunisia.",
+    "cvCtaEn": "CV English",
+    "cvCtaFr": "CV French",
+    "contactCta": "Get in touch"
+  },
+  "aboutPage": {
+    "title": "About me in 2 minutes",
+    "bio": "I’m Amani, a Data Analyst in Ariana, Tunisia. I analyze complex datasets and build KPI narratives with SQL and Python — with a designer’s eye for clarity. I also lead Friends of Figma Tunisia as Figma Community Advocate, which sharpens how I communicate with stakeholders.",
+    "sections": {
+      "now": "Now",
+      "experience": "Experience",
+      "awards": "Features & awards",
+      "timeline": "Timeline",
+      "speaking": "Speaking & community",
+      "certifications": "Certifications",
+      "findMe": "Find me online"
+    },
+    "linkedinLabel": "LinkedIn",
+    "fofLabel": "FoF Tunisia"
+  },
+  "workPage": {
+    "title": "Selected projects",
+    "lead": "Analytics craft and reporting systems first — each framed around a clear problem, approach, and outcome. Community work shows how I communicate.",
+    "caseStudyCta": "Read the case study →",
+    "backLabel": "← All work",
+    "notFoundTitle": "Project not found",
+    "notFoundBody": "That case study does not exist.",
+    "backToWork": "Back to work",
+    "overview": "Overview",
+    "problem": "Problem",
+    "approach": "Approach",
+    "impact": "Impact",
+    "highlights": "Highlights",
+    "tools": "Tools & methods",
+    "moreProjects": "More projects",
+    "discuss": "Discuss a project"
+  },
+  "contactPage": {
+    "title": "Let's talk",
+    "lead": "Open to new opportunities - data work, storytelling collaborations, community partnerships, and speaking invitations.",
+    "labels": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "fof": "Friends of Figma",
+      "basedIn": "Based in",
+      "cv": "CV",
+      "name": "Name",
+      "message": "Message"
+    },
+    "cvLinks": {
+      "en": "English",
+      "fr": "French"
+    },
+    "submit": "Send message",
+    "sentNote": "Opening your email client…",
+    "mailSubjectPrefix": "Portfolio inquiry from"
+  },
+  "footer": {
+    "thanks": [
+      "Thanks for dropping by!",
+      "I hope you find something useful here."
+    ],
+    "sign": "- Amani",
+    "monogram": "AM",
+    "hello": {
+      "title": "Hello",
+      "about": "About",
+      "contact": "Contact",
+      "linkedin": "LinkedIn",
+      "fof": "FoF Tunisia",
+      "email": "Email"
+    },
+    "focus": {
+      "title": "Focus",
+      "items": [
+        "Data analysis",
+        "Data storytelling",
+        "Clear communication",
+        "Community"
+      ]
+    },
+    "resources": {
+      "title": "Resources",
+      "cvEn": "CV (English)",
+      "cvFr": "CV (French)",
+      "allWork": "See all work →"
+    },
+    "socials": {
+      "linkedin": "LinkedIn",
+      "fof": "FoF Tunisia",
+      "email": "Email"
+    }
+  }
+}
