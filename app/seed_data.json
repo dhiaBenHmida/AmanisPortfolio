@@ -18,13 +18,13 @@
       "tagline": "Sales, customers, and stores turned into RFM segments and YTD/MTD KPIs.",
       "category": "Data analysis",
       "summary": "Formation Data & Business Intelligence project on a retail dataset covering Sales, Product, Customer, and Store tables. I built the full analytical path from relational modeling and advanced SQL through cleaning, RFM segmentation, time-based KPIs, and visual storytelling for business questions.",
-      "problem": "Stakeholders needed a clear view of who buys, what sells, and how performance moves month-to-month — not a pile of raw retail tables.",
+      "problem": "The retail dataset needed a clear view of who buys, what sells, and how performance moves month-to-month - not a pile of raw retail tables.",
       "approach": "Modeled the four-table retail schema, wrote advanced SQL (joins, CTEs, window functions, views), cleaned and transformed sales data in Python, built RFM customer segments, and designed YTD/MTD KPI views with Matplotlib and Seaborn so trends were scannable.",
-      "impact": "Delivered a repeatable analytics path: RFM segments for customer prioritization, YTD/MTD KPI views for recurring review, and charts framed for stakeholder decisions rather than exploratory notebooks alone.",
+      "impact": "Delivered a repeatable analytics path: RFM segments for customer prioritization, YTD/MTD KPI views for recurring review, and charts framed for decisions rather than exploratory notebooks alone.",
       "highlights": [
         "Queried a 4-table retail schema with joins, subqueries, CTEs, window functions, views, and stored procedures.",
         "Built RFM customer segments and Year-to-Date / Month-to-Date KPI views from cleaned sales data.",
-        "Used pandas and NumPy for exploration, then Matplotlib and Seaborn to present trends stakeholders could act on — hierarchy of KPIs first, detail second."
+        "Used pandas and NumPy for exploration, then Matplotlib and Seaborn to present trends teams could act on - hierarchy of KPIs first, detail second."
       ],
       "tools": [
         "SQL",
@@ -46,13 +46,13 @@
       "tagline": "Large validation datasets cleaned, tracked, and turned into decisions.",
       "category": "Data quality",
       "summary": "At Capgemini Engineering and KPIT Engineering, I analyzed and validated large Hardware-in-the-Loop and system test datasets, automated collection workflows in JIRA, and delivered clear reports for hardware, software, and systems teams.",
-      "problem": "Cross-functional engineering teams needed faster, trustworthy answers from high-volume test and diagnostic data — manual collation slowed decisions and hid anomalies.",
-      "approach": "Validated large-scale HiL and system test datasets, automated data collection and defect tracking in JIRA, and wrote Python scripts to generate result data and reporting for hardware, software, and systems stakeholders.",
+      "problem": "Cross-functional engineering teams needed faster, trustworthy answers from high-volume test and diagnostic data - manual collation slowed decisions and hid anomalies.",
+      "approach": "Validated large-scale HiL and system test datasets, automated data collection and defect tracking in JIRA, and wrote Python scripts to generate result data and reporting for hardware, software, and systems teams.",
       "impact": "Moved reporting from ad-hoc manual collation to a repeatable JIRA-backed workflow with clearer anomaly visibility and faster turnaround for cross-functional reviews.",
       "highlights": [
         "Validated large-scale Hardware-in-the-Loop and system test datasets, surfacing performance trends and anomalies for engineering teams.",
         "Automated data collection and defect-tracking workflows in JIRA to improve traceability and cut analysis turnaround.",
-        "Built Python scripts to generate and analyze result data, improving reporting accuracy for hardware, software, and systems stakeholders."
+        "Built Python scripts to generate and analyze result data, improving reporting accuracy for hardware, software, and systems teams."
       ],
       "tools": [
         "Python",
@@ -67,13 +67,39 @@
       "externalLabel": ""
     },
     {
+      "slug": "chetek-sports-ux",
+      "title": "Chetek Sports | Tennis Referee Companion",
+      "tagline": "UX-driven mobile app for tennis arbiters: scoring, rules, and live match control.",
+      "category": "UX design",
+      "summary": "The Tennis Referee Companion is a UX-driven mobile app designed for tennis arbiters, providing a clear way to manage the match from setup to live scoring. From real-time scoring to rule enforcement, the product aims for accuracy, fairness, and ease of officiating. UX design by Amani Medini; development by Ilyes.",
+      "problem": "Tennis arbiters needed a focused mobile tool for match setup, live scoring, and rule actions without digging through cluttered sports apps built for spectators.",
+      "approach": "Ran research and discovery (interviews, competitive analysis, personas), mapped information architecture and user flows, then moved from low-fidelity wireframes to interactive prototypes and a polished French-language UI for auth, match settings, coin toss, and live court scoring.",
+      "impact": "Delivered a complete UX package: research artifacts, wireframes, style guide, and high-fidelity flows covering login, registration, password recovery, tirage au sort, match parameters, and live scoring.",
+      "highlights": [
+        "Deliverables included user research plan, interview transcripts, competitive analysis, personas, low/high-fidelity wireframes, style guide, and user feedback analysis.",
+        "Designed French mobile flows for auth, forgot-password verification, and password reset.",
+        "Built live match UI for scoring, ball changes, faults/aces, and multi-court overview for referees."
+      ],
+      "tools": [
+        "Figma",
+        "User research",
+        "Wireframing",
+        "Prototyping",
+        "UI design",
+        "Information architecture"
+      ],
+      "image": "/images/project-chetek.png",
+      "externalUrl": "",
+      "externalLabel": ""
+    },
+    {
       "slug": "friends-of-figma-tunis",
-      "title": "Friends of Figma (FoF) Tunisia",
+      "title": "Friends of Figma (FoF) Tunisiaiaia",
       "tagline": "Official Friends of Figma Tunisia chapter - 290 members and growing.",
       "category": "Community",
-      "summary": "I founded and lead Friends of Figma (FoF) Tunisia, listed on the official Friends of Figma network as Tunisia’s chapter for Africa. As Figma Community Advocate and organizer, I grow a local space for designers and builders through meetups, Config watch parties, speaker programs, and learning in public — the same communication craft I bring to stakeholder-facing data work.",
+      "summary": "I founded and lead Friends of Figma (FoF) Tunisiaiaia, listed on the official Friends of Figma network as Tunisia’s chapter for Africa. As Figma Community Advocate and organizer, I grow a local space for designers and builders through meetups, Config watch parties, speaker programs, and learning in public - the same communication craft I bring to data work.",
       "problem": "Tunisia lacked an official Figma-affiliated community space for designers and builders to learn together in public.",
-      "approach": "Founded and organized FoF Tunisia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG — connecting design practice with clear public storytelling.",
+      "approach": "Founded and organized FoF Tunisiaiaia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG - connecting design practice with clear public storytelling.",
       "impact": "290 members on the official FoF network; hosted Tunisia Config Watch Party 2026 and recurring meetups; speaking at DevFest, GDG MENAT Summit, and Women Techmakers.",
       "highlights": [
         "Official organizer of Friends of Figma Tunisia (290 members on friends.figma.com/tunisia).",
@@ -88,37 +114,38 @@
       ],
       "image": "/images/project-community.jpg",
       "externalUrl": "https://friends.figma.com/tunisia/",
-      "externalLabel": "Visit FoF Tunisia →"
+      "externalLabel": "Visit FoF Tunisiaiaia →"
     }
   ],
   "experience": [
     {
       "company": "KPIT Engineering",
-      "title": "Data validation & reporting",
-      "dates": "2025 — Present",
+      "title": "E-Powertrain Software Tester",
+      "dates": "Apr 2025 - Dec 2025",
       "bullets": [
-        "Analyze and validate large test and diagnostic datasets for engineering stakeholders.",
-        "Deliver clear reporting that surfaces trends, anomalies, and decision-ready summaries.",
-        "Continue SQL, Python, and process-focused data quality work in a high-reliability environment."
+        "Analyzed and validated large-scale Hardware-in-the-Loop (HiL) test datasets for ECUs, BMS, and Relay Boxes, identifying performance trends and system anomalies.",
+        "Automated data collection and defect-tracking workflows in JIRA, improving data traceability and cutting analysis turnaround time.",
+        "Extracted, cleaned, and interpreted calibration and diagnostic data using INCA to support parameter optimization and reporting."
       ]
     },
     {
       "company": "Capgemini Engineering",
-      "title": "Test data analysis & reporting",
-      "dates": "2022 — 2024",
+      "title": "Automotive Software Tester",
+      "dates": "Sep 2022 - Mar 2025",
       "bullets": [
-        "Validated Hardware-in-the-Loop and system test datasets for hardware, software, and systems teams.",
-        "Automated collection and defect-tracking workflows in JIRA to improve traceability.",
-        "Built Python scripts to generate and analyze result data for cross-functional reports."
+        "Built Python-based automation scripts to generate and analyze test-result data for E/E vehicle systems (BMW Gen6, G2X platforms), improving data accuracy and reporting reliability.",
+        "Consolidated and analyzed validation datasets spanning BMS, wiring, ECUs, and CAN networks, converting raw results into clear, actionable reports for engineering teams.",
+        "Tracked and reported defect and test-coverage metrics in JIRA, supporting data-driven decisions across hardware, software, and systems teams."
       ]
     },
     {
       "company": "UTIK",
       "title": "Product Owner",
-      "dates": "2021",
+      "dates": "Mar 2021 - Jun 2022",
       "bullets": [
-        "Translated stakeholder needs into data-informed product specs and backlog priorities.",
-        "Worked across product and delivery to keep requirements clear and actionable."
+        "Analyzed product requirements and team input to define structured, data-informed functional specifications.",
+        "Prioritized product backlog using data on technical risk, system dependencies, and delivery milestones.",
+        "Coordinated cross-functional teams to align data-related deliverables with business objectives."
       ]
     }
   ],
@@ -132,7 +159,7 @@
       "body": "I bring a designer’s eye to hierarchy, clarity, and stakeholder framing — so analysis lands as decisions, not dashboards nobody opens."
     },
     {
-      "title": "Friends of Figma (FoF) Tunisia",
+      "title": "Friends of Figma (FoF) Tunisiaiaia",
       "body": "Figma Community Advocate and organizer of Tunisia’s Friends of Figma chapter - 290 members on the official FoF network."
     },
     {
@@ -173,7 +200,7 @@
     },
     {
       "year": "2023",
-      "text": "Founded Friends of Figma (FoF) Tunisia - Tunisia’s only Figma-affiliated community chapter."
+      "text": "Founded Friends of Figma (FoF) Tunisiaiaia - Tunisia’s only Figma-affiliated community chapter."
     },
     {
       "year": "2024",
@@ -216,6 +243,12 @@
       "image": "/images/guide-3.jpg"
     },
     {
+      "slug": "chetek-sports-ux",
+      "title": "Chetek Sports: tennis referee companion UX",
+      "meta": "Figma · Research · Mobile UI",
+      "image": "/images/project-chetek.png"
+    },
+    {
       "slug": "friends-of-figma-tunis",
       "title": "Friends of Figma (FoF) - only affiliated org in Tunisia",
       "meta": "Community lead · Config · Speakers",
@@ -242,7 +275,7 @@
   },
   "hero": {
     "lead": "🏕️ Hi, I’m Amani Medini",
-    "rest": "Data Analyst who turns messy data into decisions people trust ✨ With the eye of a designer 🌱 Building Friends of Figma (FoF) Tunisia 🎉 Open to new opportunities",
+    "rest": "Data Analyst who turns messy data into decisions people trust ✨ With the eye of a designer 🌱 Building Friends of Figma (FoF) Tunisiaiaia 🎉 Open to new opportunities",
     "avatarImage": "/images/Main_picture.jpg"
   },
   "home": {
@@ -288,14 +321,20 @@
       ]
     },
     "highlightsTitle": "Highlights",
-    "highlightsLead": "Proof first: retail KPI storytelling, trusted validation reporting at engineering employers, then Friends of Figma Tunisia.",
+    "highlightsLead": "Proof across analysis and design: retail KPIs, validation reporting, Chetek Sports UX, and Friends of Figma Tunisia.",
     "cvCtaEn": "CV English",
     "cvCtaFr": "CV French",
     "contactCta": "Get in touch"
   },
+  "profileLens": {
+    "hint": "Flip the lens",
+    "dataLabel": "Data",
+    "designLabel": "Design"
+  },
   "aboutPage": {
     "title": "About me in 2 minutes",
-    "bio": "I’m Amani, a Data Analyst in Ariana, Tunisia. I analyze complex datasets and build KPI narratives with SQL and Python — with a designer’s eye for clarity. I also lead Friends of Figma Tunisia as Figma Community Advocate, which sharpens how I communicate with stakeholders.",
+    "bio": "I'm Amani, a Data Analyst in Ariana, Tunisia. I analyze complex datasets and build KPI narratives with SQL and Python, with a designer's eye for clarity.",
+    "bioDesign": "I'm Amani, a UX-minded designer and Friends of Figma Tunisia advocate. I shape brand storytelling, mobile product flows, and research-led interfaces across freelance client work.",
     "sections": {
       "now": "Now",
       "experience": "Experience",
@@ -303,14 +342,28 @@
       "timeline": "Timeline",
       "speaking": "Speaking & community",
       "certifications": "Certifications",
-      "findMe": "Find me online"
+      "findMe": "Find me online",
+      "designExperience": "Design freelance",
+      "vision": "Vision",
+      "skills": "Skills",
+      "traits": "What I bring",
+      "workProcess": "UX work process"
     },
     "linkedinLabel": "LinkedIn",
-    "fofLabel": "FoF Tunisia"
+    "fofLabel": "FoF Tunisiaiaia",
+    "vision": {
+      "title": "Vision",
+      "body": "I have a clear plan for growth in the coming years: deepen analytical craft while continuing to lead with design clarity. I want to shape narratives from data and from product experience, make sharper decisions, and drive design thinking across teams. I aspire to lead, foster learning in public, and build work that people trust and enjoy using."
+    },
+    "skillsLabels": {
+      "technical": "Technical skills",
+      "soft": "Soft skills"
+    }
   },
   "workPage": {
     "title": "Selected projects",
-    "lead": "Analytics craft and reporting systems first — each framed around a clear problem, approach, and outcome. Community work shows how I communicate.",
+    "lead": "Analytics craft and reporting systems first: each framed around a clear problem, approach, and outcome.",
+    "leadDesign": "UX case studies and community craft: research, flows, and interfaces shaped with the same clarity I bring to data stories.",
     "caseStudyCta": "Read the case study →",
     "backLabel": "← All work",
     "notFoundTitle": "Project not found",
@@ -357,7 +410,7 @@
       "about": "About",
       "contact": "Contact",
       "linkedin": "LinkedIn",
-      "fof": "FoF Tunisia",
+      "fof": "FoF Tunisiaiaia",
       "email": "Email"
     },
     "focus": {
@@ -377,8 +430,105 @@
     },
     "socials": {
       "linkedin": "LinkedIn",
-      "fof": "FoF Tunisia",
+      "fof": "FoF Tunisiaiaia",
       "email": "Email"
     }
-  }
+  },
+  "designExperience": [
+    {
+      "company": "RMP",
+      "title": "Independent UX designer",
+      "dates": "Oct 2022 - Jun 2023",
+      "bullets": [
+        "Part-time freelance UX design for a German client.",
+        "User-centered flows and visuals aligned with brand identity."
+      ]
+    },
+    {
+      "company": "Tennis App",
+      "title": "Independent UX designer",
+      "dates": "Jul 2023 - Mar 2024",
+      "bullets": [
+        "Part-time freelance UX design for a French client.",
+        "Mobile product design for tennis refereeing and live match workflows."
+      ]
+    },
+    {
+      "company": "Bryteck",
+      "title": "Independent UX designer",
+      "dates": "May 2024 - Sep 2024",
+      "bullets": [
+        "Part-time freelance UX design for a Tunisian client.",
+        "Digital product design spanning research, wireframes, and UI."
+      ]
+    },
+    {
+      "company": "Upwork",
+      "title": "Independent designer",
+      "dates": "2017, 2019, 2020",
+      "bullets": [
+        "Freelance design engagements with American (2017), Tunisian (2019), and Italian (2020) clients.",
+        "Early career work across illustration, brand identity, and digital design."
+      ]
+    }
+  ],
+  "workProcess": [
+    {
+      "title": "Research & discovery",
+      "body": "Understand business goals and project requirements with clients, then run user research including interviews, surveys, analytics, and competitor analysis. Identify pain points and motivations through persona creation."
+    },
+    {
+      "title": "Information architecture & planning",
+      "body": "Map content and navigation with sitemaps and user flows. Prioritize features that align with user needs and product goals so the structure stays usable and purposeful."
+    },
+    {
+      "title": "Wireframing & prototyping",
+      "body": "Craft low-fidelity wireframes to shape layout and functionality, then bring designs to life with interactive prototypes for testing and validation."
+    },
+    {
+      "title": "UI design & visual development",
+      "body": "Enhance the interface with branding, typography, and color while keeping accessibility and consistency. Add micro-interactions when they improve clarity and polish."
+    },
+    {
+      "title": "Testing & iteration",
+      "body": "Conduct usability testing, gather feedback, and refine wireframes, prototypes, and visuals based on real user interactions."
+    },
+    {
+      "title": "Handoff & implementation",
+      "body": "Prepare clear handoff for engineering so the validated experience can be built with consistent components, states, and flows."
+    },
+    {
+      "title": "Post-launch evaluation & optimization",
+      "body": "Track behavior with analytics and heatmaps, gather feedback, and keep improving engagement through continuous design updates."
+    }
+  ],
+  "skills": {
+    "technical": [
+      "Figma",
+      "Sketch",
+      "User Research & Analysis",
+      "Interaction Design & Prototyping",
+      "Visual & UI Design",
+      "Information Architecture (IA) & Usability",
+      "Design Thinking & Problem-Solving"
+    ],
+    "soft": [
+      "Time Management",
+      "Presentation Skills",
+      "Effective Communication",
+      "Strategic Thinking",
+      "User Experience"
+    ]
+  },
+  "traits": [
+    "Problem solving",
+    "Empathy",
+    "Team player",
+    "Process improvement",
+    "Meet deadlines",
+    "Eager to learn",
+    "Willing to share knowledge",
+    "Positive attitude",
+    "Personal development"
+  ]
 }
