@@ -275,7 +275,8 @@
   },
   "hero": {
     "lead": "🏕️ Hi, I’m Amani Medini",
-    "rest": "Data Analyst who turns messy data into decisions people trust ✨ With the eye of a designer 🌱 Building Friends of Figma (FoF) Tunisiaiaia 🎉 Open to new opportunities",
+    "rest": "Data Analyst who turns messy data into decisions people trust ✨ With the eye of a designer 🌱 Building Friends of Figma (FoF) Tunisia 🎉 Open to new opportunities",
+    "restDesign": "Product-minded UX designer shaping clear mobile flows and brand stories ✨ Leading Friends of Figma Tunisia 🌱 Research, wireframes, and interfaces people enjoy using 🎉 Open to new opportunities",
     "avatarImage": "/images/Main_picture.jpg"
   },
   "home": {
@@ -284,7 +285,10 @@
       "alt": "Soft natural light through window blinds",
       "title": "From raw tables to decisions",
       "subtitle": "SQL · Python · Clear storytelling",
-      "relatedSlug": "retail-kpi-storytelling"
+      "relatedSlug": "retail-kpi-storytelling",
+      "titleDesign": "From research to polished flows",
+      "subtitleDesign": "Figma · UX · Community craft",
+      "relatedSlugDesign": "chetek-sports-ux"
     },
     "resourcesTitlePrefix": "Selected work for",
     "rotatingAudiences": [
@@ -294,6 +298,7 @@
       "Communities"
     ],
     "darkHeadline": "I turn complex data into stories people can act on.",
+    "darkHeadlineDesign": "I shape product experiences people can feel and teams can ship.",
     "features": [
       {
         "to": "/work",
@@ -305,7 +310,7 @@
       {
         "to": "/about",
         "label": "How I communicate",
-        "title": "Design taste and community leadership — so analysis lands with clarity, not noise.",
+        "title": "Design taste and community leadership: so analysis lands with clarity, not noise.",
         "cta": "About me →",
         "image": ""
       }
@@ -322,7 +327,8 @@
       ]
     },
     "highlightsTitle": "Highlights",
-    "highlightsLead": "Proof across analysis and design: retail KPIs, validation reporting, Chetek Sports UX, and Friends of Figma Tunisia.",
+    "highlightsLead": "Proof across analysis: retail KPIs, validation reporting, and trusted test data storytelling.",
+    "highlightsLeadDesign": "Proof across craft: Chetek Sports UX and Friends of Figma Tunisia community leadership.",
     "cvCtaEn": "CV English",
     "cvCtaFr": "CV French",
     "contactCta": "Get in touch"
@@ -330,7 +336,8 @@
   "profileLens": {
     "hint": "Flip the lens",
     "dataLabel": "Data",
-    "designLabel": "Design"
+    "designLabel": "Design",
+    "defaultLens": "data"
   },
   "aboutPage": {
     "title": "About me in 2 minutes",
