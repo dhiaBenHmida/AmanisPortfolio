@@ -269,198 +269,179 @@
         "UI design",
         "Information architecture"
       ],
-      "impact": "A researched UX package spanning why, market claim, competitive landscape, survey prompts, persona Walid Chetek, and high-fidelity flows for welcome, auth, referee management, schedule, and live scoring.",
-      "problem": "Arbiters still juggle physical rulebooks, static ITF/ATP/WTA references, and third-party summaries mid-match. Finding and interpreting a rule under time pressure is slow, easy to get wrong, and never designed for the court.",
-      "summary": "Vivez votre match comme les pros. The Tennis Referee Companion is a native mobile product for tennis arbiters in France: faster rule confidence, calmer match control, and live scoring built for the chair, not for spectators. UX and research by Amani Medini. Development by Ilyes.",
-      "tagline": "UX-driven mobile app for tennis arbiters: scoring, rules, and live match control.",
-      "approach": "Market research, competitive analysis, client-led survey questions, persona work, then wireframes, hi-fi French UI, and prototype validation for auth, schedule, match setup, and live court scoring.",
+      "impact": "A complete UX package the engineer could build from: research artifacts, persona, flows, and high-fidelity French screens covering the full match day from login to live scoring.",
+      "problem": "Arbiters still juggle physical rulebooks, static ITF/ATP/WTA PDFs, and thin third-party summaries while a point is live. Finding the right rule under time pressure is slow, easy to misread, and never designed for the court.",
+      "summary": "Vivez votre match comme les pros. I designed the UX for a native iOS companion for tennis arbiters in France: calmer match control, French microcopy, and live scoring built for the chair. Research and hi-fi by me. Development by Ilyes.",
+      "tagline": "UX for tennis arbiters: research, French flows, and live scoring for the chair.",
+      "approach": "I started from the client arbiter’s lived friction, mapped the competitive gap, ran survey prompts on lookup speed and offline need, built persona Walid, then designed French hi-fi for welcome, auth, tirage au sort, schedule sheets, and live scoring.",
       "category": "UX design",
       "highlights": [
-        "Started from a real arbiter frustration: juggling multiple rule resources during matches.",
-        "Competitive scan covered official rulebooks, third-party summaries, and general officiating apps.",
-        "Persona Walid Chetek: Marseille arbiter/coach who needs searchable rules, offline access, and quick reference.",
-        "Hi-fi French UI for welcome, auth, tirage au sort, schedule sheets, and tap-friendly live scoring."
+        "Grounded the product in a real arbiter’s mid-match friction, not a generic sports brief.",
+        "Mapped why official rulebooks and thin third-party tools fail under time pressure.",
+        "Persona Walid Chetek: Marseille arbiter/coach who needs speed, offline access, and clear interpretation.",
+        "Hi-fi French UI for welcome, auth, tirage au sort, tournament sheets, and tap-friendly live scoring."
       ],
       "externalUrl": "",
       "externalLabel": "",
       "timeline": "Dec 2022 - Jul 2023",
       "platform": "Native mobile app (iOS), France",
       "role": "Designer, researcher",
-      "roleBody": "Freelance UX: research, competitive analysis, survey synthesis, personas, flows, and high-fidelity French UI. The brief came from a tennis arbiter client who lived the problem on court. Development by Ilyes.",
-      "goal": "Give French-speaking tennis arbiters a user-friendly mobile companion: searchable rules thinking, offline resilience, and match tools from tirage au sort through live scoring so they can officiate with confidence.",
+      "roleBody": "I owned research and product UX end to end for a freelance brief: competitive scan, survey synthesis, persona, information architecture, and high-fidelity French UI. The brief came from a tennis arbiter who lived the problem on court. Ilyes handled development.",
+      "goal": "Give French-speaking tennis arbiters a mobile companion they can trust mid-match: faster orientation, offline-minded thinking, and match tools from tirage au sort through live scoring.",
       "metrics": [
         {
-          "value": "5",
-          "label": "Research artifacts",
-          "detail": "Why, market research, competitive analysis, user survey, and persona."
+          "value": "7 mo",
+          "label": "Design arc",
+          "detail": "Dec 2022 to Jul 2023 from research through hi-fi handoff."
         },
         {
-          "value": "6",
-          "label": "Core product flows",
-          "detail": "Welcome, auth/recovery, tirage au sort, match settings, schedule, live scoring."
+          "value": "1 seat",
+          "label": "Primary user",
+          "detail": "Designed for the arbiter on court, not for spectators."
         },
         {
           "value": "FR",
-          "label": "Built for France",
-          "detail": "Native iOS direction with French copy for arbiters on court."
+          "label": "Product language",
+          "detail": "French microcopy across auth, schedule, and scoring."
         }
       ],
       "sections": [
         {
-          "key": "why",
-          "title": "Why this exists",
-          "body": "This did not start as a generic sports idea. It started with a tennis arbiter describing the same pain over and over: too many resources, too little calm when a rule has to be found now.\\n\\nThe product is more than a digital rulebook. It is a streamlined companion so arbiters can handle the court with confidence.\n\nThe research pack sat beside concrete deliverables: research plan, interviews, competitive analysis, personas, wireframes, style guide, and feedback analysis.",
+          "key": "pain",
+          "title": "Problem: rules under pressure",
+          "layout": "stack",
+          "body": "PROBLEM — When a dispute hits, the arbiter needs the right rule now. Not after flipping three sources.\n\nEXAMPLE — Physical rulebooks are bulky. Official PDFs are complete but awkward mid-point. Jumping between books and phone tabs creates hesitation in front of players.\n\nIMPACT — Slow lookup kills confidence. Errors go up. The match loses rhythm.",
           "images": [
             {
               "src": "/images/case_studies/research-why-i-created-this-app.jpg",
-              "alt": "Why I created this application research slide",
-              "caption": "The spark: an arbiter tired of juggling resources mid-match."
+              "alt": "Research slide on why the arbiter companion exists",
+              "caption": "The brief started with lived friction, not a feature wishlist."
             },
-            {
-              "src": "/images/case_studies/research-overview.jpg",
-              "alt": "Tennis app case study overview slide with scope and role",
-              "caption": "Scope card: France, native iOS, Dec 2022 to Jul 2023."
-            },
-            {
-              "src": "/images/case_studies/chetek-overview.png",
-              "alt": "Chetek Sports overview slide with deliverables and welcome auth phones",
-              "caption": "Deliverables pack: research artifacts, wireframes, style guide, and early auth screens."
-            }
-          ]
-        },
-        {
-          "key": "market",
-          "title": "The claim and the problem",
-          "body": "The claim was simple: tennis arbiters need a more efficient, user-friendly way to manage the complexity of the rules.\\n\\nPhysical rulebooks are cumbersome in a live match. Specific rules are hard to find fast. Jumping between books and online materials creates confusion and errors.",
-          "images": [
             {
               "src": "/images/case_studies/research-market-research.jpg",
               "alt": "Market research slide with claim and problem",
-              "caption": "Market research: claim, problem, and the cost of slow reference."
+              "caption": "Market claim: arbiters need speed and clarity under live pressure."
             }
           ]
         },
         {
-          "key": "competition",
-          "title": "What arbiters use today",
-          "body": "There was no dedicated arbiter companion owning this space. Official ITF, ATP, and WTA rulebooks are comprehensive but static and awkward mid-point. Third-party summaries are thin and often unofficial. General sports officiating apps rarely go deep enough for tennis edge cases.\\n\\nThat gap is the design opportunity: depth of the official sources, speed of a mobile tool, built for the chair.",
+          "key": "gap",
+          "title": "Problem: nothing owned the chair",
+          "layout": "stack",
+          "body": "PROBLEM — There was no dedicated tennis-arbiter companion that combined official depth with mobile speed.\n\nEXAMPLE — ITF, ATP, and WTA materials are authoritative but static. Third-party summaries are thin. General officiating apps rarely handle tennis edge cases.\n\nIMPACT — That gap is the design opportunity: official seriousness, phone speed, built for the chair.",
           "images": [
             {
               "src": "/images/case_studies/research-competitive-analysis.jpg",
               "alt": "Competitive analysis of rulebooks and officiating apps",
-              "caption": "Competitive analysis across rulebooks, summaries, and general officiating apps."
+              "caption": "Competitive scan: depth without speed, or speed without tennis depth."
             }
           ]
         },
         {
-          "key": "survey",
-          "title": "Listening on court",
-          "body": "Inputs came from the client arbiter and the difficulties officials share when applying rules live.\\n\\nThe survey pressed on current resources, speed of lookup, unclear interpretations, must-have features, and how critical offline access is when connectivity dies at a venue.",
-          "images": [
-            {
-              "src": "/images/case_studies/research-user-survey.jpg",
-              "alt": "User survey questions for tennis arbiters",
-              "caption": "Survey prompts that shaped the feature priorities."
-            }
-          ]
-        },
-        {
-          "key": "persona",
+          "key": "users",
           "title": "Meet Walid",
-          "body": "Walid Chetek is 42, based in Marseille: tennis arbiter for 5 years, coach for 10, comfortable on a phone but still stuck with bulky rulebooks when the point is hot.\\n\\nHe wants searchable official rules, offline access, quick reference, scenario learning, and is open to tools like a digital coin toss. His frustrations are speed, interpretation clarity, and the absence of an app built for arbiters.",
+          "layout": "split",
+          "body": "Walid Chetek is 42, based in Marseille: five years as an arbiter, ten as a coach. Comfortable on a phone, still stuck with bulky rulebooks when the point is hot.\n\nJOB TO BE DONE — When a rule is contested mid-match, I want a calm, searchable companion so I can decide quickly without breaking the rhythm of the court.\n\nHe asked for offline access, quick reference, scenario learning, and even a digital coin toss. Those asks shaped the product more than any generic sports template.",
           "images": [
             {
               "src": "/images/case_studies/Personas.jpg",
               "alt": "Persona card for Walid Chetek tennis arbiter",
-              "caption": "Persona: Walid Chetek, tennis arbiter in Marseille."
+              "caption": "Persona first: one primary seat, one clear job."
             }
           ]
         },
         {
-          "key": "product-board",
-          "title": "The product on the table",
-          "body": "Once the research landed, the hi-fi system had to read as one product: welcome, auth, schedule, referee setup, and live scoring in the same navy and lime language.\n\nThis board is the handoff snapshot: French microcopy, court tools, and tournament structure in one frame.",
+          "key": "research",
+          "title": "Listening before pixels",
+          "layout": "stack",
+          "body": "I pulled inputs from the client arbiter and the difficulties officials share when applying rules live. The survey pressed on current resources, lookup speed, unclear interpretations, must-have features, and how critical offline access is when venue connectivity dies.\n\nThat research did not stay in a slide deck. It set priorities for auth calmness, schedule orientation, and scoring as muscle memory.",
           "images": [
             {
-              "src": "/images/case_studies/Tenis-App-Final-Screens.jpg",
-              "alt": "Isometric collage of CHETEK Sports LiveScore final screens",
-              "caption": "Final screens board: welcome through live scoring."
+              "src": "/images/case_studies/research-user-survey.jpg",
+              "alt": "User survey questions for tennis arbiters",
+              "caption": "Survey prompts that ranked speed, clarity, and offline need."
             }
           ]
         },
         {
           "key": "first-serve",
           "title": "First serve",
-          "body": "The product had to feel like court light from frame one: rackets, ball, and a promise for people running the match.\\n\\nWelcome stays quiet. Login, register, or continue as a guest. No fan clutter.",
+          "layout": "split",
+          "body": "The product had to feel like court light from frame one: rackets, ball, and a promise for people running the match.\n\nWelcome stays quiet. Login, register, or continue as a guest. No fan clutter competing with the job.",
           "images": [
             {
               "src": "/images/case_studies/Welcome.jpg",
               "alt": "CHETEK Sports LiveScore welcome screen",
-              "caption": "Welcome: Vivez Votre Match Comme Les Pros."
+              "caption": "One job on entry: get the arbiter into the product without noise."
             }
           ]
         },
         {
-          "key": "getting-on",
-          "title": "Getting onto court",
-          "body": "Auth had to be boring in the best way. Arbiters should not fight forms before a match.\\n\\nLogin, register, forgot password, verification, reset, success. French copy end to end.",
+          "key": "auth",
+          "title": "Auth that stays out of the way",
+          "layout": "stack",
+          "body": "Auth had to be boring in the best way. Arbiters should not fight forms before a match.\n\nLogin, register, forgot password, verification, reset, and success stay in one calm French voice. I designed it as one recovery path, not six screens with different tone.",
           "images": [
             {
-              "src": "/images/case_studies/Auth.png",
-              "alt": "French authentication and password recovery screens",
-              "caption": "Auth and recovery as one calm strip."
+              "src": "/images/case_studies/chetek-auth-strip.jpg",
+              "alt": "Full French authentication and password recovery flow",
+              "caption": "The whole auth path in one strip: calm, consistent, match-day ready."
             }
           ]
         },
         {
           "key": "before-point",
           "title": "Before the first point",
-          "body": "Match control starts before the first ball. Tirage au sort, who serves, who sits left of the chair, ball change, format, court overview.\\n\\nFewer taps between ready and live, including the coin-toss style choice Walid was open to.",
+          "layout": "stack",
+          "body": "Match control starts before the first ball. Tirage au sort, who serves, who sits left of the chair, ball change, format, court overview.\n\nI cut the taps between ready and live, including the coin-toss style choice Walid was open to.",
           "images": [
             {
-              "src": "/images/case_studies/ref_management.png",
-              "alt": "Tirage au sort, match parameters, court overview",
-              "caption": "Toss, parameters, then court overview."
+              "src": "/images/case_studies/chetek-setup-strip.jpg",
+              "alt": "Tirage au sort, match parameters, and court overview screens",
+              "caption": "Toss, parameters, then court cards — setup without scoring clutter."
             }
           ]
         },
         {
           "key": "day-sheet",
           "title": "The day sheet",
-          "body": "Tournament days are lists before they are points: epreuves, poules, club vs club, singles and doubles slots.\\n\\nThe schedule layer keeps the arbiter oriented in the competition structure without leaving the product voice.",
+          "layout": "stack",
+          "body": "Tournament days are lists before they are points: epreuves, poules, club vs club, singles and doubles slots.\n\nThe schedule layer keeps the arbiter oriented in the competition structure without leaving the product voice.",
           "images": [
             {
-              "src": "/images/case_studies/schedule.png",
-              "alt": "Tournament epreuves and match sheet screens",
-              "caption": "From championship sheet to S1 through D2."
+              "src": "/images/case_studies/chetek-schedule-strip.jpg",
+              "alt": "Tournament epreuves, poule matchups, and S1-D2 lineup screens",
+              "caption": "From championship sheet to S1 through D2 in three focused lists."
             }
           ]
         },
         {
           "key": "live-scoring",
           "title": "Live on court",
-          "body": "Live scoring is the loudest product idea: a court you can tap, with Ace, Filet, Faute, and F. de pied in reach while the point is alive.\\n\\nDark and light themes, ball-change reminders, readable set columns. Research had to become muscle memory here, not another settings page.\n\nAcross states, the active court side flips with the point so Ace, Filet, Faute, and F. de pied stay on the hand that needs them.",
+          "layout": "stack",
+          "body": "Live scoring is the loudest product idea: a court you can tap, with Ace, Filet, Faute, and F. de pied in reach while the point is alive.\n\nDark and light themes keep set columns readable. Across states, the active court side flips with the point so actions stay on the hand that needs them.",
           "images": [
             {
-              "src": "/images/case_studies/Scoring.png",
-              "alt": "Live scoring screens with court zones and rule actions",
-              "caption": "Live scoring under time pressure."
+              "src": "/images/case_studies/chetek-scoring-strip.jpg",
+              "alt": "Live scoring screens in dark and light themes with court actions",
+              "caption": "Scoring as muscle memory: court grid first, chrome second."
             },
             {
-              "src": "/images/case_studies/chetek-live-scoring.png",
-              "alt": "Four live scoring states showing court side flips and set progression",
-              "caption": "Scoring states: active court side flips as the point moves."
+              "src": "/images/case_studies/chetek-scoring-states-strip.jpg",
+              "alt": "Live scoring state progression with active court side flips",
+              "caption": "Active side flips with the point so the next tap stays obvious."
             }
           ]
         },
         {
-          "key": "handoff",
-          "title": "Handing it over",
-          "body": "Research slides, persona, wireframes, style thinking, and hi-fi flows went to build with Ilyes. The collaboration focus was French microcopy, scoring states, and keeping court interactions honest in implementation.",
+          "key": "learnings",
+          "title": "What held up",
+          "layout": "stack",
+          "body": "Designing for one primary seat clarified everything. Spectator features would have diluted the product.\n\nFrench microcopy was not decoration. It was part of trust. Auth, schedule, and scoring had to sound like the same official voice.\n\nFreelance scope meant I could own research through hi-fi, then hand a sharp package to engineering. The constraint was also a strength: fewer screens, clearer jobs, less theatre.",
           "images": []
         }
       ],
-      "nextSteps": "Keep testing with arbiters after launch, deepen offline rule lookup and scenario learning, and tighten live scoring edge cases from real tournament feedback."
+      "nextSteps": "After handoff, the next honest work is arbiter testing in live tournaments: offline rule lookup depth, scenario learning, and scoring edge cases that only show up when the point is hot."
     },
     {
       "slug": "friends-of-figma-tunis",
@@ -562,7 +543,10 @@
     "roleLabel": "Role",
     "addMetric": "Add metric",
     "addSection": "Add case section",
-    "addSectionImage": "Add image"
+    "addSectionImage": "Add image",
+    "sectionLayoutLabel": "Chapter layout",
+    "sectionLayoutStack": "Stacked",
+    "sectionLayoutSplit": "Side by side"
   },
   "aboutPage": {
     "bio": "I'm Amani, a Data Analyst in Ariana, Tunisia. I analyze complex datasets and build KPI narratives with SQL and Python, with a designer's eye for clarity.",
