@@ -26,7 +26,7 @@
   "home": {
     "banner": {
       "alt": "Soft natural light through window blinds",
-      "image": "/uploads/f82a58aca17a434abbcc23ad64b2cee6.jpg",
+      "image": "/images/home-banner.jpg",
       "title": "Look how Cute I AM ",
       "subtitle": "SQL · Python · Clear storytelling",
       "relatedSlug": "retail-kpi-storytelling",
@@ -464,7 +464,7 @@
     },
     {
       "slug": "friends-of-figma-tunis",
-      "image": "/uploads/db1961875a8443d4bcb7f2fe4494dcf1.jpg",
+      "image": "/images/project-fof.jpg",
       "title": "Friends of Figma (FoF) Tunisia",
       "tools": [
         "Community building",
