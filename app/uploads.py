@@ -3,7 +3,11 @@ from pathlib import Path
 from uuid import uuid4
 
 from fastapi import HTTPException, UploadFile, status
-from PIL import Image, ImageOps, UnidentifiedImageError
+from PIL import Image, ImageFile, ImageOps, UnidentifiedImageError
+
+# Oversized design exports can exceed Pillow's default bomb threshold.
+Image.MAX_IMAGE_PIXELS = None
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}
 ALLOWED_CONTENT_TYPES = {
@@ -22,9 +26,11 @@ PASSTHROUGH_CONTENT_TYPES = {
     "binary/octet-stream",
 }
 MAX_BYTES = 50 * 1024 * 1024
-MAX_EDGE_PX = 2400
-JPEG_QUALITY = 85
-WEBP_QUALITY = 82
+MAX_EDGE_PX = 1600
+JPEG_QUALITY = 80
+WEBP_QUALITY = 80
+# Re-encode large PNGs to JPEG the same way the browser upload path does.
+FORCE_JPEG_BYTES = 1 * 1024 * 1024
 
 
 def uploads_dir() -> Path:
@@ -37,6 +43,21 @@ def _normalize_suffix(filename: str) -> str:
     return Path(filename).suffix.lower()
 
 
+def _to_rgb(image: Image.Image) -> Image.Image:
+    if image.mode in {"RGBA", "LA"}:
+        background = Image.new("RGB", image.size, (255, 255, 255))
+        background.paste(image, mask=image.split()[-1])
+        return background
+    if image.mode == "P":
+        converted = image.convert("RGBA")
+        background = Image.new("RGB", converted.size, (255, 255, 255))
+        background.paste(converted, mask=converted.split()[-1])
+        return background
+    if image.mode != "RGB":
+        return image.convert("RGB")
+    return image
+
+
 def optimize_raster_image(data: bytes, suffix: str) -> tuple[bytes, str]:
     """Downscale large rasters and recompress. SVG/GIF are left unchanged."""
     if suffix in {".svg", ".gif"}:
@@ -44,6 +65,7 @@ def optimize_raster_image(data: bytes, suffix: str) -> tuple[bytes, str]:
 
     try:
         image = Image.open(BytesIO(data))
+        image.load()
     except UnidentifiedImageError as exc:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -54,33 +76,30 @@ def optimize_raster_image(data: bytes, suffix: str) -> tuple[bytes, str]:
     width, height = image.size
     longest = max(width, height)
     if longest > MAX_EDGE_PX:
-        scale = MAX_EDGE_PX / longest
-        image = image.resize(
-            (max(1, round(width * scale)), max(1, round(height * scale))),
-            Image.Resampling.LANCZOS,
-        )
+        # thumbnail mutates in place and is lighter on huge exports
+        image.thumbnail((MAX_EDGE_PX, MAX_EDGE_PX), Image.Resampling.LANCZOS)
 
     out = BytesIO()
-    if suffix in {".jpg", ".jpeg"}:
-        if image.mode in {"RGBA", "LA", "P"}:
+    as_jpeg = suffix in {".jpg", ".jpeg"} or len(data) >= FORCE_JPEG_BYTES or longest > MAX_EDGE_PX
+
+    if suffix == ".webp" and not as_jpeg:
+        image.save(out, format="WEBP", quality=WEBP_QUALITY, method=6)
+        return out.getvalue(), ".webp"
+
+    if suffix == ".png" and not as_jpeg:
+        if image.mode not in {"RGB", "RGBA", "L", "LA", "P"}:
             image = image.convert("RGBA")
-            background = Image.new("RGB", image.size, (255, 255, 255))
-            background.paste(image, mask=image.split()[-1])
-            image = background
-        elif image.mode != "RGB":
-            image = image.convert("RGB")
-        image.save(out, format="JPEG", quality=JPEG_QUALITY, optimize=True)
+        image.save(out, format="PNG", optimize=True)
+        return out.getvalue(), ".png"
+
+    if as_jpeg or suffix in {".jpg", ".jpeg"}:
+        image = _to_rgb(image)
+        image.save(out, format="JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
         return out.getvalue(), ".jpg"
 
     if suffix == ".webp":
         image.save(out, format="WEBP", quality=WEBP_QUALITY, method=6)
         return out.getvalue(), ".webp"
-
-    if suffix == ".png":
-        if image.mode not in {"RGB", "RGBA", "L", "LA", "P"}:
-            image = image.convert("RGBA")
-        image.save(out, format="PNG", optimize=True)
-        return out.getvalue(), ".png"
 
     raise HTTPException(
         status_code=status.HTTP_400_BAD_REQUEST,
