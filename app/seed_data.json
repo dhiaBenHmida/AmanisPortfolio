@@ -259,7 +259,7 @@
     },
     {
       "slug": "chetek-sports-ux",
-      "image": "/images/case_studies/Welcome.jpg",
+      "image": "/images/case_studies/final-onboarding-welcome.jpg",
       "title": "Chetek Sports | Tennis Referee Companion",
       "tools": [
         "Figma",
@@ -269,179 +269,452 @@
         "UI design",
         "Information architecture"
       ],
-      "impact": "A complete UX package the engineer could build from: research artifacts, persona, flows, and high-fidelity French screens covering the full match day from login to live scoring.",
-      "problem": "Arbiters still juggle physical rulebooks, static ITF/ATP/WTA PDFs, and thin third-party summaries while a point is live. Finding the right rule under time pressure is slow, easy to misread, and never designed for the court.",
-      "summary": "Vivez votre match comme les pros. I designed the UX for a native iOS companion for tennis arbiters in France: calmer match control, French microcopy, and live scoring built for the chair. Research and hi-fi by me. Development by Ilyes.",
-      "tagline": "UX for tennis arbiters: research, French flows, and live scoring for the chair.",
-      "approach": "I started from the client arbiter’s lived friction, mapped the competitive gap, ran survey prompts on lookup speed and offline need, built persona Walid, then designed French hi-fi for welcome, auth, tirage au sort, schedule sheets, and live scoring.",
+      "impact": "A build-ready UX package: research artifacts, a sharp persona, process wireframes, and a high-fidelity French system spanning onboarding, licence trust gates, planning and assignments, live scoring, rules learning with a quiz, and post-match reporting. The handoff let engineering build from decisions, not guesses.",
+      "problem": "Mid-point, an arbiter has seconds to apply the right rule. Instead they juggle bulky physical rulebooks, static ITF/ATP/WTA PDFs, and thin third-party summaries, none of them built for a phone held courtside. Every extra tap or page flip is hesitation in front of players, and hesitation reads as doubt.",
+      "summary": "Vivez votre match comme les pros. Chetek Sports is a native iOS companion I designed for French tennis arbiters, the people running the match from the chair. I took it from lived friction and research through persona, wireframes, and a high-fidelity French system that covers the whole match day: onboarding, licence trust, assignments, live scoring, rules learning, and post-match reporting. Research and hi-fi by me; development by Ilyes.",
+      "tagline": "UX for tennis arbiters: research, French flows, and a full match-day system for the chair.",
+      "approach": "I started from the client arbiter's real mid-match friction rather than a sports-app template. I mapped the competitive gap, ran a survey on lookup speed and offline need, and shaped persona Walid around one primary seat. From there I moved through low-fi wireframes and mid-fi court scoring, then into a broader hi-fi platform so the product owned the full match day, not just the score.",
       "category": "UX design",
       "highlights": [
-        "Grounded the product in a real arbiter’s mid-match friction, not a generic sports brief.",
-        "Mapped why official rulebooks and thin third-party tools fail under time pressure.",
-        "Persona Walid Chetek: Marseille arbiter/coach who needs speed, offline access, and clear interpretation.",
-        "Hi-fi French UI for welcome, auth, tirage au sort, tournament sheets, and tap-friendly live scoring."
+        "Grounded the product in a working arbiter's mid-match friction, not a generic sports brief.",
+        "Diagnosed why official rulebooks, PDFs, and thin apps all fail under live time pressure.",
+        "Persona Walid Chetek: a Marseille arbiter-coach who needs speed, offline access, and clear interpretation.",
+        "Carried the story from wireframes to mid-fi court scoring, then a full hi-fi system for the official seat.",
+        "Kept one calm French voice across auth, planning, scoring, and rules so the product felt official."
       ],
       "externalUrl": "",
       "externalLabel": "",
       "timeline": "Dec 2022 - Jul 2023",
       "platform": "Native mobile app (iOS), France",
       "role": "Designer, researcher",
-      "roleBody": "I owned research and product UX end to end for a freelance brief: competitive scan, survey synthesis, persona, information architecture, and high-fidelity French UI. The brief came from a tennis arbiter who lived the problem on court. Ilyes handled development.",
-      "goal": "Give French-speaking tennis arbiters a mobile companion they can trust mid-match: faster orientation, offline-minded thinking, and match tools from tirage au sort through live scoring.",
+      "roleBody": "I owned research and product UX end to end for a freelance brief: competitive scan, survey synthesis, persona, information architecture, user flows, and high-fidelity French UI. The brief came from a tennis arbiter who lived the problem on court, so every decision could be checked against a real user. Ilyes handled development from my handoff.",
+      "goal": "Give French-speaking tennis arbiters a companion they trust mid-match: faster orientation under pressure, offline-minded thinking, and match tools from tirage au sort through live scoring, all in one official voice.",
       "metrics": [
         {
           "value": "7 mo",
           "label": "Design arc",
-          "detail": "Dec 2022 to Jul 2023 from research through hi-fi handoff."
+          "detail": "Dec 2022 to Jul 2023, research through hi-fi handoff."
         },
         {
           "value": "1 seat",
           "label": "Primary user",
-          "detail": "Designed for the arbiter on court, not for spectators."
+          "detail": "Every screen serves the arbiter on court, not spectators."
         },
         {
-          "value": "FR",
-          "label": "Product language",
-          "detail": "French microcopy across auth, schedule, and scoring."
+          "value": "100%",
+          "label": "French UI",
+          "detail": "Microcopy in one official voice across the whole match day."
+        },
+        {
+          "value": "6 phases",
+          "label": "Match-day span",
+          "detail": "Onboarding, trust, planning, scoring, rules, reporting."
         }
       ],
       "sections": [
         {
-          "key": "pain",
-          "title": "Problem: rules under pressure",
+          "key": "introduction",
+          "title": "Introduction",
           "layout": "stack",
-          "body": "PROBLEM — When a dispute hits, the arbiter needs the right rule now. Not after flipping three sources.\n\nEXAMPLE — Physical rulebooks are bulky. Official PDFs are complete but awkward mid-point. Jumping between books and phone tabs creates hesitation in front of players.\n\nIMPACT — Slow lookup kills confidence. Errors go up. The match loses rhythm.",
+          "imageLayout": "stack",
+          "body": "Chetek Sports is a native iOS companion for tennis arbiters in France. The brief came from a working arbiter who was still juggling rulebooks, PDFs, and thin tools while the point was live, so the product had a real user from day one.\n\nThe ambition was not another scoreboard. It was a calm, official-feeling companion that owns the whole match day, from the moment an arbiter opens the app to the report they file after the last point.\n\nMY ROLE — I owned research and product UX end to end: competitive scan, survey synthesis, persona, information architecture, flows, and high-fidelity French UI. Ilyes handled development from my handoff.",
+          "images": []
+        },
+        {
+          "key": "problem",
+          "title": "Problem",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "PROBLEM — When a call is contested, the arbiter needs the right rule now, in front of players, not after flipping through three sources.\n\nEXAMPLE — Physical rulebooks are bulky and slow. Official PDFs are complete but awkward to search mid-point. Switching between a book and phone tabs breaks eye contact and rhythm exactly when composure matters most.\n\nIMPACT — Slow, uncertain lookups cost the arbiter authority. Errors creep in, players push harder, and the match loses its rhythm.\n\nPROBLEM — No dedicated tennis-arbiter companion combined official depth with real mobile speed.\n\nEXAMPLE — ITF, ATP, and WTA materials are authoritative but static. Third-party summaries are thin and unofficial. General officiating apps rarely handle tennis edge cases like tie-breaks, ball changes, or side switches.\n\nIMPACT — That gap was the opening: official seriousness with phone speed, designed specifically for the chair.",
           "images": [
             {
               "src": "/images/case_studies/research-why-i-created-this-app.jpg",
               "alt": "Research slide on why the arbiter companion exists",
-              "caption": "The brief started with lived friction, not a feature wishlist."
+              "caption": "I opened with the why, framed from lived courtside friction rather than a feature wishlist."
             },
             {
               "src": "/images/case_studies/research-market-research.jpg",
               "alt": "Market research slide with claim and problem",
-              "caption": "Market claim: arbiters need speed and clarity under live pressure."
-            }
-          ]
-        },
-        {
-          "key": "gap",
-          "title": "Problem: nothing owned the chair",
-          "layout": "stack",
-          "body": "PROBLEM — There was no dedicated tennis-arbiter companion that combined official depth with mobile speed.\n\nEXAMPLE — ITF, ATP, and WTA materials are authoritative but static. Third-party summaries are thin. General officiating apps rarely handle tennis edge cases.\n\nIMPACT — That gap is the design opportunity: official seriousness, phone speed, built for the chair.",
-          "images": [
+              "caption": "Market view: arbiters need speed and clarity under live pressure, and nothing served that well."
+            },
             {
               "src": "/images/case_studies/research-competitive-analysis.jpg",
               "alt": "Competitive analysis of rulebooks and officiating apps",
-              "caption": "Competitive scan: depth without speed, or speed without tennis depth."
+              "caption": "Competitive scan: existing tools offered depth without speed, or speed without real tennis depth."
             }
           ]
         },
         {
+          "key": "goals",
+          "title": "Goals",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "BUSINESS GOALS — Deliver a companion arbiters trust mid-match, and hand engineering a sharp, build-ready package from research through hi-fi.\n\nMove beyond a static rule PDF to owning match-day control: orientation, setup, scoring, and learning in one coherent product voice.\n\nUSER GOALS — Faster orientation under pressure, offline-minded thinking for dead venue connectivity, and tools from tirage au sort through live scoring, with no fan clutter competing for attention.\n\nA calm French interface that feels official on the chair instead of like a generic sports template.",
+          "images": []
+        },
+        {
+          "key": "impact",
+          "title": "Impact",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "This was a freelance arc delivered in phases: research, low-fi wireframes, mid-fi scoring exploration, then a fuller hi-fi system for the official seat. The measures below are honest scope markers for a solo research-to-hi-fi brief, not invented adoption or conversion numbers.\n\nThe real outcome is a package an engineer could build from with confidence: every screen ties back to a research input, a persona need, or an explicit match-day job.",
+          "images": []
+        },
+        {
           "key": "users",
-          "title": "Meet Walid",
+          "title": "Our Users",
           "layout": "split",
-          "body": "Walid Chetek is 42, based in Marseille: five years as an arbiter, ten as a coach. Comfortable on a phone, still stuck with bulky rulebooks when the point is hot.\n\nJOB TO BE DONE — When a rule is contested mid-match, I want a calm, searchable companion so I can decide quickly without breaking the rhythm of the court.\n\nHe asked for offline access, quick reference, scenario learning, and even a digital coin toss. Those asks shaped the product more than any generic sports template.",
+          "imageLayout": "stack",
+          "body": "Walid Chetek is 42 and based in Marseille: five years as an arbiter, ten as a coach. He is comfortable on a phone yet still stuck with bulky rulebooks when the point is hot.\n\nJOB TO BE DONE — When a rule is contested mid-match, I want a calm, searchable companion so I can decide quickly without breaking the rhythm of the court.\n\nHe asked for offline access, quick reference, scenario learning, and even a digital coin toss. Anchoring to one real seat shaped the product far more than any generic sports template, and it gave me a clear test for every later feature: does this help Walid decide faster on court?",
           "images": [
             {
               "src": "/images/case_studies/Personas.jpg",
               "alt": "Persona card for Walid Chetek tennis arbiter",
-              "caption": "Persona first: one primary seat, one clear job."
+              "caption": "Persona first: one primary seat, one clear job, a real test for every feature that followed."
             }
           ]
         },
         {
-          "key": "research",
-          "title": "Listening before pixels",
+          "key": "process-sketches",
+          "title": "Process: Sketches",
           "layout": "stack",
-          "body": "I pulled inputs from the client arbiter and the difficulties officials share when applying rules live. The survey pressed on current resources, lookup speed, unclear interpretations, must-have features, and how critical offline access is when venue connectivity dies.\n\nThat research did not stay in a slide deck. It set priorities for auth calmness, schedule orientation, and scoring as muscle memory.",
+          "imageLayout": "row",
+          "body": "I mapped the full match day in low-fidelity wireframes before touching visual design: login, competition pick, the rencontres schedule, team lineups, match-code entry, tirage au sort, match parameters, the pre-match recap, and the first court-scoring ideas.\n\nAt this stage I cared about structure and French microcopy jobs, not polish. Seeing the whole flow in grey boxes is where I cut taps between ready and live, and where the coin-toss and side-selection logic got pinned down.",
+          "images": [
+            {
+              "src": "/images/case_studies/sketch-login.jpg",
+              "alt": "Wireframe login screen",
+              "caption": "Login and entry, kept to one job."
+            },
+            {
+              "src": "/images/case_studies/sketch-competition.jpg",
+              "alt": "Wireframe competition picker",
+              "caption": "Choose a competition or drop into a match code."
+            },
+            {
+              "src": "/images/case_studies/sketch-rencontres.jpg",
+              "alt": "Wireframe rencontres schedule",
+              "caption": "Rencontres: the day as a scannable schedule."
+            },
+            {
+              "src": "/images/case_studies/sketch-lineup.jpg",
+              "alt": "Wireframe S1-D2 lineup",
+              "caption": "Team lineups from singles through doubles."
+            },
+            {
+              "src": "/images/case_studies/sketch-match-code.jpg",
+              "alt": "Wireframe match code entry",
+              "caption": "Quick match-code path for one-off matches."
+            },
+            {
+              "src": "/images/case_studies/sketch-tirage.jpg",
+              "alt": "Wireframe tirage au sort",
+              "caption": "Tirage au sort: toss, serve, and side in one place."
+            },
+            {
+              "src": "/images/case_studies/sketch-match-params.jpg",
+              "alt": "Wireframe match parameters",
+              "caption": "Match parameters: format, ball change, tie-break rules."
+            },
+            {
+              "src": "/images/case_studies/sketch-recap.jpg",
+              "alt": "Wireframe match recap",
+              "caption": "Pre-match recap to confirm before the first point."
+            },
+            {
+              "src": "/images/case_studies/sketch-tiebreak.jpg",
+              "alt": "Wireframe tie-break modal",
+              "caption": "An early edge case: the tie-break points modal."
+            },
+            {
+              "src": "/images/case_studies/sketch-scoring.jpg",
+              "alt": "Wireframe live scoring court",
+              "caption": "First court-scoring idea, tap targets over chrome."
+            }
+          ]
+        },
+        {
+          "key": "process-early",
+          "title": "Process: Early designs",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Mid-fidelity screens tightened the auth path and proved the core bet: scoring as muscle memory. A court you can tap, with Ace, Filet, Faute, and F. de pied within reach while the point is still alive.\n\nThis is where the LiveScore companion stopped being a diagram and started to feel real, with the active side flipping as play switches ends. Testing it here, before hi-fi, kept the later platform expansion grounded in a scoring model that already worked.",
+          "images": [
+            {
+              "src": "/images/case_studies/early-welcome.jpg",
+              "alt": "Early welcome screen",
+              "caption": "Welcome, setting the calm entry tone."
+            },
+            {
+              "src": "/images/case_studies/early-login.jpg",
+              "alt": "Early login screen",
+              "caption": "Login without friction before a match."
+            },
+            {
+              "src": "/images/case_studies/early-register.jpg",
+              "alt": "Early register screen",
+              "caption": "Register, kept short."
+            },
+            {
+              "src": "/images/case_studies/early-forgot-password.jpg",
+              "alt": "Early forgot password screen",
+              "caption": "Forgot password, one clear recovery start."
+            },
+            {
+              "src": "/images/case_studies/early-verification.jpg",
+              "alt": "Early verification screen",
+              "caption": "Verification step in the same voice."
+            },
+            {
+              "src": "/images/case_studies/early-password-changed.jpg",
+              "alt": "Early password changed screen",
+              "caption": "Success state that closes the recovery loop."
+            },
+            {
+              "src": "/images/case_studies/early-score-light.jpg",
+              "alt": "Early light scoring screen",
+              "caption": "Light scoring theme for bright courts."
+            },
+            {
+              "src": "/images/case_studies/early-score-court.jpg",
+              "alt": "Early court-tap scoring screen",
+              "caption": "The core bet: a tappable court, actions in reach."
+            },
+            {
+              "src": "/images/case_studies/early-score-state-a.jpg",
+              "alt": "Early scoring state A",
+              "caption": "A live scoring state mid-game."
+            },
+            {
+              "src": "/images/case_studies/early-score-state-b.jpg",
+              "alt": "Early scoring state B",
+              "caption": "Active side flips as players switch ends."
+            }
+          ]
+        },
+        {
+          "key": "process-research",
+          "title": "Process: Listening",
+          "layout": "split",
+          "imageLayout": "stack",
+          "body": "Alongside the client arbiter, I drew on the difficulties officials share when applying rules live. The survey pressed on current resources, lookup speed, unclear interpretations, must-have features, and how critical offline access is when venue connectivity dies.\n\nThat input did not sit in a slide. It set clear priorities: calm auth, schedule orientation, scoring as muscle memory, and, later, rules learning that lives beside the official documents.",
           "images": [
             {
               "src": "/images/case_studies/research-user-survey.jpg",
               "alt": "User survey questions for tennis arbiters",
-              "caption": "Survey prompts that ranked speed, clarity, and offline need."
+              "caption": "Survey prompts that ranked speed, clarity, and offline need over nice-to-haves."
             }
           ]
         },
         {
-          "key": "first-serve",
-          "title": "First serve",
-          "layout": "split",
-          "body": "The product had to feel like court light from frame one: rackets, ball, and a promise for people running the match.\n\nWelcome stays quiet. Login, register, or continue as a guest. No fan clutter competing with the job.",
-          "images": [
-            {
-              "src": "/images/case_studies/Welcome.jpg",
-              "alt": "CHETEK Sports LiveScore welcome screen",
-              "caption": "One job on entry: get the arbiter into the product without noise."
-            }
-          ]
-        },
-        {
-          "key": "auth",
-          "title": "Auth that stays out of the way",
+          "key": "final-entry",
+          "title": "Looks new on the chair",
           "layout": "stack",
-          "body": "Auth had to be boring in the best way. Arbiters should not fight forms before a match.\n\nLogin, register, forgot password, verification, reset, and success stay in one calm French voice. I designed it as one recovery path, not six screens with different tone.",
+          "imageLayout": "row",
+          "body": "The final system opens with court light and a clear promise for the people running the match. The splash and onboarding welcome set an official, confident voice before any form asks for attention.\n\nFirst impressions carry trust here: an arbiter should feel this app belongs on the chair with them.",
           "images": [
             {
-              "src": "/images/case_studies/chetek-auth-strip.jpg",
-              "alt": "Full French authentication and password recovery flow",
-              "caption": "The whole auth path in one strip: calm, consistent, match-day ready."
-            }
-          ]
-        },
-        {
-          "key": "before-point",
-          "title": "Before the first point",
-          "layout": "stack",
-          "body": "Match control starts before the first ball. Tirage au sort, who serves, who sits left of the chair, ball change, format, court overview.\n\nI cut the taps between ready and live, including the coin-toss style choice Walid was open to.",
-          "images": [
-            {
-              "src": "/images/case_studies/chetek-setup-strip.jpg",
-              "alt": "Tirage au sort, match parameters, and court overview screens",
-              "caption": "Toss, parameters, then court cards — setup without scoring clutter."
-            }
-          ]
-        },
-        {
-          "key": "day-sheet",
-          "title": "The day sheet",
-          "layout": "stack",
-          "body": "Tournament days are lists before they are points: epreuves, poules, club vs club, singles and doubles slots.\n\nThe schedule layer keeps the arbiter oriented in the competition structure without leaving the product voice.",
-          "images": [
-            {
-              "src": "/images/case_studies/chetek-schedule-strip.jpg",
-              "alt": "Tournament epreuves, poule matchups, and S1-D2 lineup screens",
-              "caption": "From championship sheet to S1 through D2 in three focused lists."
-            }
-          ]
-        },
-        {
-          "key": "live-scoring",
-          "title": "Live on court",
-          "layout": "stack",
-          "body": "Live scoring is the loudest product idea: a court you can tap, with Ace, Filet, Faute, and F. de pied in reach while the point is alive.\n\nDark and light themes keep set columns readable. Across states, the active court side flips with the point so actions stay on the hand that needs them.",
-          "images": [
-            {
-              "src": "/images/case_studies/chetek-scoring-strip.jpg",
-              "alt": "Live scoring screens in dark and light themes with court actions",
-              "caption": "Scoring as muscle memory: court grid first, chrome second."
+              "src": "/images/case_studies/final-splash.jpg",
+              "alt": "Chetek Sports splash screen",
+              "caption": "Splash: brand and promise in one calm frame."
             },
             {
-              "src": "/images/case_studies/chetek-scoring-states-strip.jpg",
-              "alt": "Live scoring state progression with active court side flips",
-              "caption": "Active side flips with the point so the next tap stays obvious."
+              "src": "/images/case_studies/final-onboarding-welcome.jpg",
+              "alt": "Onboarding welcome screen",
+              "caption": "Onboarding welcome that speaks to the arbiter, not a fan."
+            }
+          ]
+        },
+        {
+          "key": "final-onboarding",
+          "title": "Onboarding the job",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Onboarding teaches the job in short, single-purpose beats: planning, scoring, availability, then a setup-complete confirmation. Each screen owns one idea so the arbiter learns what the product does before match day, not during it.\n\nKeeping onboarding this disciplined mirrored a core principle from the whole system: one screen, one job.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-onboarding-planning.jpg",
+              "alt": "Onboarding planning screen",
+              "caption": "Planning: see the day at a glance."
+            },
+            {
+              "src": "/images/case_studies/final-onboarding-scoring.jpg",
+              "alt": "Onboarding scoring screen",
+              "caption": "Scoring: the core action, previewed."
+            },
+            {
+              "src": "/images/case_studies/final-onboarding-availability.jpg",
+              "alt": "Onboarding availability screen",
+              "caption": "Availability: tell the system when you can officiate."
+            },
+            {
+              "src": "/images/case_studies/final-setup-complete.jpg",
+              "alt": "Setup complete screen",
+              "caption": "Setup complete: ready for match day."
+            }
+          ]
+        },
+        {
+          "key": "final-auth",
+          "title": "Auth that stays calm",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Auth had to be boring in the best way. Login, register, and verification stay in one calm French voice so arbiters never fight forms before a match.\n\nI treated recovery and verification as a single considered path rather than a pile of disconnected screens, so the tone stays official even when something goes wrong.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-login.jpg",
+              "alt": "Final login screen",
+              "caption": "Login: fast, familiar, low friction."
+            },
+            {
+              "src": "/images/case_studies/final-signup.jpg",
+              "alt": "Final sign up screen",
+              "caption": "Sign up: only what the role needs."
+            },
+            {
+              "src": "/images/case_studies/final-email-verification.jpg",
+              "alt": "Email verification screen",
+              "caption": "Verification in the same official voice."
+            }
+          ]
+        },
+        {
+          "key": "final-trust",
+          "title": "Trust before tools",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "For an officiating product, credibility is the feature. Home can stay read-only until the licence is verified, so the app never lets an unverified account act as an official.\n\nThe pending state and verification path make that trust explicit. Blocked actions are shown as pending, not hidden behind buttons that quietly fail, which respects the arbiter and the integrity of the match.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-home-pending.jpg",
+              "alt": "Home pending license state",
+              "caption": "Home in a pending state: honest about what is not unlocked yet."
+            },
+            {
+              "src": "/images/case_studies/final-license.jpg",
+              "alt": "License verification screen",
+              "caption": "Licence verification: the trust gate before real tools open."
+            }
+          ]
+        },
+        {
+          "key": "final-assignments",
+          "title": "The day is assignments",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Tournament days are logistics before they are points. This path keeps the arbiter oriented: calendar view, full assignment detail, venue and role notes, and a pre-match readiness screen.\n\nPulling all of that into one flow means an arbiter can arrive prepared, knowing the court, the role, and the context, before the first serve.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-planning.jpg",
+              "alt": "Planning calendar screen",
+              "caption": "Planning calendar: where the day starts."
+            },
+            {
+              "src": "/images/case_studies/final-assignment.jpg",
+              "alt": "Match assignment detail screen",
+              "caption": "Assignment detail: match, role, and venue in one place."
+            },
+            {
+              "src": "/images/case_studies/final-pre-match.jpg",
+              "alt": "Pre-match detail screen",
+              "caption": "Pre-match readiness before walking to the chair."
+            }
+          ]
+        },
+        {
+          "key": "final-live",
+          "title": "Live on court",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Live scoring is the loudest idea in the product, and the one I validated earliest. Large point actions, a running log of recent events, and a match summary that closes the loop after the final point.\n\nThe layout puts the court and its tap targets first and chrome second, so scoring stays muscle memory even under pressure. It is the direct descendant of the mid-fi court I tested in the process phase.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-live-scoring.jpg",
+              "alt": "Live match scoring screen",
+              "caption": "Live scoring: court and actions first, chrome second."
+            },
+            {
+              "src": "/images/case_studies/final-match-summary.jpg",
+              "alt": "Match summary screen",
+              "caption": "Match summary that closes the loop after the last point."
+            }
+          ]
+        },
+        {
+          "key": "final-rules",
+          "title": "Rules in the pocket",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Rules become searchable in the pocket, with recent updates surfaced and a quiz path for scenario learning. Instead of living in a separate PDF tab, interpretation sits right beside the official documents.\n\nThis is where the product answers the original problem head on: the right rule, and the reasoning behind it, available in seconds without breaking the arbiter's focus.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-rules.jpg",
+              "alt": "Rules and regulations screen",
+              "caption": "Reglements: official documents, searchable on the phone."
+            },
+            {
+              "src": "/images/case_studies/final-quiz-question.jpg",
+              "alt": "Rules quiz question screen",
+              "caption": "Quiz question: scenario learning, not passive reading."
+            },
+            {
+              "src": "/images/case_studies/final-quiz-results.jpg",
+              "alt": "Rules quiz results screen",
+              "caption": "Quiz results that reinforce the tricky interpretations."
+            }
+          ]
+        },
+        {
+          "key": "final-after",
+          "title": "After the match",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "The match is not done at the last point. Post-match reporting closes the day, and a clear confirmation makes the handoff to organizers feel finished and official.\n\nTreating reporting as part of the core loop, rather than an afterthought, keeps the product honest to the arbiter's real responsibilities.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-report.jpg",
+              "alt": "Report confirmation screen",
+              "caption": "Report confirmation: the day handed off cleanly."
+            }
+          ]
+        },
+        {
+          "key": "final-support",
+          "title": "Support when stuck",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "When the product or the rules still leave a question, help and live chat stay within reach. For an official tool, reachable support is itself part of trust on match day.\n\nIt is the safety net behind the confidence the rest of the system projects.",
+          "images": [
+            {
+              "src": "/images/case_studies/final-help.jpg",
+              "alt": "Help and support screen",
+              "caption": "Help center for the common questions."
+            },
+            {
+              "src": "/images/case_studies/final-chat.jpg",
+              "alt": "Live chat support screen",
+              "caption": "Live chat for the moments that need a person."
             }
           ]
         },
         {
           "key": "learnings",
-          "title": "What held up",
+          "title": "What we learned",
           "layout": "stack",
-          "body": "Designing for one primary seat clarified everything. Spectator features would have diluted the product.\n\nFrench microcopy was not decoration. It was part of trust. Auth, schedule, and scoring had to sound like the same official voice.\n\nFreelance scope meant I could own research through hi-fi, then hand a sharp package to engineering. The constraint was also a strength: fewer screens, clearer jobs, less theatre.",
+          "imageLayout": "stack",
+          "body": "Designing for one primary seat clarified everything. Every time a spectator or generic-sports feature tempted its way in, the persona test cut it: it did not help Walid decide faster on court.\n\nFrench microcopy was not decoration, it was trust. Auth, planning, scoring, and rules all had to sound like the same official voice, or the product would feel unofficial.\n\nProcess artifacts earned their place. Validating the tappable court in mid-fi is what made the later platform expansion honest instead of theatrical, because the riskiest interaction was already proven.",
+          "images": []
+        },
+        {
+          "key": "future",
+          "title": "Future",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "After handoff, the most honest next step is arbiter testing in live tournaments: how deep offline rule lookup really needs to go, whether scenario learning changes on-court confidence, and which assignment and scoring edge cases only surface when the point is hot.\n\nAny post-launch iteration should follow real match-day use and measured behaviour, not more screens added for their own sake.",
           "images": []
         }
       ],
-      "nextSteps": "After handoff, the next honest work is arbiter testing in live tournaments: offline rule lookup depth, scenario learning, and scoring edge cases that only show up when the point is hot."
+      "nextSteps": "Test with arbiters in live tournaments: offline rule-lookup depth, scenario learning's effect on confidence, and the scoring and assignment edge cases that only appear when the point is hot. Let real match-day behaviour, not screen count, drive the next iteration."
     },
     {
       "slug": "friends-of-figma-tunis",
@@ -546,7 +819,10 @@
     "addSectionImage": "Add image",
     "sectionLayoutLabel": "Chapter layout",
     "sectionLayoutStack": "Stacked",
-    "sectionLayoutSplit": "Side by side"
+    "sectionLayoutSplit": "Side by side",
+    "sectionImageLayoutLabel": "Screen layout",
+    "sectionImageLayoutStack": "Screens stacked",
+    "sectionImageLayoutRow": "Screens side by side"
   },
   "aboutPage": {
     "bio": "I'm Amani, a Data Analyst in Ariana, Tunisia. I analyze complex datasets and build KPI narratives with SQL and Python, with a designer's eye for clarity.",
