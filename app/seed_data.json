@@ -1138,24 +1138,24 @@
         "pandas",
         "Matplotlib",
         "Learning analytics",
-        "OULAD",
+        "Open University Learning Analytics Dataset",
         "VLE engagement"
       ],
-      "impact": "On OULAD (32,593 enrollments across 7 modules), 53% end Fail or Withdrawn. Silent starters (14% with zero VLE clicks in the first 14 days) reach 91% at-risk. Lowest early-engagement quintile: 86% at-risk vs 28% in the highest.",
+      "impact": "On the Open University Learning Analytics Dataset (32,593 enrollments across 7 modules), 53% end Fail or Withdrawn. Silent starters (14% with zero VLE clicks in the first 14 days) reach 91% at-risk. Lowest early-engagement quintile: 86% at-risk vs 28% in the highest.",
       "problem": "An instructor cockpit that only shows enrollments and revenue still leaves teachers guessing who needs help this week. BryTek's dashboard UX needs a data story that turns engagement into an intervention queue.",
-      "summary": "Data lens companion to the BryTek UX study. I use the public Open University Learning Analytics Dataset (OULAD, CC BY 4.0) as a real EdTech stand-in: demographics, assessments, and VLE click summaries for 32k+ students. The question is the same one a BryTek teacher dashboard should answer: who needs outreach before they fail or withdraw. Honest framing: this is public OU data, not BryTek production telemetry.",
-      "tagline": "OULAD learning analytics framed for BryTek instructor intervention decisions.",
-      "approach": "Start from the BryTek instructor job (morning course health), ground it in OULAD outcomes and early VLE activity, then leave with a decision mix: silent starters first, then low-engagement bands, with module-level health as context.",
+      "summary": "Data lens companion to the BryTek UX study. I use the public Open University Learning Analytics Dataset (CC BY 4.0) as a real EdTech stand-in: demographics, assessments, and VLE click summaries for 32k+ students. The question is the same one a BryTek teacher dashboard should answer: who needs outreach before they fail or withdraw. Honest framing: this is public OU data, not BryTek production telemetry.",
+      "tagline": "Open University Learning Analytics Dataset framed for BryTek instructor intervention decisions.",
+      "approach": "Start from the BryTek instructor job (morning course health), ground it in Open University Learning Analytics Dataset outcomes and early VLE activity, then leave with a decision mix: silent starters first, then low-engagement bands, with module-level health as context.",
       "category": "Data analysis",
       "highlights": [
         "Paired with the BryTek UX case: same instructor cockpit question, measured on real public LMS data.",
-        "Grounded in OULAD (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
+        "Grounded in the Open University Learning Analytics Dataset (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
         "Early VLE silence (first 14 days) as the primary risk signal for Fail or Withdrawn.",
         "Module health view so teachers see which courses need staffing attention, not only which students."
       ],
       "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
-      "externalLabel": "OULAD source",
-      "timeline": "Portfolio data study · OULAD (2013 - 2014 presentations)",
+      "externalLabel": "Open University Learning Analytics Dataset",
+      "timeline": "Portfolio data study · Open University Learning Analytics Dataset (2013 - 2014 presentations)",
       "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
       "role": "Data analyst",
       "roleBody": "Owned the analytical narrative for a BryTek-framed instructor decision: source honesty, early-engagement risk signal, module health, and an intervention queue a teacher could act on. Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry.",
@@ -1188,7 +1188,7 @@
           "title": "Introduction",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "This is the data lens beside BryTek Online Learning (UX). The design study gives teachers a cockpit for enrollments, ratings, and earnings. This study asks what that cockpit should prioritize when the signal is learning behaviour, not revenue.\n\nI use the Open University Learning Analytics Dataset (OULAD): anonymized course, student, assessment, and Virtual Learning Environment (VLE) interaction data from Open University presentations in 2013 and 2014. License: CC BY 4.0. Citation: Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171 (2017).\n\nFraming rule: OULAD is a public EdTech proxy. It is not BryTek production data. The point is transferable decisions a BryTek-style instructor dashboard should surface.\n\nMY ROLE - Data analyst framing the instructor question, early-engagement risk, module health, and intervention narrative.",
+          "body": "This is the data lens beside BryTek Online Learning (UX). The design study gives teachers a cockpit for enrollments, ratings, and earnings. This study asks what that cockpit should prioritize when the signal is learning behaviour, not revenue.\n\nI use the Open University Learning Analytics Dataset: anonymized course, student, assessment, and Virtual Learning Environment (VLE) interaction data from Open University presentations in 2013 and 2014. License: CC BY 4.0. Citation: Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171 (2017).\n\nFraming rule: the Open University Learning Analytics Dataset is a public EdTech proxy. It is not BryTek production data. The point is transferable decisions a BryTek-style instructor dashboard should surface.\n\nMY ROLE - Data analyst framing the instructor question, early-engagement risk, module health, and intervention narrative.",
           "images": []
         },
         {
@@ -1196,7 +1196,7 @@
           "title": "Problem",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "PROBLEM - A teacher opens BryTek and sees headcount and money. Without engagement risk, the morning view cannot say who needs a message today.\n\nEXAMPLE - Two courses can show similar enrollment counts while one is filled with learners who never opened the VLE in the first two weeks.\n\nIMPACT - Outreach waits until after the first failed assessment. Retention work arrives too late.\n\nPROBLEM - Public LMS logs are noisy: withdrawals, fails, distinctions, and silent accounts sit in the same table until you define an outcome and a time window.\n\nEXAMPLE - OULAD labels final_result as Distinction, Pass, Fail, or Withdrawn, and stores daily VLE click summaries that only help if you pick an early window.\n\nIMPACT - Without those definitions, 'engagement' stays a vague chart instead of a queue.",
+          "body": "PROBLEM - A teacher opens BryTek and sees headcount and money. Without engagement risk, the morning view cannot say who needs a message today.\n\nEXAMPLE - Two courses can show similar enrollment counts while one is filled with learners who never opened the VLE in the first two weeks.\n\nIMPACT - Outreach waits until after the first failed assessment. Retention work arrives too late.\n\nPROBLEM - Public LMS logs are noisy: withdrawals, fails, distinctions, and silent accounts sit in the same table until you define an outcome and a time window.\n\nEXAMPLE - The Open University Learning Analytics Dataset labels final_result as Distinction, Pass, Fail, or Withdrawn, and stores daily VLE click summaries that only help if you pick an early window.\n\nIMPACT - Without those definitions, 'engagement' stays a vague chart instead of a queue.",
           "images": []
         },
         {
@@ -1204,7 +1204,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS - Prove that BryTek's instructor product can be backed by a real learning-analytics decision story, not only UI fiction on the dashboard cards.\n\nUSER GOALS - Give an instructor a shortlist: silent starters first, then low early engagement, with module context so staffing attention follows course risk.\n\nGive a portfolio reader an honest source trail (OULAD / UCI / OU Analyse) they can verify.",
+          "body": "BUSINESS GOALS - Prove that BryTek's instructor product can be backed by a real learning-analytics decision story, not only UI fiction on the dashboard cards.\n\nUSER GOALS - Give an instructor a shortlist: silent starters first, then low early engagement, with module context so staffing attention follows course risk.\n\nGive a portfolio reader an honest source trail (Open University Learning Analytics Dataset / UCI / OU Analyse) they can verify.",
           "images": []
         },
         {
@@ -1212,7 +1212,7 @@
           "title": "Impact",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Computed on public OULAD after joining studentInfo to early VLE activity (days 0 to 14).\n\nScale: 32,593 enrollments, 28,785 students, 7 modules, 22 presentations.\n\nOutcomes: Distinction 3,024, Pass 12,361, Fail 7,052, Withdrawn 10,156. Combined Fail + Withdrawn: 53%.\n\nSilent starters (14% with zero early clicks): 91% at-risk. Lowest early-engagement quintile 86% at-risk vs 28% in the highest. Highest-risk module in this cut: CCC (62% at-risk, 45% withdrawn).",
+          "body": "Computed on the public Open University Learning Analytics Dataset after joining studentInfo to early VLE activity (days 0 to 14).\n\nScale: 32,593 enrollments, 28,785 students, 7 modules, 22 presentations.\n\nOutcomes: Distinction 3,024, Pass 12,361, Fail 7,052, Withdrawn 10,156. Combined Fail + Withdrawn: 53%.\n\nSilent starters (14% with zero early clicks): 91% at-risk. Lowest early-engagement quintile 86% at-risk vs 28% in the highest. Highest-risk module in this cut: CCC (62% at-risk, 45% withdrawn).",
           "images": []
         },
         {
@@ -1234,7 +1234,7 @@
           "title": "Scenario: who needs outreach",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "DATA QUESTION - In the first two weeks of a presentation, which enrollments should enter an instructor intervention queue because early VLE silence predicts Fail or Withdrawn?\n\nHugging Face check before locking the source: edu-interactions is AI-tutor oriented; student-engagement-and-performance is only ~50 rows; OULAD-derived HF artifacts are prompts or benchmarks, not the raw LMS tables. OULAD via OU Analyse / UCI remains the best public fit for a BryTek instructor story.\n\nThe storyboard: define outcomes, measure early clicks, rank risk bands, read module health, then leave with a decision mix tied to the BryTek teacher job.",
+          "body": "DATA QUESTION - In the first two weeks of a presentation, which enrollments should enter an instructor intervention queue because early VLE silence predicts Fail or Withdrawn?\n\nHugging Face check before locking the source: edu-interactions is AI-tutor oriented; student-engagement-and-performance is only ~50 rows; Open University Learning Analytics Dataset-derived Hugging Face artifacts are prompts or benchmarks, not the raw LMS tables. the Open University Learning Analytics Dataset via OU Analyse / UCI remains the best public fit for a BryTek instructor story.\n\nThe storyboard: define outcomes, measure early clicks, rank risk bands, read module health, then leave with a decision mix tied to the BryTek teacher job.",
           "images": []
         },
         {
@@ -1246,7 +1246,7 @@
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-outcomes.jpg",
-              "alt": "OULAD final outcome counts",
+              "alt": "Open University Learning Analytics Dataset final outcome counts",
               "caption": "Outcomes: Pass 12,361 · Withdrawn 10,156 · Fail 7,052 · Distinction 3,024."
             }
           ]
@@ -1256,7 +1256,7 @@
           "title": "Process: early VLE engagement",
           "layout": "stack",
           "imageLayout": "row",
-          "body": "Early window: days 0 to 14 in OULAD's relative course calendar. Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\nINSIGHT - Risk falls as early activity rises: 86% at-risk in the lowest quintile vs 28% in the highest. Silent starters (14% of enrollments) hit 91% Fail or Withdrawn.\n\nThis is the signal BryTek's recent-activity and course-health widgets should amplify.",
+          "body": "Early window: days 0 to 14 in the Open University Learning Analytics Dataset relative course calendar. Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\nINSIGHT - Risk falls as early activity rises: 86% at-risk in the lowest quintile vs 28% in the highest. Silent starters (14% of enrollments) hit 91% Fail or Withdrawn.\n\nThis is the signal BryTek's recent-activity and course-health widgets should amplify.",
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
@@ -1279,7 +1279,7 @@
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-module-health.jpg",
-              "alt": "Pass and withdrawal rates by OULAD module",
+              "alt": "Pass and withdrawal rates by Open University Learning Analytics Dataset module",
               "caption": "Module health: success vs withdrawal side by side."
             }
           ]
@@ -1303,7 +1303,7 @@
           "title": "What we learned",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Hugging Face is useful for discovery, but the best BryTek-shaped public table set is still OULAD from OU Analyse / UCI, not a 50-row engagement toy set.\n\nSay the source out loud. Claiming OULAD as BryTek production data would break trust.\n\nEarly windows beat lifetime averages for instructor action. Teachers intervene in weeks, not after the final result lands.\n\nPair the UX and data entries. Design shows the cockpit; analytics shows what should fill it.",
+          "body": "Hugging Face is useful for discovery, but the best BryTek-shaped public table set is still the Open University Learning Analytics Dataset from OU Analyse / UCI, not a 50-row engagement toy set.\n\nSay the source out loud. Claiming the Open University Learning Analytics Dataset as BryTek production data would break trust.\n\nEarly windows beat lifetime averages for instructor action. Teachers intervene in weeks, not after the final result lands.\n\nPair the UX and data entries. Design shows the cockpit; analytics shows what should fill it.",
           "images": []
         },
         {
@@ -1514,7 +1514,7 @@
       "slug": "brytek-learning-analytics",
       "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
       "title": "BryTek data: early VLE risk for instructor outreach",
-      "meta": "Data analysis · OULAD · Learning analytics"
+      "meta": "Data analysis · Open University Learning Analytics Dataset"
     },
     {
       "meta": "Community lead · Config · Speakers",

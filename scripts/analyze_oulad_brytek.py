@@ -134,7 +134,7 @@ def main() -> None:
     style_axes(ax)
     bars = ax.bar(order, vals, color=colors)
     ax.set_ylabel("Enrollments")
-    ax.set_title("OULAD final outcomes (student x module presentations)")
+    ax.set_title("Open University Learning Analytics Dataset outcomes")
     for b, v in zip(bars, vals):
         ax.text(b.get_x() + b.get_width() / 2, v + 200, f"{v:,}", ha="center", va="bottom", fontsize=9)
     save_fig(fig, "brytek-oulad-outcomes.jpg")
@@ -187,7 +187,7 @@ def main() -> None:
     save_fig(fig, "brytek-oulad-silent-starters.jpg")
 
     metrics = {
-        "source": "Open University Learning Analytics Dataset (OULAD)",
+        "source": "Open University Learning Analytics Dataset",
         "license": "CC BY 4.0",
         "citation": "Kuzilek, Hlosta, Zdrahal. Nature Scientific Data 4:170171 (2017).",
         "enrollments": enrollments,

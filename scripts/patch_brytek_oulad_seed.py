@@ -1,4 +1,4 @@
-"""Insert / refresh brytek-learning-analytics in seed_data.json from OULAD metrics."""
+"""Insert / refresh brytek-learning-analytics in seed_data.json from Open University Learning Analytics Dataset metrics."""
 
 from __future__ import annotations
 
@@ -36,11 +36,11 @@ def build_project(m: dict) -> dict:
             "pandas",
             "Matplotlib",
             "Learning analytics",
-            "OULAD",
+            "Open University Learning Analytics Dataset",
             "VLE engagement",
         ],
         "impact": (
-            f"On OULAD ({m['enrollments']:,} enrollments across {m['modules']} modules), "
+            f"On the Open University Learning Analytics Dataset ({m['enrollments']:,} enrollments across {m['modules']} modules), "
             f"{pct(m['at_risk_rate'])} end Fail or Withdrawn. Silent starters "
             f"({pct(m['zero_early_share'])} with zero VLE clicks in the first "
             f"{m['early_window_days']} days) reach {pct(m['zero_early_at_risk'])} at-risk. "
@@ -54,27 +54,27 @@ def build_project(m: dict) -> dict:
         ),
         "summary": (
             "Data lens companion to the BryTek UX study. I use the public Open University Learning "
-            "Analytics Dataset (OULAD, CC BY 4.0) as a real EdTech stand-in: demographics, assessments, "
+            "Analytics Dataset (CC BY 4.0) as a real EdTech stand-in: demographics, assessments, "
             "and VLE click summaries for 32k+ students. The question is the same one a BryTek teacher "
             "dashboard should answer: who needs outreach before they fail or withdraw. Honest framing: "
             "this is public OU data, not BryTek production telemetry."
         ),
-        "tagline": "OULAD learning analytics framed for BryTek instructor intervention decisions.",
+        "tagline": "Open University Learning Analytics Dataset framed for BryTek instructor intervention decisions.",
         "approach": (
-            "Start from the BryTek instructor job (morning course health), ground it in OULAD outcomes "
+            "Start from the BryTek instructor job (morning course health), ground it in Open University Learning Analytics Dataset outcomes "
             "and early VLE activity, then leave with a decision mix: silent starters first, then "
             "low-engagement bands, with module-level health as context."
         ),
         "category": "Data analysis",
         "highlights": [
             "Paired with the BryTek UX case: same instructor cockpit question, measured on real public LMS data.",
-            "Grounded in OULAD (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
+            "Grounded in the Open University Learning Analytics Dataset (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
             "Early VLE silence (first 14 days) as the primary risk signal for Fail or Withdrawn.",
             "Module health view so teachers see which courses need staffing attention, not only which students.",
         ],
         "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
-        "externalLabel": "OULAD source",
-        "timeline": "Portfolio data study · OULAD (2013 - 2014 presentations)",
+        "externalLabel": "Open University Learning Analytics Dataset",
+        "timeline": "Portfolio data study · Open University Learning Analytics Dataset (2013 - 2014 presentations)",
         "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
         "role": "Data analyst",
         "roleBody": (
@@ -121,11 +121,11 @@ def build_project(m: dict) -> dict:
                     "This is the data lens beside BryTek Online Learning (UX). The design study gives "
                     "teachers a cockpit for enrollments, ratings, and earnings. This study asks what that "
                     "cockpit should prioritize when the signal is learning behaviour, not revenue.\n\n"
-                    "I use the Open University Learning Analytics Dataset (OULAD): anonymized course, "
+                    "I use the Open University Learning Analytics Dataset: anonymized course, "
                     "student, assessment, and Virtual Learning Environment (VLE) interaction data from "
                     "Open University presentations in 2013 and 2014. License: CC BY 4.0. Citation: "
                     "Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171 (2017).\n\n"
-                    "Framing rule: OULAD is a public EdTech proxy. It is not BryTek production data. "
+                    "Framing rule: the Open University Learning Analytics Dataset is a public EdTech proxy. It is not BryTek production data. "
                     "The point is transferable decisions a BryTek-style instructor dashboard should surface.\n\n"
                     "MY ROLE - Data analyst framing the instructor question, early-engagement risk, "
                     "module health, and intervention narrative."
@@ -146,7 +146,7 @@ def build_project(m: dict) -> dict:
                     "arrives too late.\n\n"
                     "PROBLEM - Public LMS logs are noisy: withdrawals, fails, distinctions, and silent "
                     "accounts sit in the same table until you define an outcome and a time window.\n\n"
-                    "EXAMPLE - OULAD labels final_result as Distinction, Pass, Fail, or Withdrawn, and "
+                    "EXAMPLE - The Open University Learning Analytics Dataset labels final_result as Distinction, Pass, Fail, or Withdrawn, and "
                     "stores daily VLE click summaries that only help if you pick an early window.\n\n"
                     "IMPACT - Without those definitions, 'engagement' stays a vague chart instead of a queue."
                 ),
@@ -162,7 +162,7 @@ def build_project(m: dict) -> dict:
                     "learning-analytics decision story, not only UI fiction on the dashboard cards.\n\n"
                     "USER GOALS - Give an instructor a shortlist: silent starters first, then low early "
                     "engagement, with module context so staffing attention follows course risk.\n\n"
-                    "Give a portfolio reader an honest source trail (OULAD / UCI / OU Analyse) they can verify."
+                    "Give a portfolio reader an honest source trail (Open University Learning Analytics Dataset / UCI / OU Analyse) they can verify."
                 ),
                 "images": [],
             },
@@ -172,7 +172,7 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    f"Computed on public OULAD after joining studentInfo to early VLE activity "
+                    f"Computed on the public Open University Learning Analytics Dataset after joining studentInfo to early VLE activity "
                     f"(days 0 to {m['early_window_days']}).\n\n"
                     f"Scale: {m['enrollments']:,} enrollments, {m['students']:,} students, "
                     f"{m['modules']} modules, {m['presentations']} presentations.\n\n"
@@ -217,8 +217,8 @@ def build_project(m: dict) -> dict:
                     "DATA QUESTION - In the first two weeks of a presentation, which enrollments should "
                     "enter an instructor intervention queue because early VLE silence predicts Fail or Withdrawn?\n\n"
                     "Hugging Face check before locking the source: edu-interactions is AI-tutor oriented; "
-                    "student-engagement-and-performance is only ~50 rows; OULAD-derived HF artifacts are "
-                    "prompts or benchmarks, not the raw LMS tables. OULAD via OU Analyse / UCI remains the "
+                    "student-engagement-and-performance is only ~50 rows; Open University Learning Analytics Dataset-derived Hugging Face artifacts are "
+                    "prompts or benchmarks, not the raw LMS tables. the Open University Learning Analytics Dataset via OU Analyse / UCI remains the "
                     "best public fit for a BryTek instructor story.\n\n"
                     "The storyboard: define outcomes, measure early clicks, rank risk bands, read module "
                     "health, then leave with a decision mix tied to the BryTek teacher job."
@@ -240,7 +240,7 @@ def build_project(m: dict) -> dict:
                 "images": [
                     {
                         "src": media("/images/case_studies/brytek-oulad-outcomes.jpg"),
-                        "alt": "OULAD final outcome counts",
+                        "alt": "Open University Learning Analytics Dataset final outcome counts",
                         "caption": (
                             f"Outcomes: Pass {oc.get('Pass', 0):,} · Withdrawn {oc.get('Withdrawn', 0):,} · "
                             f"Fail {oc.get('Fail', 0):,} · Distinction {oc.get('Distinction', 0):,}."
@@ -254,7 +254,7 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "row",
                 "body": (
-                    f"Early window: days 0 to {m['early_window_days']} in OULAD's relative course calendar. "
+                    f"Early window: days 0 to {m['early_window_days']} in the Open University Learning Analytics Dataset relative course calendar. "
                     "Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\n"
                     f"INSIGHT - Risk falls as early activity rises: {pct(m['q1_at_risk'])} at-risk in the "
                     f"lowest quintile vs {pct(m['q5_at_risk'])} in the highest. "
@@ -297,7 +297,7 @@ def build_project(m: dict) -> dict:
                 "images": [
                     {
                         "src": media("/images/case_studies/brytek-oulad-module-health.jpg"),
-                        "alt": "Pass and withdrawal rates by OULAD module",
+                        "alt": "Pass and withdrawal rates by Open University Learning Analytics Dataset module",
                         "caption": "Module health: success vs withdrawal side by side.",
                     }
                 ],
@@ -333,8 +333,8 @@ def build_project(m: dict) -> dict:
                 "imageLayout": "stack",
                 "body": (
                     "Hugging Face is useful for discovery, but the best BryTek-shaped public table set is still "
-                    "OULAD from OU Analyse / UCI, not a 50-row engagement toy set.\n\n"
-                    "Say the source out loud. Claiming OULAD as BryTek production data would break trust.\n\n"
+                    "the Open University Learning Analytics Dataset from OU Analyse / UCI, not a 50-row engagement toy set.\n\n"
+                    "Say the source out loud. Claiming the Open University Learning Analytics Dataset as BryTek production data would break trust.\n\n"
                     "Early windows beat lifetime averages for instructor action. Teachers intervene in weeks, "
                     "not after the final result lands.\n\n"
                     "Pair the UX and data entries. Design shows the cockpit; analytics shows what should fill it."
@@ -374,7 +374,7 @@ def main() -> None:
         "slug": "brytek-learning-analytics",
         "image": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
         "title": "BryTek data: early VLE risk for instructor outreach",
-        "meta": "Data analysis · OULAD · Learning analytics",
+        "meta": "Data analysis · Open University Learning Analytics Dataset",
     }
     highlights = data["highlights"]
     h_idx = next((i for i, h in enumerate(highlights) if h["slug"] == "brytek-learning-analytics"), None)
