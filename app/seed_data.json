@@ -115,7 +115,7 @@
       "title": "Focus"
     },
     "hello": {
-      "fof": "FoF Tunisiaiaia",
+      "fof": "FoF Tunisia",
       "about": "About",
       "email": "Email",
       "title": "Hello",
@@ -127,7 +127,7 @@
       "I hope you find something useful here."
     ],
     "socials": {
-      "fof": "FoF Tunisiaiaia",
+      "fof": "FoF Tunisia",
       "email": "Email",
       "linkedin": "LinkedIn"
     },
@@ -174,12 +174,12 @@
       "title": "Data Analyst & Storyteller"
     },
     {
-      "body": "I bring a designer’s eye to hierarchy, clarity, and stakeholder framing — so analysis lands as decisions, not dashboards nobody opens.",
+      "body": "I bring a designer’s eye to hierarchy, clarity, and stakeholder framing, so analysis lands as decisions, not dashboards nobody opens.",
       "title": "Design-minded communication"
     },
     {
       "body": "Figma Community Advocate and organizer of Tunisia’s Friends of Figma chapter - 290 members on the official FoF network.",
-      "title": "Friends of Figma (FoF) Tunisiaiaia"
+      "title": "Friends of Figma (FoF) Tunisia"
     },
     {
       "body": "WTM Ambassador since 2019; co-organizing GDG meetups, workshops, and talks for the Tunisian developer community.",
@@ -203,7 +203,7 @@
       ],
       "impact": "On cleaned Online Retail II sales (2009-12-01 to 2011-12-09), the analysis covers 5,881 customers, 36,975 orders, and £17.7M revenue (AOV £480). Champions are 25% of customers but 69% of revenue. Peak month 2010-11 hit £1.2M.",
       "problem": "Transaction dumps answer what sold yesterday. They do not answer who to prioritize next month unless you rebuild the data around customers, time, and actionable segments.",
-      "summary": "Portfolio analysis on the UCI Online Retail II dataset (UK giftware e-commerce, Dec 2009 to Dec 2011). I framed a holiday-priority scenario, cleaned cancellations and missing customer IDs, built RFM segments, and designed YTD/MTD KPI storytelling so a retail lead can decide who deserves retention focus. Method aligned with Formation Data and BI (SQL, Python, RFM, visualization). Draft for validation.",
+      "summary": "Portfolio analysis on the UCI Online Retail II dataset (UK giftware e-commerce, Dec 2009 to Dec 2011). I framed a holiday-priority scenario, cleaned cancellations and missing customer IDs, built RFM segments, and designed YTD/MTD KPI storytelling so a retail lead can decide who deserves retention focus. Method aligned with Formation Data and BI (SQL, Python, RFM, visualization). ",
       "tagline": "Real Online Retail II data turned into RFM segments and YTD/MTD decisions.",
       "approach": "Start from a real trading question, clean the Online Retail II mess, aggregate to customer and time grains, score RFM, label segments, then present YTD/MTD KPIs a stakeholder can scan in a review meeting.",
       "category": "Data analysis",
@@ -218,7 +218,7 @@
       "timeline": "Formation Data and BI method · portfolio analysis on Online Retail II",
       "platform": "Retail analytics (SQL / Python / BI storytelling)",
       "role": "Data analyst",
-      "roleBody": "Owned the analytical narrative: business question, cleaning rules, RFM design, time-based KPIs, and stakeholder framing. Validate how this maps to your Formation deliverables and any notebooks you already have.",
+      "roleBody": "Owned the analytical narrative: business question, cleaning rules, RFM design, time-based KPIs, and stakeholder framing. Maps to Formation Data and BI craft: business question, cleaning, RFM, and KPI storytelling.",
       "goal": "Turn a multi-year retail transaction log into a clear answer to who buys, who is slipping, and how performance moves month to month.",
       "metrics": [
         {
@@ -248,7 +248,7 @@
           "title": "Introduction",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "This case study uses the public Online Retail II dataset from the UCI Machine Learning Repository: real transactions from a UK-based online giftware retailer between December 2009 and December 2011. Many customers are wholesalers. The dataset is CC BY 4.0.\n\nThe analytical method matches Formation Data and BI craft (SQL, Python cleaning, RFM, YTD/MTD visualization). This draft is for your validation before we attach computed charts.\n\nMY ROLE — Data analyst framing the business question, cleaning rules, RFM segmentation, and KPI storytelling.",
+          "body": "This case study uses the public Online Retail II dataset from the UCI Machine Learning Repository: real transactions from a UK-based online giftware retailer between December 2009 and December 2011. Many customers are wholesalers. The dataset is CC BY 4.0.\n\nThe analytical method matches Formation Data and BI craft (SQL, Python cleaning, RFM, YTD/MTD visualization). MY ROLE, Data analyst framing the business question, cleaning rules, RFM segmentation, and KPI storytelling.",
           "images": []
         },
         {
@@ -256,7 +256,7 @@
           "title": "Problem",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "PROBLEM — A raw invoice file tells you units and revenue. It does not tell you which customers deserve retention budget before a seasonal peak.\n\nEXAMPLE — Online Retail II includes cancellations (invoice codes starting with C), missing CustomerID values, and returns mixed into quantity. A naive sum overstates health and breaks customer history.\n\nIMPACT — Teams either trust a polluted total or abandon the file. Neither helps a CRM or ops lead prioritize outreach.\n\nPROBLEM — Without RFM and time windows, every customer looks equally urgent.\n\nEXAMPLE — A high-spend buyer who vanished three months ago sits next to a small but weekly repeat buyer in an unsorted table.\n\nIMPACT — Retention effort spreads thin. Peak season spend hits the wrong people.",
+          "body": "PROBLEM - A raw invoice file tells you units and revenue. It does not tell you which customers deserve retention budget before a seasonal peak.\n\nEXAMPLE - Online Retail II includes cancellations (invoice codes starting with C), missing CustomerID values, and returns mixed into quantity. A naive sum overstates health and breaks customer history.\n\nIMPACT - Teams either trust a polluted total or abandon the file. Neither helps a CRM or ops lead prioritize outreach.\n\nPROBLEM - Without RFM and time windows, every customer looks equally urgent.\n\nEXAMPLE - A high-spend buyer who vanished three months ago sits next to a small but weekly repeat buyer in an unsorted table.\n\nIMPACT - Retention effort spreads thin. Peak season spend hits the wrong people.",
           "images": []
         },
         {
@@ -264,7 +264,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS — Support a monthly trading or CRM review with a short list of customer priorities and a clean read on YTD/MTD performance.\n\nUSER GOALS — Give an analyst a repeatable path from raw UCI extract to segments and KPI views.\n\nGive a decision-maker a scannable answer to who is Champions, who is At Risk, and how this month compares to the year so far.",
+          "body": "BUSINESS GOALS - Support a monthly trading or CRM review with a short list of customer priorities and a clean read on YTD/MTD performance.\n\nUSER GOALS - Give an analyst a repeatable path from raw UCI extract to segments and KPI views.\n\nGive a decision-maker a scannable answer to who is Champions, who is At Risk, and how this month compares to the year so far.",
           "images": []
         },
         {
@@ -280,7 +280,7 @@
           "title": "Stakeholders",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Primary reader: a retail ops or CRM lead preparing for peak giftware season.\n\nJOB TO BE DONE — When holiday demand rises, I want a clear shortlist of customers to retain or reactivate so outreach budget follows value and risk, not gut feel.\n\nSecondary reader: the analyst who must defend cleaning rules and segment definitions in that same meeting.",
+          "body": "Primary reader: a retail ops or CRM lead preparing for peak giftware season.\n\nJOB TO BE DONE - When holiday demand rises, I want a clear shortlist of customers to retain or reactivate so outreach budget follows value and risk, not gut feel.\n\nSecondary reader: the analyst who must defend cleaning rules and segment definitions in that same meeting.",
           "images": []
         },
         {
@@ -288,7 +288,7 @@
           "title": "Scenario: holiday priority",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "DATA QUESTION — Who should we prioritize before the next giftware peak: protect Champions, nurture Loyal customers, or reactivate At Risk spenders?\n\nThe storyboard that follows is the working session: clean the file, rebuild customer grain, score RFM, read YTD/MTD, then leave the room with a decision mix rather than a chart graveyard.",
+          "body": "DATA QUESTION - Who should we prioritize before the next giftware peak: protect Champions, nurture Loyal customers, or reactivate At Risk spenders?\n\nThe storyboard that follows is the working session: clean the file, rebuild customer grain, score RFM, read YTD/MTD, then leave the room with a decision mix rather than a pile of charts with no owner.",
           "images": []
         },
         {
@@ -296,7 +296,7 @@
           "title": "Process: clean the real mess",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Online Retail II is useful because it is messy in the ways production retail data is messy.\n\nCleaning rules in this draft: drop rows without CustomerID for customer analytics, treat invoices starting with C as cancellations, compute line revenue as Quantity times UnitPrice, and keep returns visible when they matter for quality checks.\n\nINSIGHT — If you skip this step, RFM and YTD totals inherit fiction.",
+          "body": "Online Retail II is useful because it is messy in the ways production retail data is messy.\n\nCleaning rules: drop rows without CustomerID for customer analytics, treat invoices starting with C as cancellations, compute line revenue as Quantity times UnitPrice, and keep returns visible when they matter for quality checks.\n\nINSIGHT - If you skip this step, RFM and YTD totals inherit fiction.",
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-cleaning-funnel.jpg",
@@ -324,7 +324,7 @@
           "title": "Process: RFM segmentation",
           "layout": "stack",
           "imageLayout": "row",
-          "body": "Per customer:\n\nRecency — days since last purchase.\n\nFrequency — count of invoices.\n\nMonetary — sum of revenue.\n\nScores become labeled segments such as Champions, Loyal, Potential, At Risk, and Lost. Labels matter more than cluster IDs in a business review because they imply action.\n\nThis approach follows the retail RFM tradition associated with Online Retail analyses (including Chen et al. on RFM for online retail), adapted for a clear portfolio narrative.",
+          "body": "Per customer:\n\nRecency - days since last purchase.\n\nFrequency - count of invoices.\n\nMonetary - sum of revenue.\n\nScores become labeled segments such as Champions, Loyal, Potential, At Risk, and Lost. Labels matter more than cluster IDs in a business review because they imply action.\n\nThis approach follows the retail RFM tradition associated with Online Retail analyses (including Chen et al. on RFM for online retail), adapted for a clear stakeholder narrative.",
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-rfm-customers.jpg",
@@ -484,7 +484,7 @@
           "title": "Introduction",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Chetek Sports is a native iOS companion for tennis arbiters in France. The brief came from a working arbiter who was still juggling rulebooks, PDFs, and thin tools while the point was live, so the product had a real user from day one.\n\nThe ambition was not another scoreboard. It was a calm, official-feeling companion that owns the whole match day, from the moment an arbiter opens the app to the report they file after the last point.\n\nMY ROLE — I owned research and product UX end to end: competitive scan, survey synthesis, persona, information architecture, flows, and high-fidelity French UI. Ilyes handled development from my handoff.",
+          "body": "Chetek Sports is a native iOS companion for tennis arbiters in France. The brief came from a working arbiter who was still juggling rulebooks, PDFs, and thin tools while the point was live, so the product had a real user from day one.\n\nThe ambition was not another scoreboard. It was a calm, official-feeling companion that owns the whole match day, from the moment an arbiter opens the app to the report they file after the last point.\n\nMY ROLE - I owned research and product UX end to end: competitive scan, survey synthesis, persona, information architecture, flows, and high-fidelity French UI. Ilyes handled development from my handoff.",
           "images": []
         },
         {
@@ -492,7 +492,7 @@
           "title": "Problem",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "PROBLEM — When a call is contested, the arbiter needs the right rule now, in front of players, not after flipping through three sources.\n\nEXAMPLE — Physical rulebooks are bulky and slow. Official PDFs are complete but awkward to search mid-point. Switching between a book and phone tabs breaks eye contact and rhythm exactly when composure matters most.\n\nIMPACT — Slow, uncertain lookups cost the arbiter authority. Errors creep in, players push harder, and the match loses its rhythm.\n\nPROBLEM — No dedicated tennis-arbiter companion combined official depth with real mobile speed.\n\nEXAMPLE — ITF, ATP, and WTA materials are authoritative but static. Third-party summaries are thin and unofficial. General officiating apps rarely handle tennis edge cases like tie-breaks, ball changes, or side switches.\n\nIMPACT — That gap was the opening: official seriousness with phone speed, designed specifically for the chair.",
+          "body": "PROBLEM - When a call is contested, the arbiter needs the right rule now, in front of players, not after flipping through three sources.\n\nEXAMPLE - Physical rulebooks are bulky and slow. Official PDFs are complete but awkward to search mid-point. Switching between a book and phone tabs breaks eye contact and rhythm exactly when composure matters most.\n\nIMPACT - Slow, uncertain lookups cost the arbiter authority. Errors creep in, players push harder, and the match loses its rhythm.\n\nPROBLEM - No dedicated tennis-arbiter companion combined official depth with real mobile speed.\n\nEXAMPLE - ITF, ATP, and WTA materials are authoritative but static. Third-party summaries are thin and unofficial. General officiating apps rarely handle tennis edge cases like tie-breaks, ball changes, or side switches.\n\nIMPACT - That gap was the opening: official seriousness with phone speed, designed specifically for the chair.",
           "images": [
             {
               "src": "/images/case_studies/research-why-i-created-this-app.jpg",
@@ -516,7 +516,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS — Deliver a companion arbiters trust mid-match, and hand engineering a sharp, build-ready package from research through hi-fi.\n\nMove beyond a static rule PDF to owning match-day control: orientation, setup, scoring, and learning in one coherent product voice.\n\nUSER GOALS — Faster orientation under pressure, offline-minded thinking for dead venue connectivity, and tools from tirage au sort through live scoring, with no fan clutter competing for attention.\n\nA calm French interface that feels official on the chair instead of like a generic sports template.",
+          "body": "BUSINESS GOALS - Deliver a companion arbiters trust mid-match, and hand engineering a sharp, build-ready package from research through hi-fi.\n\nMove beyond a static rule PDF to owning match-day control: orientation, setup, scoring, and learning in one coherent product voice.\n\nUSER GOALS - Faster orientation under pressure, offline-minded thinking for dead venue connectivity, and tools from tirage au sort through live scoring, with no fan clutter competing for attention.\n\nA calm French interface that feels official on the chair instead of like a generic sports template.",
           "images": []
         },
         {
@@ -532,7 +532,7 @@
           "title": "Our Users",
           "layout": "split",
           "imageLayout": "stack",
-          "body": "Walid Chetek is 42 and based in Marseille: five years as an arbiter, ten as a coach. He is comfortable on a phone yet still stuck with bulky rulebooks when the point is hot.\n\nJOB TO BE DONE — When a rule is contested mid-match, I want a calm, searchable companion so I can decide quickly without breaking the rhythm of the court.\n\nHe asked for offline access, quick reference, scenario learning, and even a digital coin toss. Anchoring to one real seat shaped the product far more than any generic sports template, and it gave me a clear test for every later feature: does this help Walid decide faster on court?",
+          "body": "Walid Chetek is 42 and based in Marseille: five years as an arbiter, ten as a coach. He is comfortable on a phone yet still stuck with bulky rulebooks when the point is hot.\n\nJOB TO BE DONE - When a rule is contested mid-match, I want a calm, searchable companion so I can decide quickly without breaking the rhythm of the court.\n\nHe asked for offline access, quick reference, scenario learning, and even a digital coin toss. Anchoring to one real seat shaped the product far more than any generic sports template, and it gave me a clear test for every later feature: does this help Walid decide faster on court?",
           "images": [
             {
               "src": "/images/case_studies/Personas.jpg",
@@ -908,11 +908,11 @@
       ],
       "externalUrl": "",
       "externalLabel": "",
-      "timeline": "Client justification study: UX + paired learning-analytics case (dates TBD)",
+      "timeline": "Client justification study: UX + paired learning-analytics case",
       "platform": "Responsive web (marketing + instructor / learner)",
       "role": "Product / UI designer (paired with data analysis)",
       "roleBody": "I owned the visual and interaction design for BryTek and worked the paired data study so the client had a complete justification package: information architecture across public and instructor surfaces, role-based entry, auth modals, and the instructor dashboard suite, plus evidence that early learner silence is a real retention risk the product should surface.",
-      "goal": "Give the client a clear yes-case for BryTek: a coherent product experience learners and teachers can trust, and a data-backed reason the instructor cockpit must support early outreach.",
+      "goal": "Give the client a clear case for BryTek: a coherent product experience learners and teachers can trust, and a data-backed reason the instructor cockpit must support early outreach.",
       "metrics": [
         {
           "value": "3 roles",
@@ -949,7 +949,7 @@
           "title": "Problem",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "PROBLEM — Prospective learners meet a marketing site, while instructors live in a console. If those surfaces feel like different products, trust drops before the first lesson.\n\nEXAMPLE — A visitor finds a course on the public grid, then hits a login path that never asks whether they are a student or a teacher. The instructor later opens a flat list of courses with no earnings or rating context.\n\nIMPACT — Learners bounce. Teachers cannot see whether a course is healthy. The platform looks unfinished even when the screens exist.\n\nPROBLEM — Instructor work is multi-signal: enrollments, ratings, revenue, messages. Spreading those signals across disconnected pages slows every morning check-in.\n\nEXAMPLE — Revenue lives on one page, ratings on another, and recent comments nowhere near the course list.\n\nIMPACT — Teachers manage by inbox and guesswork instead of a single cockpit.",
+          "body": "PROBLEM - Prospective learners meet a marketing site, while instructors live in a console. If those surfaces feel like different products, trust drops before the first lesson.\n\nEXAMPLE - A visitor finds a course on the public grid, then hits a login path that never asks whether they are a student or a teacher. The instructor later opens a flat list of courses with no earnings or rating context.\n\nIMPACT - Learners bounce. Teachers cannot see whether a course is healthy. The platform looks unfinished even when the screens exist.\n\nPROBLEM - Instructor work is multi-signal: enrollments, ratings, revenue, messages. Spreading those signals across disconnected pages slows every morning check-in.\n\nEXAMPLE - Revenue lives on one page, ratings on another, and recent comments nowhere near the course list.\n\nIMPACT - Teachers manage by inbox and guesswork instead of a single cockpit.",
           "images": []
         },
         {
@@ -973,7 +973,7 @@
           "title": "Our Users",
           "layout": "split",
           "imageLayout": "stack",
-          "body": "BryTek starts with three seats at the role gate.\n\nAdmin / Owner — Needs oversight and platform control. Entry must feel official, not like a student signup.\n\nTeacher — Needs courses, ratings, earnings, and messages in one daily loop.\n\nJOB TO BE DONE — When I open BryTek in the morning, I want a clear view of enrollments, ratings, and revenue so I know which course needs attention today.\n\nStudent — Needs a simple path into learning after discovering courses on the public site.",
+          "body": "BryTek starts with three seats at the role gate.\n\nAdmin / Owner - Needs oversight and platform control. Entry must feel official, not like a student signup.\n\nTeacher - Needs courses, ratings, earnings, and messages in one daily loop.\n\nJOB TO BE DONE - When I open BryTek in the morning, I want a clear view of enrollments, ratings, and revenue so I know which course needs attention today.\n\nStudent - Needs a simple path into learning after discovering courses on the public site.",
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-role-gate.jpg",
@@ -1029,7 +1029,7 @@
           "title": "Final: Getting in",
           "layout": "stack",
           "imageLayout": "row",
-          "body": "Entry is explicit. Visitors pick Admin, Teacher, or Student, then move into trainer login or trainee sign-in / sign-up modals with Google and email paths.\n\nOne polish note for validation: a modal headline spells BryTeck while the logo reads BryTek. Worth aligning before handoff.",
+          "body": "Entry is explicit. Visitors pick Admin, Teacher, or Student, then move into trainer login or trainee sign-in / sign-up modals with Google and email paths.\n\nOne polish note for validation: a modal headline spells BryTeck while the logo reads BryTek. Align the spelling before handoff.",
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-role-gate.jpg",
@@ -1143,7 +1143,7 @@
       ],
       "impact": "On the Open University Learning Analytics Dataset (32,593 enrollments across 7 modules), 53% end Fail or Withdrawn. Silent starters (14% with zero VLE clicks in the first 14 days) reach 91% at-risk. Lowest early-engagement quintile: 86% at-risk vs 28% in the highest.",
       "problem": "In online teaching, learners can disappear quietly. A BryTek instructor who only sees enrollments and earnings cannot tell who has gone silent early enough to help, so support arrives after fail or withdrawal instead of before. A client cannot approve that cockpit on UI fiction alone.",
-      "summary": "I worked the BryTek data study together with the BryTek UX case to justify the product to the client: design shows how the platform feels, and this analysis shows why the instructor cockpit must surface early retention risk. Distance learning creates a human gap: teachers cannot see the room, so early Virtual Learning Environment (VLE) silence often warns that a learner is drifting toward fail or withdrawal. I ground that job in the public Open University Learning Analytics Dataset (CC BY 4.0), published for learning-analytics research (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as scientific stand-in, not BryTek production telemetry.",
+      "summary": "I worked the BryTek data study together with the BryTek UX case to justify the product to the client: design shows how the platform feels, and this analysis shows why the instructor cockpit must surface early retention risk. Distance learning creates a human gap: teachers cannot see the room, so early Virtual Learning Environment (VLE) silence often warns that a learner is drifting toward fail or withdrawal. I ground that job in the public Open University Learning Analytics Dataset (CC BY 4.0), published for learning-analytics research (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Public Open University data is used as a scientific stand-in, not BryTek production telemetry.",
       "tagline": "Retention evidence for BryTek, paired with UX, to justify the product to the client.",
       "approach": "Treat design and data as one client justification package. Start from the human retention problem in online teaching, place it in the Open University learning-analytics tradition (early at-risk detection from VLE behaviour), then measure outcomes and early clicks on the Open University Learning Analytics Dataset so the BryTek instructor queue has a defensible basis the client can fund.",
       "category": "Data analysis",
@@ -1212,7 +1212,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS - Give the client a yes-case for BryTek: retention evidence that stands beside the UX package, so approving the instructor product is not a leap of faith.\n\nShow that BryTek's instructor cockpit answers a real retention problem learning-analytics research already takes seriously.\n\nUSER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early engagement, with module context so staffing follows course risk.\n\nGive the client the human reason (protect drifting learners) and the scientific reason (Open University early at-risk tradition + published dataset) in one story they can verify before build.",
+          "body": "BUSINESS GOALS - Give the client a clear case for BryTek: retention evidence that stands beside the UX package, so approving the instructor product is not a leap of faith.\n\nShow that BryTek's instructor cockpit answers a real retention problem learning-analytics research already takes seriously.\n\nUSER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early engagement, with module context so staffing follows course risk.\n\nGive the client the human reason (protect drifting learners) and the scientific reason (Open University early at-risk tradition + published dataset) in one story they can verify before build.",
           "images": []
         },
         {
@@ -1336,9 +1336,9 @@
       ],
       "impact": "290 members on the official FoF network; hosted Tunisia Config Watch Party 2026 and recurring meetups; speaking at DevFest, GDG MENAT Summit, and Women Techmakers.",
       "problem": "Tunisia lacked an official Figma-affiliated community space for designers and builders to learn together in public.",
-      "summary": "I founded and lead Friends of Figma (FoF) Tunisiaiaia, listed on the official Friends of Figma network as Tunisia’s chapter for Africa. As Figma Community Advocate and organizer, I grow a local space for designers and builders through meetups, Config watch parties, speaker programs, and learning in public - the same communication craft I bring to data work.",
+      "summary": "I founded and lead Friends of Figma (FoF) Tunisia, listed on the official Friends of Figma network as Tunisia’s chapter for Africa. As Figma Community Advocate and organizer, I grow a local space for designers and builders through meetups, Config watch parties, speaker programs, and learning in public - the same communication craft I bring to data work.",
       "tagline": "Official Friends of Figma Tunisia chapter - 290 members and growing.",
-      "approach": "Founded and organized FoF Tunisiaiaia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG - connecting design practice with clear public storytelling.",
+      "approach": "Founded and organized FoF Tunisia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG - connecting design practice with clear public storytelling.",
       "category": "Community",
       "highlights": [
         "Official organizer of Friends of Figma Tunisia (290 members on friends.figma.com/tunisia).",
@@ -1346,7 +1346,7 @@
         "Connect design and data storytelling through talks at DevFest, GDG MENAT Summit 2025, and Women Techmakers."
       ],
       "externalUrl": "https://friends.figma.com/tunisia/",
-      "externalLabel": "Visit FoF Tunisiaiaia →",
+      "externalLabel": "Visit FoF Tunisia →",
       "timeline": "Ongoing community leadership",
       "platform": "Friends of Figma network",
       "role": "Founder & chapter lead",
@@ -1382,7 +1382,7 @@
       "year": "2022"
     },
     {
-      "text": "Founded Friends of Figma (FoF) Tunisiaiaia - Tunisia’s only Figma-affiliated community chapter.",
+      "text": "Founded Friends of Figma (FoF) Tunisia - Tunisia’s only Figma-affiliated community chapter.",
       "year": "2023"
     },
     {
@@ -1439,7 +1439,7 @@
       "body": "I have a clear plan for growth in the coming years: deepen analytical craft while continuing to lead with design clarity. I want to shape narratives from data and from product experience, make sharper decisions, and drive design thinking across teams. I aspire to lead, foster learning in public, and build work that people trust and enjoy using.",
       "title": "Vision"
     },
-    "fofLabel": "FoF Tunisiaiaia",
+    "fofLabel": "FoF Tunisia",
     "sections": {
       "now": "Now",
       "awards": "Features & awards",

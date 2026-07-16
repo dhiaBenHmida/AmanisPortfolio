@@ -60,8 +60,8 @@ def build_project(m: dict) -> dict:
             "cannot see the room, so early Virtual Learning Environment (VLE) silence often warns that a "
             "learner is drifting toward fail or withdrawal. I ground that job in the public Open "
             "University Learning Analytics Dataset (CC BY 4.0), published for learning-analytics research "
-            "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as "
-            "scientific stand-in, not BryTek production telemetry."
+            "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Public Open University "
+            "data is used as a scientific stand-in, not BryTek production telemetry."
         ),
         "tagline": (
             "Retention evidence for BryTek, paired with UX, to justify the product to the client."
@@ -206,7 +206,7 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "BUSINESS GOALS - Give the client a yes-case for BryTek: retention evidence that "
+                    "BUSINESS GOALS - Give the client a clear case for BryTek: retention evidence that "
                     "stands beside the UX package, so approving the instructor product is not a leap of faith.\n\n"
                     "Show that BryTek's instructor cockpit answers a real retention problem "
                     "learning-analytics research already takes seriously.\n\n"
