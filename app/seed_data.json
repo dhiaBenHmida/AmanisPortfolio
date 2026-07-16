@@ -894,25 +894,25 @@
         "Web design",
         "EdTech UX"
       ],
-      "impact": "A complete UX package for a three-sided EdTech product: public marketing site, role-aware entry, and an instructor cockpit that turns courses, ratings, and earnings into a scannable daily view.",
+      "impact": "A complete UX package for a three-sided EdTech product, delivered beside a learning-analytics case so the client could approve scope with both product shape and retention evidence in hand.",
       "problem": "Online learning platforms often split the story: a pretty marketing site for discovery, then a disconnected instructor console for teaching and money. Learners, teachers, and owners need one coherent BryTek voice from first visit to the dashboard.",
-      "summary": "BryTek is an online learning platform I designed as a portfolio UX study: dark marketing pages for courses, events, and blogs, a role gate for Admin, Teacher, and Student, and a full instructor suite covering dashboard KPIs, course management, earnings, messages, and settings. Draft content for your review.",
-      "tagline": "EdTech UX: marketing site, role-aware entry, and an instructor cockpit for courses and earnings.",
-      "approach": "I structured BryTek as two surfaces that must feel like one product: a public discovery site and a logged-in instructor workspace. Entry starts with who you are (Admin, Teacher, Student), then auth, then a dashboard that leads with KPIs before course and revenue detail.",
+      "summary": "BryTek is an online learning platform I designed as one half of a client justification package: dark marketing pages for courses, events, and blogs, a role gate for Admin, Teacher, and Student, and a full instructor suite for dashboard KPIs, courses, earnings, messages, and settings. I also owned the paired data study so the client could see both the product experience and the retention logic behind the instructor cockpit before committing to build.",
+      "tagline": "EdTech UX for BryTek, paired with a data study to justify the product to the client.",
+      "approach": "I treated BryTek as a two-part case for the client: design proves how the product feels from discovery to the instructor cockpit; the companion learning-analytics study proves why that cockpit must surface early learner risk, not only enrollments and earnings. On the design side, public discovery and logged-in teaching share one visual system, with role-aware entry first.",
       "category": "UX design",
       "highlights": [
+        "Built design and data together so the client could justify investing in BryTek with both lenses.",
         "Mapped a three-role entry model (Admin/Owner, Teacher, Student) before auth forms.",
-        "Designed public discovery pages for courses, events, blogs, about, and contact in one dark visual system.",
-        "Built an instructor cockpit: KPI dashboard, my courses, course detail, earnings, messages, and settings.",
-        "Kept teal and orange accents consistent across marketing modals and logged-in tools."
+        "Designed public discovery plus an instructor cockpit for KPIs, courses, earnings, and messages.",
+        "Kept one dark visual system across marketing and logged-in tools."
       ],
       "externalUrl": "",
       "externalLabel": "",
-      "timeline": "Portfolio UX study (dates TBD)",
+      "timeline": "Client justification study: UX + paired learning-analytics case (dates TBD)",
       "platform": "Responsive web (marketing + instructor / learner)",
-      "role": "Product / UI designer",
-      "roleBody": "I owned the visual and interaction design for BryTek as a portfolio EdTech study: information architecture across public and instructor surfaces, role-based entry, auth modals, and the instructor dashboard suite. Validate or replace this role framing with your real brief.",
-      "goal": "Give learners a clear path to discover courses, and give instructors a calm cockpit for teaching activity, ratings, and earnings without jumping between unrelated tools.",
+      "role": "Product / UI designer (paired with data analysis)",
+      "roleBody": "I owned the visual and interaction design for BryTek and worked the paired data study so the client had a complete justification package: information architecture across public and instructor surfaces, role-based entry, auth modals, and the instructor dashboard suite, plus evidence that early learner silence is a real retention risk the product should surface.",
+      "goal": "Give the client a clear yes-case for BryTek: a coherent product experience learners and teachers can trust, and a data-backed reason the instructor cockpit must support early outreach.",
       "metrics": [
         {
           "value": "3 roles",
@@ -941,7 +941,7 @@
           "title": "Introduction",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BryTek is an online learning platform designed as a dark, modern EdTech experience. The product has to sell learning in public and run teaching in private: courses, events, and blogs on the outside; KPIs, course management, and earnings on the inside.\n\nThis draft treats BryTek as a portfolio UX study based on the shipped hi-fi screens. Replace timeline and ownership details once you validate the brief.\n\nMY ROLE — Product / UI designer for the marketing site, role gate, auth flows, and instructor suite.",
+          "body": "BryTek is an online learning platform designed as a dark, modern EdTech experience. The product has to sell learning in public and run teaching in private: courses, events, and blogs on the outside; KPIs, course management, and earnings on the inside.\n\nI worked this design case together with the BryTek learning-analytics study. The point was not a decorative portfolio pair. It was to justify the work to the client: show what BryTek looks and feels like, and show why the instructor cockpit needs early retention intelligence before build budget is locked.\n\nMY ROLE - Product / UI designer for the marketing site, role gate, auth flows, and instructor suite, working in parallel with the data study that backs the teacher dashboard.",
           "images": []
         },
         {
@@ -957,7 +957,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS — Present BryTek as a credible online learning brand, then convert visitors into the right account type without confusion.\n\nGive instructors a workspace that makes course health and earnings visible in the first scroll.\n\nUSER GOALS — Learners: find courses, events, and articles quickly, then sign in or sign up as a student.\n\nTeachers: land on a dashboard that answers what happened overnight before diving into course detail, earnings, or messages.",
+          "body": "BUSINESS GOALS - Give the client a credible BryTek brand and product shape they can approve, then convert visitors into the right account type without confusion.\n\nProve, beside the data study, that the instructor workspace is worth building because course health and earnings sit next to a real retention job.\n\nUSER GOALS - Learners: find courses, events, and articles quickly, then sign in or sign up as a student.\n\nTeachers: land on a dashboard that answers what happened overnight before diving into course detail, earnings, or messages.",
           "images": []
         },
         {
@@ -965,7 +965,7 @@
           "title": "Impact",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "This draft measures design scope, not invented platform revenue. The instructor dashboard shows large sample KPI figures for UI realism; those numbers are not claimed as live business results.\n\nThe outcome of this study is a coherent system: public discovery, role-aware entry, and an instructor suite that can be handed to engineering as one visual language.",
+          "body": "This case measures design scope, not invented platform revenue. The instructor dashboard shows sample KPI figures for UI realism; those numbers are not claimed as live business results.\n\nThe outcome for the client is a justification package: a coherent UX system ready to hand to engineering, paired with the learning-analytics case that explains what the cockpit should prioritize when learners go silent.",
           "images": []
         },
         {
@@ -1115,7 +1115,7 @@
           "title": "What we learned",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Role before form reduces auth confusion in multi-sided products. Asking Admin, Teacher, or Student first is cheaper than recovering from a wrong account type later.\n\nInstructor dashboards should lead with decisions, not chrome. KPI cards and ratings belong above course lists.\n\nPublic and private surfaces must share one visual voice, or EdTech products feel like a brochure stapled to an admin tool.",
+          "body": "Design alone is a mood board. Design plus a data study is an argument a client can fund.\n\nRole before form reduces auth confusion in multi-sided products. Asking Admin, Teacher, or Student first is cheaper than recovering from a wrong account type later.\n\nInstructor dashboards should lead with decisions, not chrome. KPI cards and ratings belong above course lists, and the paired data case shows which decision (early outreach) matters most.\n\nPublic and private surfaces must share one visual voice, or EdTech products feel like a brochure stapled to an admin tool.",
           "images": []
         },
         {
@@ -1123,11 +1123,11 @@
           "title": "Future",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "Validate the real brief: client, timeline, and whether Admin flows need dedicated screens beyond the role gate.\n\nNext design depth: learner course-taking flows after trainee sign-in, empty states for new instructors, and a pass to align BryTek spelling across modals.\n\nUsability testing with one teacher and one student would pressure-test the morning dashboard and the discovery-to-signup path.",
+          "body": "Keep the client brief explicit: timeline, ownership, and whether Admin flows need dedicated screens beyond the role gate.\n\nNext design depth: learner course-taking flows after trainee sign-in, empty states for new instructors, and a pass to align BryTek spelling across modals.\n\nUsability testing with one teacher and one student would pressure-test the morning dashboard and the discovery-to-signup path, while the data case stays the evidence spine for retention.",
           "images": []
         }
       ],
-      "nextSteps": "Validate brief details, align BryTek spelling, and deepen learner post-login flows after the trainee gate."
+      "nextSteps": "Keep design and data paired in client reviews, align BryTek spelling, and deepen learner post-login flows after the trainee gate."
     },
     {
       "slug": "brytek-learning-analytics",
@@ -1142,24 +1142,24 @@
         "VLE engagement"
       ],
       "impact": "On the Open University Learning Analytics Dataset (32,593 enrollments across 7 modules), 53% end Fail or Withdrawn. Silent starters (14% with zero VLE clicks in the first 14 days) reach 91% at-risk. Lowest early-engagement quintile: 86% at-risk vs 28% in the highest.",
-      "problem": "In online teaching, learners can disappear quietly. A BryTek instructor who only sees enrollments and earnings cannot tell who has gone silent early enough to help, so support arrives after fail or withdrawal instead of before.",
-      "summary": "Data companion to the BryTek UX study. Distance learning creates a human gap: teachers cannot see the room, so early Virtual Learning Environment (VLE) silence is often the first warning that a learner is drifting toward fail or withdrawal. I ground that BryTek instructor job in the public Open University Learning Analytics Dataset (CC BY 4.0), the same family of evidence used in Open University retention research and published to support learning-analytics work (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as a scientific stand-in, not BryTek production telemetry.",
-      "tagline": "Why early VLE silence matters for BryTek teachers, grounded in Open University learning-analytics research.",
-      "approach": "Start from the human retention problem in online teaching, place it in the Open University learning-analytics tradition (early at-risk detection from VLE behaviour), then measure outcomes and early clicks on the Open University Learning Analytics Dataset so a BryTek instructor queue has a defensible scientific basis.",
+      "problem": "In online teaching, learners can disappear quietly. A BryTek instructor who only sees enrollments and earnings cannot tell who has gone silent early enough to help, so support arrives after fail or withdrawal instead of before. A client cannot approve that cockpit on UI fiction alone.",
+      "summary": "I worked the BryTek data study together with the BryTek UX case to justify the product to the client: design shows how the platform feels, and this analysis shows why the instructor cockpit must surface early retention risk. Distance learning creates a human gap: teachers cannot see the room, so early Virtual Learning Environment (VLE) silence often warns that a learner is drifting toward fail or withdrawal. I ground that job in the public Open University Learning Analytics Dataset (CC BY 4.0), published for learning-analytics research (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as scientific stand-in, not BryTek production telemetry.",
+      "tagline": "Retention evidence for BryTek, paired with UX, to justify the product to the client.",
+      "approach": "Treat design and data as one client justification package. Start from the human retention problem in online teaching, place it in the Open University learning-analytics tradition (early at-risk detection from VLE behaviour), then measure outcomes and early clicks on the Open University Learning Analytics Dataset so the BryTek instructor queue has a defensible basis the client can fund.",
       "category": "Data analysis",
       "highlights": [
-        "Human stake: online teachers cannot see the room; early silence is the practical warning before fail or withdrawal.",
-        "Scientific stake: sits in Open University learning-analytics research on early at-risk detection from VLE behaviour.",
-        "Uses the Open University Learning Analytics Dataset (Nature Scientific Data / UCI, CC BY 4.0) as a public evidence base.",
-        "Turns that tradition into a BryTek instructor decision: silent starters first, then low-engagement bands, with module health."
+        "Paired with BryTek UX so the client sees product shape and retention evidence in one case.",
+        "Human stake: online teachers cannot see the room; early silence warns before fail or withdrawal.",
+        "Scientific stake: Open University learning-analytics research on early at-risk detection from VLE behaviour.",
+        "Uses the Open University Learning Analytics Dataset (Nature Scientific Data / UCI, CC BY 4.0) as public evidence."
       ],
       "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
       "externalLabel": "Open University Learning Analytics Dataset",
-      "timeline": "Portfolio data study · Open University Learning Analytics Dataset (2013 - 2014 presentations)",
+      "timeline": "Client justification study: data + paired BryTek UX · Open University Learning Analytics Dataset (2013 - 2014)",
       "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
-      "role": "Data analyst",
-      "roleBody": "Owned the analytical narrative: why the study exists (human retention + scientific tradition), source honesty, early-engagement risk, module health, and an intervention queue a BryTek teacher could act on. Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry.",
-      "goal": "Give BryTek's instructor cockpit a real reason to exist beyond pretty KPIs: surface who is going silent early, using a public learning-analytics dataset that was published so this class of retention questions can be studied openly.",
+      "role": "Data analyst (paired with UX design)",
+      "roleBody": "Owned the analytical half of the client justification package: why the study exists (human retention + scientific tradition), source honesty, early-engagement risk, module health, and an intervention queue a BryTek teacher could act on, delivered beside the UX case so the client could approve both product and evidence.",
+      "goal": "Help the client say yes to BryTek with evidence: prove the instructor cockpit should surface who is going silent early, using a public learning-analytics dataset published for this class of retention questions.",
       "metrics": [
         {
           "value": "32,593",
@@ -1188,7 +1188,7 @@
           "title": "Introduction",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "This study exists because online teaching hides the human signal that a classroom makes obvious. On BryTek, a teacher can see enrollments, ratings, and earnings. What they still need is an early answer to a quieter question: who has stopped showing up in the learning environment before the first failed assessment or a withdrawal letter.\n\nThe BryTek UX case designed that instructor cockpit. This data case fills it with a retention logic that learning-analytics research already treats as serious work, not a random chart exercise.\n\nMY ROLE - Data analyst placing the BryTek instructor job in human and scientific context, then measuring early engagement risk on a public Open University dataset.",
+          "body": "I worked this data study together with the BryTek UX case to justify the product to the client. Design alone shows screens. Design plus retention evidence shows why those screens deserve budget.\n\nThis study exists because online teaching hides the human signal that a classroom makes obvious. On BryTek, a teacher can see enrollments, ratings, and earnings. What they still need is an early answer to a quieter question: who has stopped showing up in the learning environment before the first failed assessment or a withdrawal letter.\n\nThe UX case designed that instructor cockpit. This data case fills it with a retention logic learning-analytics research already treats as serious work, so the client can approve BryTek with both product shape and evidence in hand.\n\nMY ROLE - Data analyst on the client justification package: human and scientific context, then early engagement risk on a public Open University dataset, paired with UX.",
           "images": []
         },
         {
@@ -1196,7 +1196,7 @@
           "title": "Why this study: human and scientific context",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "HUMAN CONTEXT - In distance and online learning, absence is easy to miss. A learner can register, open nothing, and drift toward fail or withdrawal without a corridor conversation. Tutors and support teams only intervene if the product surfaces risk while there is still time. That is the morning job behind BryTek's teacher dashboard: not prettier KPIs, but a shortlist of people who need a human message this week.\n\nSCIENTIFIC CONTEXT - Learning analytics exists to use learner data to improve the learning experience and guide support. At the Open University, that line of work became operational in systems such as OU Analyse, built for early identification of students at risk of failing so tutors and Student Support Teams can act. The Open University Learning Analytics Dataset was published so researchers and practitioners can study those questions with real, anonymized course, demographic, assessment, and Virtual Learning Environment (VLE) interaction data from 2013 and 2014 presentations (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171, 2017; CC BY 4.0; also available via UCI and OU Analyse).\n\nWHY THIS DATASET HERE - BryTek does not ship production LMS logs in a portfolio. The Open University Learning Analytics Dataset is the public evidence base that matches the same job: early risk from learning behaviour, not invented grades. This analysis does not claim to reproduce OU Analyse as a product. It borrows the scientific question (who is at risk early?) and turns it into a BryTek instructor decision story.",
+          "body": "CLIENT CONTEXT - The brief needed more than a pretty instructor dashboard. I owned both the BryTek design study and this data study so the client could decide with a full case: what the product looks like, and why early learner outreach belongs in scope. Approving UX without retention evidence would leave the cockpit half-justified.\n\nHUMAN CONTEXT - In distance and online learning, absence is easy to miss. A learner can register, open nothing, and drift toward fail or withdrawal without a corridor conversation. Tutors and support teams only intervene if the product surfaces risk while there is still time. That is the morning job behind BryTek's teacher dashboard: not prettier KPIs, but a shortlist of people who need a human message this week.\n\nSCIENTIFIC CONTEXT - Learning analytics exists to use learner data to improve the learning experience and guide support. At the Open University, that line of work became operational in systems such as OU Analyse, built for early identification of students at risk of failing so tutors and Student Support Teams can act. The Open University Learning Analytics Dataset was published so researchers and practitioners can study those questions with real, anonymized course, demographic, assessment, and Virtual Learning Environment (VLE) interaction data from 2013 and 2014 presentations (Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171, 2017; CC BY 4.0; also available via UCI and OU Analyse).\n\nWHY THIS DATASET HERE - BryTek does not ship production LMS logs in a client pitch. The Open University Learning Analytics Dataset is the public evidence base that matches the same job: early risk from learning behaviour, not invented grades. This analysis does not claim to reproduce OU Analyse as a product. It borrows the scientific question (who is at risk early?) and turns it into a BryTek instructor decision story the client can fund beside the UX.",
           "images": []
         },
         {
@@ -1212,7 +1212,7 @@
           "title": "Goals",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "BUSINESS GOALS - Show that BryTek's instructor product is answering a real retention problem that learning-analytics research already takes seriously, not inventing a dataset for decoration.\n\nUSER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early engagement, with module context so staffing follows course risk.\n\nGive a portfolio reader the human reason (protect drifting learners) and the scientific reason (Open University early at-risk tradition + published dataset) in one story they can verify.",
+          "body": "BUSINESS GOALS - Give the client a yes-case for BryTek: retention evidence that stands beside the UX package, so approving the instructor product is not a leap of faith.\n\nShow that BryTek's instructor cockpit answers a real retention problem learning-analytics research already takes seriously.\n\nUSER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early engagement, with module context so staffing follows course risk.\n\nGive the client the human reason (protect drifting learners) and the scientific reason (Open University early at-risk tradition + published dataset) in one story they can verify before build.",
           "images": []
         },
         {
@@ -1311,7 +1311,7 @@
           "title": "What we learned",
           "layout": "stack",
           "imageLayout": "stack",
-          "body": "A portfolio data study needs a reason before it needs a chart. Here the reason is double: protect online learners who go quiet, and sit that job inside a published Open University learning-analytics tradition rather than a synthetic toy set.\n\nSay the source out loud. Claiming the Open University Learning Analytics Dataset as BryTek production data would break trust.\n\nEarly windows beat lifetime averages for instructor action. Teachers intervene in weeks, not after the final result lands.\n\nPair the UX and data entries. Design shows the cockpit; analytics shows why that cockpit should surface silent starters first.",
+          "body": "A client justification needs a reason before it needs a chart. Here the reason is triple: protect online learners who go quiet, sit that job inside a published Open University learning-analytics tradition, and deliver it beside BryTek UX so design and data argue for the same build decision.\n\nSay the source out loud. Claiming the Open University Learning Analytics Dataset as BryTek production data would break trust with the client.\n\nEarly windows beat lifetime averages for instructor action. Teachers intervene in weeks, not after the final result lands.\n\nKeep the pair visible in reviews. Design shows the cockpit; analytics shows why silent starters belong on the first scroll.",
           "images": []
         },
         {
@@ -1515,14 +1515,14 @@
     {
       "slug": "brytek-online-learning",
       "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-instructor-dashboard.jpg",
-      "title": "BryTek: EdTech marketing + instructor cockpit",
-      "meta": "UX design"
+      "title": "BryTek UX: client-ready EdTech marketing + instructor cockpit",
+      "meta": "UX design · paired with data justification"
     },
     {
       "slug": "brytek-learning-analytics",
       "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
-      "title": "BryTek data: early silence, Open University learning analytics",
-      "meta": "Data analysis · Open University Learning Analytics Dataset"
+      "title": "BryTek data: retention evidence to justify the product",
+      "meta": "Data analysis · Open University Learning Analytics Dataset · client case"
     },
     {
       "meta": "Community lead · Config · Speakers",

@@ -50,47 +50,51 @@ def build_project(m: dict) -> dict:
         "problem": (
             "In online teaching, learners can disappear quietly. A BryTek instructor who only sees "
             "enrollments and earnings cannot tell who has gone silent early enough to help, so support "
-            "arrives after fail or withdrawal instead of before."
+            "arrives after fail or withdrawal instead of before. A client cannot approve that cockpit "
+            "on UI fiction alone."
         ),
         "summary": (
-            "Data companion to the BryTek UX study. Distance learning creates a human gap: teachers cannot "
-            "see the room, so early Virtual Learning Environment (VLE) silence is often the first warning "
-            "that a learner is drifting toward fail or withdrawal. I ground that BryTek instructor job in "
-            "the public Open University Learning Analytics Dataset (CC BY 4.0), the same family of evidence "
-            "used in Open University retention research and published to support learning-analytics work "
+            "I worked the BryTek data study together with the BryTek UX case to justify the product to "
+            "the client: design shows how the platform feels, and this analysis shows why the instructor "
+            "cockpit must surface early retention risk. Distance learning creates a human gap: teachers "
+            "cannot see the room, so early Virtual Learning Environment (VLE) silence often warns that a "
+            "learner is drifting toward fail or withdrawal. I ground that job in the public Open "
+            "University Learning Analytics Dataset (CC BY 4.0), published for learning-analytics research "
             "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as "
-            "a scientific stand-in, not BryTek production telemetry."
+            "scientific stand-in, not BryTek production telemetry."
         ),
         "tagline": (
-            "Why early VLE silence matters for BryTek teachers, grounded in Open University learning-analytics research."
+            "Retention evidence for BryTek, paired with UX, to justify the product to the client."
         ),
         "approach": (
-            "Start from the human retention problem in online teaching, place it in the Open University "
-            "learning-analytics tradition (early at-risk detection from VLE behaviour), then measure "
-            "outcomes and early clicks on the Open University Learning Analytics Dataset so a BryTek "
-            "instructor queue has a defensible scientific basis."
+            "Treat design and data as one client justification package. Start from the human retention "
+            "problem in online teaching, place it in the Open University learning-analytics tradition "
+            "(early at-risk detection from VLE behaviour), then measure outcomes and early clicks on the "
+            "Open University Learning Analytics Dataset so the BryTek instructor queue has a defensible "
+            "basis the client can fund."
         ),
         "category": "Data analysis",
         "highlights": [
-            "Human stake: online teachers cannot see the room; early silence is the practical warning before fail or withdrawal.",
-            "Scientific stake: sits in Open University learning-analytics research on early at-risk detection from VLE behaviour.",
-            "Uses the Open University Learning Analytics Dataset (Nature Scientific Data / UCI, CC BY 4.0) as a public evidence base.",
-            "Turns that tradition into a BryTek instructor decision: silent starters first, then low-engagement bands, with module health.",
+            "Paired with BryTek UX so the client sees product shape and retention evidence in one case.",
+            "Human stake: online teachers cannot see the room; early silence warns before fail or withdrawal.",
+            "Scientific stake: Open University learning-analytics research on early at-risk detection from VLE behaviour.",
+            "Uses the Open University Learning Analytics Dataset (Nature Scientific Data / UCI, CC BY 4.0) as public evidence.",
         ],
         "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
         "externalLabel": "Open University Learning Analytics Dataset",
-        "timeline": "Portfolio data study · Open University Learning Analytics Dataset (2013 - 2014 presentations)",
+        "timeline": "Client justification study: data + paired BryTek UX · Open University Learning Analytics Dataset (2013 - 2014)",
         "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
-        "role": "Data analyst",
+        "role": "Data analyst (paired with UX design)",
         "roleBody": (
-            "Owned the analytical narrative: why the study exists (human retention + scientific tradition), "
-            "source honesty, early-engagement risk, module health, and an intervention queue a BryTek "
-            "teacher could act on. Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry."
+            "Owned the analytical half of the client justification package: why the study exists "
+            "(human retention + scientific tradition), source honesty, early-engagement risk, module "
+            "health, and an intervention queue a BryTek teacher could act on, delivered beside the UX "
+            "case so the client could approve both product and evidence."
         ),
         "goal": (
-            "Give BryTek's instructor cockpit a real reason to exist beyond pretty KPIs: surface who is "
-            "going silent early, using a public learning-analytics dataset that was published so this class "
-            "of retention questions can be studied openly."
+            "Help the client say yes to BryTek with evidence: prove the instructor cockpit should "
+            "surface who is going silent early, using a public learning-analytics dataset published for "
+            "this class of retention questions."
         ),
         "metrics": [
             {
@@ -124,15 +128,18 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
+                    "I worked this data study together with the BryTek UX case to justify the product "
+                    "to the client. Design alone shows screens. Design plus retention evidence shows why "
+                    "those screens deserve budget.\n\n"
                     "This study exists because online teaching hides the human signal that a classroom "
                     "makes obvious. On BryTek, a teacher can see enrollments, ratings, and earnings. What "
                     "they still need is an early answer to a quieter question: who has stopped showing up "
                     "in the learning environment before the first failed assessment or a withdrawal letter.\n\n"
-                    "The BryTek UX case designed that instructor cockpit. This data case fills it with a "
-                    "retention logic that learning-analytics research already treats as serious work, not "
-                    "a random chart exercise.\n\n"
-                    "MY ROLE - Data analyst placing the BryTek instructor job in human and scientific "
-                    "context, then measuring early engagement risk on a public Open University dataset."
+                    "The UX case designed that instructor cockpit. This data case fills it with a "
+                    "retention logic learning-analytics research already treats as serious work, so the "
+                    "client can approve BryTek with both product shape and evidence in hand.\n\n"
+                    "MY ROLE - Data analyst on the client justification package: human and scientific "
+                    "context, then early engagement risk on a public Open University dataset, paired with UX."
                 ),
                 "images": [],
             },
@@ -142,6 +149,10 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
+                    "CLIENT CONTEXT - The brief needed more than a pretty instructor dashboard. I owned "
+                    "both the BryTek design study and this data study so the client could decide with a "
+                    "full case: what the product looks like, and why early learner outreach belongs in "
+                    "scope. Approving UX without retention evidence would leave the cockpit half-justified.\n\n"
                     "HUMAN CONTEXT - In distance and online learning, absence is easy to miss. A learner "
                     "can register, open nothing, and drift toward fail or withdrawal without a corridor "
                     "conversation. Tutors and support teams only intervene if the product surfaces risk "
@@ -156,11 +167,12 @@ def build_project(m: dict) -> dict:
                     "Virtual Learning Environment (VLE) interaction data from 2013 and 2014 presentations "
                     "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171, 2017; CC BY 4.0; also "
                     "available via UCI and OU Analyse).\n\n"
-                    "WHY THIS DATASET HERE - BryTek does not ship production LMS logs in a portfolio. The "
-                    "Open University Learning Analytics Dataset is the public evidence base that matches "
-                    "the same job: early risk from learning behaviour, not invented grades. This analysis "
-                    "does not claim to reproduce OU Analyse as a product. It borrows the scientific "
-                    "question (who is at risk early?) and turns it into a BryTek instructor decision story."
+                    "WHY THIS DATASET HERE - BryTek does not ship production LMS logs in a client pitch. "
+                    "The Open University Learning Analytics Dataset is the public evidence base that "
+                    "matches the same job: early risk from learning behaviour, not invented grades. This "
+                    "analysis does not claim to reproduce OU Analyse as a product. It borrows the "
+                    "scientific question (who is at risk early?) and turns it into a BryTek instructor "
+                    "decision story the client can fund beside the UX."
                 ),
                 "images": [],
             },
@@ -194,14 +206,15 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "BUSINESS GOALS - Show that BryTek's instructor product is answering a real retention "
-                    "problem that learning-analytics research already takes seriously, not inventing a "
-                    "dataset for decoration.\n\n"
+                    "BUSINESS GOALS - Give the client a yes-case for BryTek: retention evidence that "
+                    "stands beside the UX package, so approving the instructor product is not a leap of faith.\n\n"
+                    "Show that BryTek's instructor cockpit answers a real retention problem "
+                    "learning-analytics research already takes seriously.\n\n"
                     "USER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early "
                     "engagement, with module context so staffing follows course risk.\n\n"
-                    "Give a portfolio reader the human reason (protect drifting learners) and the "
-                    "scientific reason (Open University early at-risk tradition + published dataset) in "
-                    "one story they can verify."
+                    "Give the client the human reason (protect drifting learners) and the scientific "
+                    "reason (Open University early at-risk tradition + published dataset) in one story "
+                    "they can verify before build."
                 ),
                 "images": [],
             },
@@ -383,15 +396,16 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "A portfolio data study needs a reason before it needs a chart. Here the reason is "
-                    "double: protect online learners who go quiet, and sit that job inside a published "
-                    "Open University learning-analytics tradition rather than a synthetic toy set.\n\n"
+                    "A client justification needs a reason before it needs a chart. Here the reason is "
+                    "triple: protect online learners who go quiet, sit that job inside a published Open "
+                    "University learning-analytics tradition, and deliver it beside BryTek UX so design "
+                    "and data argue for the same build decision.\n\n"
                     "Say the source out loud. Claiming the Open University Learning Analytics Dataset as "
-                    "BryTek production data would break trust.\n\n"
+                    "BryTek production data would break trust with the client.\n\n"
                     "Early windows beat lifetime averages for instructor action. Teachers intervene in "
                     "weeks, not after the final result lands.\n\n"
-                    "Pair the UX and data entries. Design shows the cockpit; analytics shows why that "
-                    "cockpit should surface silent starters first."
+                    "Keep the pair visible in reviews. Design shows the cockpit; analytics shows why "
+                    "silent starters belong on the first scroll."
                 ),
                 "images": [],
             },
@@ -427,8 +441,8 @@ def main() -> None:
     highlight = {
         "slug": "brytek-learning-analytics",
         "image": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
-        "title": "BryTek data: early silence, Open University learning analytics",
-        "meta": "Data analysis · Open University Learning Analytics Dataset",
+        "title": "BryTek data: retention evidence to justify the product",
+        "meta": "Data analysis · Open University Learning Analytics Dataset · client case",
     }
     highlights = data["highlights"]
     h_idx = next((i for i, h in enumerate(highlights) if h["slug"] == "brytek-learning-analytics"), None)
