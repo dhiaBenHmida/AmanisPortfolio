@@ -48,29 +48,34 @@ def build_project(m: dict) -> dict:
             f"{pct(m['q5_at_risk'])} in the highest."
         ),
         "problem": (
-            "An instructor cockpit that only shows enrollments and revenue still leaves teachers "
-            "guessing who needs help this week. BryTek's dashboard UX needs a data story that "
-            "turns engagement into an intervention queue."
+            "In online teaching, learners can disappear quietly. A BryTek instructor who only sees "
+            "enrollments and earnings cannot tell who has gone silent early enough to help, so support "
+            "arrives after fail or withdrawal instead of before."
         ),
         "summary": (
-            "Data lens companion to the BryTek UX study. I use the public Open University Learning "
-            "Analytics Dataset (CC BY 4.0) as a real EdTech stand-in: demographics, assessments, "
-            "and VLE click summaries for 32k+ students. The question is the same one a BryTek teacher "
-            "dashboard should answer: who needs outreach before they fail or withdraw. Honest framing: "
-            "this is public OU data, not BryTek production telemetry."
+            "Data companion to the BryTek UX study. Distance learning creates a human gap: teachers cannot "
+            "see the room, so early Virtual Learning Environment (VLE) silence is often the first warning "
+            "that a learner is drifting toward fail or withdrawal. I ground that BryTek instructor job in "
+            "the public Open University Learning Analytics Dataset (CC BY 4.0), the same family of evidence "
+            "used in Open University retention research and published to support learning-analytics work "
+            "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data, 2017). Honest framing: public OU data as "
+            "a scientific stand-in, not BryTek production telemetry."
         ),
-        "tagline": "Open University Learning Analytics Dataset framed for BryTek instructor intervention decisions.",
+        "tagline": (
+            "Why early VLE silence matters for BryTek teachers, grounded in Open University learning-analytics research."
+        ),
         "approach": (
-            "Start from the BryTek instructor job (morning course health), ground it in Open University Learning Analytics Dataset outcomes "
-            "and early VLE activity, then leave with a decision mix: silent starters first, then "
-            "low-engagement bands, with module-level health as context."
+            "Start from the human retention problem in online teaching, place it in the Open University "
+            "learning-analytics tradition (early at-risk detection from VLE behaviour), then measure "
+            "outcomes and early clicks on the Open University Learning Analytics Dataset so a BryTek "
+            "instructor queue has a defensible scientific basis."
         ),
         "category": "Data analysis",
         "highlights": [
-            "Paired with the BryTek UX case: same instructor cockpit question, measured on real public LMS data.",
-            "Grounded in the Open University Learning Analytics Dataset (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
-            "Early VLE silence (first 14 days) as the primary risk signal for Fail or Withdrawn.",
-            "Module health view so teachers see which courses need staffing attention, not only which students.",
+            "Human stake: online teachers cannot see the room; early silence is the practical warning before fail or withdrawal.",
+            "Scientific stake: sits in Open University learning-analytics research on early at-risk detection from VLE behaviour.",
+            "Uses the Open University Learning Analytics Dataset (Nature Scientific Data / UCI, CC BY 4.0) as a public evidence base.",
+            "Turns that tradition into a BryTek instructor decision: silent starters first, then low-engagement bands, with module health.",
         ],
         "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
         "externalLabel": "Open University Learning Analytics Dataset",
@@ -78,13 +83,14 @@ def build_project(m: dict) -> dict:
         "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
         "role": "Data analyst",
         "roleBody": (
-            "Owned the analytical narrative for a BryTek-framed instructor decision: source honesty, "
-            "early-engagement risk signal, module health, and an intervention queue a teacher could act on. "
-            "Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry."
+            "Owned the analytical narrative: why the study exists (human retention + scientific tradition), "
+            "source honesty, early-engagement risk, module health, and an intervention queue a BryTek "
+            "teacher could act on. Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry."
         ),
         "goal": (
-            "Show that BryTek's instructor cockpit is not only a UI: it should surface who is going silent "
-            "early enough to intervene, using real public learning analytics as proof of method."
+            "Give BryTek's instructor cockpit a real reason to exist beyond pretty KPIs: surface who is "
+            "going silent early, using a public learning-analytics dataset that was published so this class "
+            "of retention questions can be studied openly."
         ),
         "metrics": [
             {
@@ -118,17 +124,43 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "This is the data lens beside BryTek Online Learning (UX). The design study gives "
-                    "teachers a cockpit for enrollments, ratings, and earnings. This study asks what that "
-                    "cockpit should prioritize when the signal is learning behaviour, not revenue.\n\n"
-                    "I use the Open University Learning Analytics Dataset: anonymized course, "
-                    "student, assessment, and Virtual Learning Environment (VLE) interaction data from "
-                    "Open University presentations in 2013 and 2014. License: CC BY 4.0. Citation: "
-                    "Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171 (2017).\n\n"
-                    "Framing rule: the Open University Learning Analytics Dataset is a public EdTech proxy. It is not BryTek production data. "
-                    "The point is transferable decisions a BryTek-style instructor dashboard should surface.\n\n"
-                    "MY ROLE - Data analyst framing the instructor question, early-engagement risk, "
-                    "module health, and intervention narrative."
+                    "This study exists because online teaching hides the human signal that a classroom "
+                    "makes obvious. On BryTek, a teacher can see enrollments, ratings, and earnings. What "
+                    "they still need is an early answer to a quieter question: who has stopped showing up "
+                    "in the learning environment before the first failed assessment or a withdrawal letter.\n\n"
+                    "The BryTek UX case designed that instructor cockpit. This data case fills it with a "
+                    "retention logic that learning-analytics research already treats as serious work, not "
+                    "a random chart exercise.\n\n"
+                    "MY ROLE - Data analyst placing the BryTek instructor job in human and scientific "
+                    "context, then measuring early engagement risk on a public Open University dataset."
+                ),
+                "images": [],
+            },
+            {
+                "key": "context",
+                "title": "Why this study: human and scientific context",
+                "layout": "stack",
+                "imageLayout": "stack",
+                "body": (
+                    "HUMAN CONTEXT - In distance and online learning, absence is easy to miss. A learner "
+                    "can register, open nothing, and drift toward fail or withdrawal without a corridor "
+                    "conversation. Tutors and support teams only intervene if the product surfaces risk "
+                    "while there is still time. That is the morning job behind BryTek's teacher dashboard: "
+                    "not prettier KPIs, but a shortlist of people who need a human message this week.\n\n"
+                    "SCIENTIFIC CONTEXT - Learning analytics exists to use learner data to improve the "
+                    "learning experience and guide support. At the Open University, that line of work "
+                    "became operational in systems such as OU Analyse, built for early identification of "
+                    "students at risk of failing so tutors and Student Support Teams can act. The Open "
+                    "University Learning Analytics Dataset was published so researchers and practitioners "
+                    "can study those questions with real, anonymized course, demographic, assessment, and "
+                    "Virtual Learning Environment (VLE) interaction data from 2013 and 2014 presentations "
+                    "(Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171, 2017; CC BY 4.0; also "
+                    "available via UCI and OU Analyse).\n\n"
+                    "WHY THIS DATASET HERE - BryTek does not ship production LMS logs in a portfolio. The "
+                    "Open University Learning Analytics Dataset is the public evidence base that matches "
+                    "the same job: early risk from learning behaviour, not invented grades. This analysis "
+                    "does not claim to reproduce OU Analyse as a product. It borrows the scientific "
+                    "question (who is at risk early?) and turns it into a BryTek instructor decision story."
                 ),
                 "images": [],
             },
@@ -138,17 +170,21 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "PROBLEM - A teacher opens BryTek and sees headcount and money. Without engagement "
-                    "risk, the morning view cannot say who needs a message today.\n\n"
+                    "PROBLEM - Online teachers lose the room. Without an engagement risk view, BryTek's "
+                    "morning cockpit cannot tell who needs outreach today.\n\n"
                     "EXAMPLE - Two courses can show similar enrollment counts while one is filled with "
                     "learners who never opened the VLE in the first two weeks.\n\n"
-                    "IMPACT - Outreach waits until after the first failed assessment. Retention work "
-                    "arrives too late.\n\n"
-                    "PROBLEM - Public LMS logs are noisy: withdrawals, fails, distinctions, and silent "
-                    "accounts sit in the same table until you define an outcome and a time window.\n\n"
-                    "EXAMPLE - The Open University Learning Analytics Dataset labels final_result as Distinction, Pass, Fail, or Withdrawn, and "
-                    "stores daily VLE click summaries that only help if you pick an early window.\n\n"
-                    "IMPACT - Without those definitions, 'engagement' stays a vague chart instead of a queue."
+                    "IMPACT - Support waits until after a failed assessment or a withdrawal. The human "
+                    "cost is a learner who might have stayed with one timely message; the product cost is "
+                    "a dashboard that looks busy and still fails the teacher.\n\n"
+                    "PROBLEM - Retention research needs clean outcome and time definitions. Raw LMS tables "
+                    "mix Pass, Distinction, Fail, Withdrawn, and daily click summaries until you choose "
+                    "what 'at risk' means and how early you look.\n\n"
+                    "EXAMPLE - The Open University Learning Analytics Dataset labels final results and "
+                    "stores VLE click summaries on a relative course calendar. Those fields only become "
+                    "actionable when you define an early window and an intervention outcome.\n\n"
+                    "IMPACT - Without those definitions, 'engagement' stays a decorative chart instead of "
+                    "a queue a teacher can defend."
                 ),
                 "images": [],
             },
@@ -158,11 +194,14 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "BUSINESS GOALS - Prove that BryTek's instructor product can be backed by a real "
-                    "learning-analytics decision story, not only UI fiction on the dashboard cards.\n\n"
-                    "USER GOALS - Give an instructor a shortlist: silent starters first, then low early "
-                    "engagement, with module context so staffing attention follows course risk.\n\n"
-                    "Give a portfolio reader an honest source trail (Open University Learning Analytics Dataset / UCI / OU Analyse) they can verify."
+                    "BUSINESS GOALS - Show that BryTek's instructor product is answering a real retention "
+                    "problem that learning-analytics research already takes seriously, not inventing a "
+                    "dataset for decoration.\n\n"
+                    "USER GOALS - Give a BryTek teacher a shortlist: silent starters first, then low early "
+                    "engagement, with module context so staffing follows course risk.\n\n"
+                    "Give a portfolio reader the human reason (protect drifting learners) and the "
+                    "scientific reason (Open University early at-risk tradition + published dataset) in "
+                    "one story they can verify."
                 ),
                 "images": [],
             },
@@ -184,7 +223,10 @@ def build_project(m: dict) -> dict:
                     f"Lowest early-engagement quintile {pct(m['q1_at_risk'])} at-risk vs "
                     f"{pct(m['q5_at_risk'])} in the highest. "
                     f"Highest-risk module in this cut: {worst['code_module']} "
-                    f"({pct(worst['at_risk_rate'])} at-risk, {pct(worst['withdraw_rate'])} withdrawn)."
+                    f"({pct(worst['at_risk_rate'])} at-risk, {pct(worst['withdraw_rate'])} withdrawn).\n\n"
+                    "Those numbers matter because they quantify the human gap: a large share of "
+                    "enrollments end badly, and the worst outcomes concentrate where early VLE activity "
+                    "never starts."
                 ),
                 "images": [],
             },
@@ -197,14 +239,15 @@ def build_project(m: dict) -> dict:
                     "Primary reader: a BryTek Teacher using the instructor cockpit from the UX case.\n\n"
                     "JOB TO BE DONE - When I open BryTek in the morning, I want a clear queue of learners "
                     "going silent so I message the right people before they withdraw.\n\n"
-                    "Secondary reader: a platform owner comparing course health across modules, and an "
-                    "analyst who must defend the early-window definition in that same review."
+                    "Secondary readers: a platform owner comparing course health across modules, and an "
+                    "analyst who must defend the early-window definition against the Open University "
+                    "learning-analytics tradition in that same review."
                 ),
                 "images": [
                     {
                         "src": media("/images/case_studies/brytek-instructor-dashboard.jpg"),
                         "alt": "BryTek instructor dashboard from the UX case study",
-                        "caption": "UX companion: the cockpit this data story is meant to feed.",
+                        "caption": "UX companion: the cockpit this retention story is meant to feed.",
                     }
                 ],
             },
@@ -216,12 +259,16 @@ def build_project(m: dict) -> dict:
                 "body": (
                     "DATA QUESTION - In the first two weeks of a presentation, which enrollments should "
                     "enter an instructor intervention queue because early VLE silence predicts Fail or Withdrawn?\n\n"
-                    "Hugging Face check before locking the source: edu-interactions is AI-tutor oriented; "
-                    "student-engagement-and-performance is only ~50 rows; Open University Learning Analytics Dataset-derived Hugging Face artifacts are "
-                    "prompts or benchmarks, not the raw LMS tables. the Open University Learning Analytics Dataset via OU Analyse / UCI remains the "
-                    "best public fit for a BryTek instructor story.\n\n"
-                    "The storyboard: define outcomes, measure early clicks, rank risk bands, read module "
-                    "health, then leave with a decision mix tied to the BryTek teacher job."
+                    "That question is not arbitrary. Open University research on at-risk detection treats "
+                    "early engagement with the Virtual Learning Environment as a practical signal for "
+                    "tutor and support action. This portfolio study asks the same question in BryTek "
+                    "language: who should the teacher message now?\n\n"
+                    "Source choice follows that context. Thin Hugging Face engagement samples and "
+                    "AI-tutor grade logs do not match an instructor cockpit. The Open University Learning "
+                    "Analytics Dataset does: real module presentations, final results, and daily VLE "
+                    "click summaries published for learning-analytics research.\n\n"
+                    "The storyboard: define the retention outcome, measure early clicks, rank risk bands, "
+                    "read module health, then leave with a decision mix a teacher can own."
                 ),
                 "images": [],
             },
@@ -234,8 +281,8 @@ def build_project(m: dict) -> dict:
                     "Grain is student x module presentation (enrollment). Final result is the outcome label.\n\n"
                     "INSIGHT - Pass and Distinction are success. Fail and Withdrawn are the at-risk bucket "
                     f"for intervention planning ({pct(m['at_risk_rate'])} of enrollments in this extract).\n\n"
-                    "That binary is deliberate for a teacher queue. Finer grading can come later; the first "
-                    "cockpit job is who needs a human touch."
+                    "That binary matches the human job. Before finer grading models, a teacher needs to "
+                    "know who is drifting out of the course entirely."
                 ),
                 "images": [
                     {
@@ -254,13 +301,16 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "row",
                 "body": (
-                    f"Early window: days 0 to {m['early_window_days']} in the Open University Learning Analytics Dataset relative course calendar. "
-                    "Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\n"
+                    f"Early window: days 0 to {m['early_window_days']} on the Open University Learning "
+                    "Analytics Dataset relative course calendar. Sum of VLE clicks per enrollment. "
+                    "Missing VLE rows count as zero early clicks. The window is short on purpose: "
+                    "retention action is useful in the first weeks, not after the final result lands.\n\n"
                     f"INSIGHT - Risk falls as early activity rises: {pct(m['q1_at_risk'])} at-risk in the "
                     f"lowest quintile vs {pct(m['q5_at_risk'])} in the highest. "
                     f"Silent starters ({pct(m['zero_early_share'])} of enrollments) hit "
                     f"{pct(m['zero_early_at_risk'])} Fail or Withdrawn.\n\n"
-                    "This is the signal BryTek's recent-activity and course-health widgets should amplify."
+                    "That pattern is why BryTek's recent-activity and course-health widgets should amplify "
+                    "early silence, not only lifetime averages."
                 ),
                 "images": [
                     {
@@ -314,7 +364,8 @@ def build_project(m: dict) -> dict:
                     f"Staffing review: inspect module {worst['code_module']} for content or support gaps "
                     f"before the next presentation.\n\n"
                     "INSIGHT - The BryTek dashboard earns its KPI row when those queues exist. "
-                    "Enrollments and earnings without an intervention list are still a pretty empty morning.\n\n"
+                    "Enrollments and earnings without an intervention list leave the human retention "
+                    "problem unsolved.\n\n"
                     "DATA QUESTION - After two weeks of outreach, did silent starters return to the VLE, "
                     "and did Fail + Withdrawn fall in the next assessment window?"
                 ),
@@ -332,12 +383,15 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "Hugging Face is useful for discovery, but the best BryTek-shaped public table set is still "
-                    "the Open University Learning Analytics Dataset from OU Analyse / UCI, not a 50-row engagement toy set.\n\n"
-                    "Say the source out loud. Claiming the Open University Learning Analytics Dataset as BryTek production data would break trust.\n\n"
-                    "Early windows beat lifetime averages for instructor action. Teachers intervene in weeks, "
-                    "not after the final result lands.\n\n"
-                    "Pair the UX and data entries. Design shows the cockpit; analytics shows what should fill it."
+                    "A portfolio data study needs a reason before it needs a chart. Here the reason is "
+                    "double: protect online learners who go quiet, and sit that job inside a published "
+                    "Open University learning-analytics tradition rather than a synthetic toy set.\n\n"
+                    "Say the source out loud. Claiming the Open University Learning Analytics Dataset as "
+                    "BryTek production data would break trust.\n\n"
+                    "Early windows beat lifetime averages for instructor action. Teachers intervene in "
+                    "weeks, not after the final result lands.\n\n"
+                    "Pair the UX and data entries. Design shows the cockpit; analytics shows why that "
+                    "cockpit should surface silent starters first."
                 ),
                 "images": [],
             },
@@ -347,9 +401,9 @@ def build_project(m: dict) -> dict:
                 "layout": "stack",
                 "imageLayout": "stack",
                 "body": (
-                    "Next depth on the same question: first-assessment timing, weekly engagement trajectories, "
-                    "and a lightweight risk score that could sit behind BryTek's recent-activity panel. "
-                    "Keep Retail KPI Storytelling as the separate commerce data study."
+                    "Next depth on the same human and scientific question: first-assessment timing, "
+                    "weekly engagement trajectories, and a lightweight risk score behind BryTek's "
+                    "recent-activity panel. Keep Retail KPI Storytelling as the separate commerce data study."
                 ),
                 "images": [],
             },
@@ -373,7 +427,7 @@ def main() -> None:
     highlight = {
         "slug": "brytek-learning-analytics",
         "image": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
-        "title": "BryTek data: early VLE risk for instructor outreach",
+        "title": "BryTek data: early silence, Open University learning analytics",
         "meta": "Data analysis · Open University Learning Analytics Dataset",
     }
     highlights = data["highlights"]
