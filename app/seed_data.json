@@ -189,7 +189,7 @@
   "projects": [
     {
       "slug": "retail-kpi-storytelling",
-      "image": "/images/project-retail.jpg",
+      "image": "/images/case_studies/retail-monthly-revenue.jpg",
       "title": "Retail KPI Storytelling",
       "tools": [
         "SQL",
@@ -201,27 +201,194 @@
         "RFM",
         "YTD/MTD KPIs"
       ],
-      "impact": "Delivered a repeatable analytics path: RFM segments for customer prioritization, YTD/MTD KPI views for recurring review, and charts framed for decisions rather than exploratory notebooks alone.",
-      "problem": "The retail dataset needed a clear view of who buys, what sells, and how performance moves month-to-month - not a pile of raw retail tables.",
-      "summary": "Formation Data & Business Intelligence project on a retail dataset covering Sales, Product, Customer, and Store tables. I built the full analytical path from relational modeling and advanced SQL through cleaning, RFM segmentation, time-based KPIs, and visual storytelling for business questions.",
-      "tagline": "Sales, customers, and stores turned into RFM segments and YTD/MTD KPIs.",
-      "approach": "Modeled the four-table retail schema, wrote advanced SQL (joins, CTEs, window functions, views), cleaned and transformed sales data in Python, built RFM customer segments, and designed YTD/MTD KPI views with Matplotlib and Seaborn so trends were scannable.",
+      "impact": "On cleaned Online Retail II sales (2009-12-01 to 2011-12-09), the analysis covers 5,881 customers, 36,975 orders, and £17.7M revenue (AOV £480). Champions are 25% of customers but 69% of revenue. Peak month 2010-11 hit £1.2M.",
+      "problem": "Transaction dumps answer what sold yesterday. They do not answer who to prioritize next month unless you rebuild the data around customers, time, and actionable segments.",
+      "summary": "Portfolio analysis on the UCI Online Retail II dataset (UK giftware e-commerce, Dec 2009 to Dec 2011). I framed a holiday-priority scenario, cleaned cancellations and missing customer IDs, built RFM segments, and designed YTD/MTD KPI storytelling so a retail lead can decide who deserves retention focus. Method aligned with Formation Data and BI (SQL, Python, RFM, visualization). Draft for validation.",
+      "tagline": "Real Online Retail II data turned into RFM segments and YTD/MTD decisions.",
+      "approach": "Start from a real trading question, clean the Online Retail II mess, aggregate to customer and time grains, score RFM, label segments, then present YTD/MTD KPIs a stakeholder can scan in a review meeting.",
       "category": "Data analysis",
       "highlights": [
-        "Queried a 4-table retail schema with joins, subqueries, CTEs, window functions, views, and stored procedures.",
-        "Built RFM customer segments and Year-to-Date / Month-to-Date KPI views from cleaned sales data.",
-        "Used pandas and NumPy for exploration, then Matplotlib and Seaborn to present trends teams could act on - hierarchy of KPIs first, detail second."
+        "Grounded the study in UCI Online Retail II, a real UK online retail transaction dataset (CC BY 4.0).",
+        "Scenario: who to prioritize before peak giftware season, not a generic chart dump.",
+        "Cleaning path for cancellations, missing CustomerID, and returns before RFM.",
+        "RFM segments plus YTD/MTD KPI views for recurring business review."
       ],
       "externalUrl": "",
       "externalLabel": "",
-      "timeline": "Formation Data & Business Intelligence",
-      "platform": "Retail analytics (SQL / BI)",
+      "timeline": "Formation Data and BI method · portfolio analysis on Online Retail II",
+      "platform": "Retail analytics (SQL / Python / BI storytelling)",
       "role": "Data analyst",
-      "roleBody": "Owned modeling, advanced SQL, transformation, and KPI storytelling across Sales, Product, Customer, and Store tables.",
-      "goal": "Turn a multi-table retail dataset into a clear, repeatable view of who buys, what sells, and how performance moves month to month.",
-      "metrics": [],
-      "sections": [],
-      "nextSteps": ""
+      "roleBody": "Owned the analytical narrative: business question, cleaning rules, RFM design, time-based KPIs, and stakeholder framing. Validate how this maps to your Formation deliverables and any notebooks you already have.",
+      "goal": "Turn a multi-year retail transaction log into a clear answer to who buys, who is slipping, and how performance moves month to month.",
+      "metrics": [
+        {
+          "value": "5,881",
+          "label": "Customers",
+          "detail": "After dropping missing CustomerID rows."
+        },
+        {
+          "value": "36,975",
+          "label": "Orders",
+          "detail": "Non-cancelled invoices with positive quantity."
+        },
+        {
+          "value": "£17.7M",
+          "label": "Clean revenue",
+          "detail": "Quantity x UnitPrice on cleaned sales lines."
+        },
+        {
+          "value": "69%",
+          "label": "Champions revenue",
+          "detail": "1,482 Champions drive most cleaned revenue."
+        }
+      ],
+      "sections": [
+        {
+          "key": "introduction",
+          "title": "Introduction",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "This case study uses the public Online Retail II dataset from the UCI Machine Learning Repository: real transactions from a UK-based online giftware retailer between December 2009 and December 2011. Many customers are wholesalers. The dataset is CC BY 4.0.\n\nThe analytical method matches Formation Data and BI craft (SQL, Python cleaning, RFM, YTD/MTD visualization). This draft is for your validation before we attach computed charts.\n\nMY ROLE — Data analyst framing the business question, cleaning rules, RFM segmentation, and KPI storytelling.",
+          "images": []
+        },
+        {
+          "key": "problem",
+          "title": "Problem",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "PROBLEM — A raw invoice file tells you units and revenue. It does not tell you which customers deserve retention budget before a seasonal peak.\n\nEXAMPLE — Online Retail II includes cancellations (invoice codes starting with C), missing CustomerID values, and returns mixed into quantity. A naive sum overstates health and breaks customer history.\n\nIMPACT — Teams either trust a polluted total or abandon the file. Neither helps a CRM or ops lead prioritize outreach.\n\nPROBLEM — Without RFM and time windows, every customer looks equally urgent.\n\nEXAMPLE — A high-spend buyer who vanished three months ago sits next to a small but weekly repeat buyer in an unsorted table.\n\nIMPACT — Retention effort spreads thin. Peak season spend hits the wrong people.",
+          "images": []
+        },
+        {
+          "key": "goals",
+          "title": "Goals",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "BUSINESS GOALS — Support a monthly trading or CRM review with a short list of customer priorities and a clean read on YTD/MTD performance.\n\nUSER GOALS — Give an analyst a repeatable path from raw UCI extract to segments and KPI views.\n\nGive a decision-maker a scannable answer to who is Champions, who is At Risk, and how this month compares to the year so far.",
+          "images": []
+        },
+        {
+          "key": "impact",
+          "title": "Impact",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Computed on the public Online Retail II extract after the cleaning rules in this study.\n\nClean window: 2009-12-01 to 2011-12-09. Raw rows 1,067,371; missing CustomerID 243,007; cancellations among identified customers 18,744; cleaned sales lines 805,620.\n\nTrading snapshot: 5,881 customers, 36,975 orders, £17.7M revenue, AOV £480. Peak month 2010-11 at £1.2M. YTD 2011 £8.3M; MTD 2011-12 £518k.",
+          "images": []
+        },
+        {
+          "key": "stakeholders",
+          "title": "Stakeholders",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Primary reader: a retail ops or CRM lead preparing for peak giftware season.\n\nJOB TO BE DONE — When holiday demand rises, I want a clear shortlist of customers to retain or reactivate so outreach budget follows value and risk, not gut feel.\n\nSecondary reader: the analyst who must defend cleaning rules and segment definitions in that same meeting.",
+          "images": []
+        },
+        {
+          "key": "scenario",
+          "title": "Scenario: holiday priority",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "DATA QUESTION — Who should we prioritize before the next giftware peak: protect Champions, nurture Loyal customers, or reactivate At Risk spenders?\n\nThe storyboard that follows is the working session: clean the file, rebuild customer grain, score RFM, read YTD/MTD, then leave the room with a decision mix rather than a chart graveyard.",
+          "images": []
+        },
+        {
+          "key": "process-clean",
+          "title": "Process: clean the real mess",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Online Retail II is useful because it is messy in the ways production retail data is messy.\n\nCleaning rules in this draft: drop rows without CustomerID for customer analytics, treat invoices starting with C as cancellations, compute line revenue as Quantity times UnitPrice, and keep returns visible when they matter for quality checks.\n\nINSIGHT — If you skip this step, RFM and YTD totals inherit fiction.",
+          "images": [
+            {
+              "src": "/images/case_studies/retail-cleaning-funnel.jpg",
+              "alt": "Cleaning funnel from raw Online Retail II rows to positive sales lines",
+              "caption": "Funnel: 1,067,371 raw rows down to 805,620 positive sales lines with CustomerID."
+            }
+          ]
+        },
+        {
+          "key": "process-sql",
+          "title": "Process: SQL and customer grain",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "After cleaning, the analysis moves to invoice and customer grains: joins and aggregations that answer revenue, order counts, and AOV over time.\n\nFormation craft shows up here: CTEs, window functions, and views that make YTD/MTD reusable instead of one-off notebook cells.",
+          "images": [
+            {
+              "src": "/images/case_studies/retail-top-countries.jpg",
+              "alt": "Top countries by cleaned revenue",
+              "caption": "Country mix after cleaning: UK concentration with international wholesale tails."
+            }
+          ]
+        },
+        {
+          "key": "process-rfm",
+          "title": "Process: RFM segmentation",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Per customer:\n\nRecency — days since last purchase.\n\nFrequency — count of invoices.\n\nMonetary — sum of revenue.\n\nScores become labeled segments such as Champions, Loyal, Potential, At Risk, and Lost. Labels matter more than cluster IDs in a business review because they imply action.\n\nThis approach follows the retail RFM tradition associated with Online Retail analyses (including Chen et al. on RFM for online retail), adapted for a clear portfolio narrative.",
+          "images": [
+            {
+              "src": "/images/case_studies/retail-rfm-customers.jpg",
+              "alt": "Customers by RFM segment",
+              "caption": "Champions 1,482 · Loyal 1,222 · At Risk 824."
+            },
+            {
+              "src": "/images/case_studies/retail-rfm-revenue.jpg",
+              "alt": "Revenue share by RFM segment",
+              "caption": "Champions hold 69% of cleaned revenue with 25% of customers."
+            }
+          ]
+        },
+        {
+          "key": "process-kpi",
+          "title": "Process: YTD/MTD storytelling",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Time KPIs answer the other half of the briefing: how are we doing this month versus the year so far.\n\nYTD and MTD views sit beside RFM so segment decisions are grounded in current trading pace, not only lifetime value.",
+          "images": [
+            {
+              "src": "/images/case_studies/retail-monthly-revenue.jpg",
+              "alt": "Monthly cleaned revenue over Online Retail II period",
+              "caption": "Monthly pulse with peak in 2010-11 at £1.2M."
+            },
+            {
+              "src": "/images/case_studies/retail-ytd-mtd.jpg",
+              "alt": "YTD versus MTD revenue bars",
+              "caption": "YTD 2011 £8.3M vs MTD 2011-12 £518k."
+            }
+          ]
+        },
+        {
+          "key": "decision",
+          "title": "Decision storyboard",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "DECISION - Protect Champions (1,482 customers, 69% of revenue) with white-glove retention, keep Loyal (1,222) in a steady nurture track, and run a focused reactivation offer for At Risk (824 customers, 9% of revenue) who used to spend.\n\nINSIGHT - The point of RFM is not prettier colors. It is a shorter meeting: fewer customers discussed, clearer owners, and a mix you can defend with recency and spend evidence.\n\nDATA QUESTION - After the campaign window, which At Risk customers returned, and did Champions hold their share of YTD revenue?",
+          "images": [
+            {
+              "src": "/images/case_studies/retail-rfm-revenue.jpg",
+              "alt": "Revenue concentration by RFM segment for decision mix",
+              "caption": "Decision mix follows revenue concentration, not equal customer counts."
+            }
+          ]
+        },
+        {
+          "key": "learnings",
+          "title": "What we learned",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Real public data beats a synthetic shop if you are honest about source, license, and what you still need to compute.\n\nCleaning rules are product decisions. They belong in the case study, not a hidden cell.\n\nSegments without actions are still a chart dump. Champions and At Risk only earn their place when the decision chapter names what happens next.",
+          "images": []
+        },
+        {
+          "key": "future",
+          "title": "Future",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Charts and cleaned KPIs are now attached from the Online Retail II run. Next depth: cohort retention and country-mix cuts still tied to the same holiday-priority question, plus any Formation SQL artifacts you want shown as process proof.",
+          "images": []
+        }
+      ],
+      "nextSteps": "Optional depth: cohort retention and UK vs international wholesaler cuts, still framed by the holiday-priority decision."
     },
     {
       "slug": "trusted-test-data-reporting",
@@ -717,6 +884,439 @@
       "nextSteps": "Test with arbiters in live tournaments: offline rule-lookup depth, scenario learning's effect on confidence, and the scoring and assignment edge cases that only appear when the point is hot. Let real match-day behaviour, not screen count, drive the next iteration."
     },
     {
+      "slug": "brytek-online-learning",
+      "image": "/images/case_studies/brytek-instructor-dashboard.jpg",
+      "title": "BryTek | Online Learning Platform",
+      "tools": [
+        "Figma",
+        "UI design",
+        "Information architecture",
+        "Web design",
+        "EdTech UX"
+      ],
+      "impact": "A complete UX package for a three-sided EdTech product: public marketing site, role-aware entry, and an instructor cockpit that turns courses, ratings, and earnings into a scannable daily view.",
+      "problem": "Online learning platforms often split the story: a pretty marketing site for discovery, then a disconnected instructor console for teaching and money. Learners, teachers, and owners need one coherent BryTek voice from first visit to the dashboard.",
+      "summary": "BryTek is an online learning platform I designed as a portfolio UX study: dark marketing pages for courses, events, and blogs, a role gate for Admin, Teacher, and Student, and a full instructor suite covering dashboard KPIs, course management, earnings, messages, and settings. Draft content for your review.",
+      "tagline": "EdTech UX: marketing site, role-aware entry, and an instructor cockpit for courses and earnings.",
+      "approach": "I structured BryTek as two surfaces that must feel like one product: a public discovery site and a logged-in instructor workspace. Entry starts with who you are (Admin, Teacher, Student), then auth, then a dashboard that leads with KPIs before course and revenue detail.",
+      "category": "UX design",
+      "highlights": [
+        "Mapped a three-role entry model (Admin/Owner, Teacher, Student) before auth forms.",
+        "Designed public discovery pages for courses, events, blogs, about, and contact in one dark visual system.",
+        "Built an instructor cockpit: KPI dashboard, my courses, course detail, earnings, messages, and settings.",
+        "Kept teal and orange accents consistent across marketing modals and logged-in tools."
+      ],
+      "externalUrl": "",
+      "externalLabel": "",
+      "timeline": "Portfolio UX study (dates TBD)",
+      "platform": "Responsive web (marketing + instructor / learner)",
+      "role": "Product / UI designer",
+      "roleBody": "I owned the visual and interaction design for BryTek as a portfolio EdTech study: information architecture across public and instructor surfaces, role-based entry, auth modals, and the instructor dashboard suite. Validate or replace this role framing with your real brief.",
+      "goal": "Give learners a clear path to discover courses, and give instructors a calm cockpit for teaching activity, ratings, and earnings without jumping between unrelated tools.",
+      "metrics": [
+        {
+          "value": "3 roles",
+          "label": "Entry model",
+          "detail": "Admin/Owner, Teacher, and Student from the first gate."
+        },
+        {
+          "value": "2 surfaces",
+          "label": "Product split",
+          "detail": "Public marketing site plus logged-in instructor workspace."
+        },
+        {
+          "value": "6 modules",
+          "label": "Instructor suite",
+          "detail": "Dashboard, courses, course detail, earnings, messages, settings."
+        },
+        {
+          "value": "1 system",
+          "label": "Visual voice",
+          "detail": "Dark charcoal base with teal actions and orange accents."
+        }
+      ],
+      "sections": [
+        {
+          "key": "introduction",
+          "title": "Introduction",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "BryTek is an online learning platform designed as a dark, modern EdTech experience. The product has to sell learning in public and run teaching in private: courses, events, and blogs on the outside; KPIs, course management, and earnings on the inside.\n\nThis draft treats BryTek as a portfolio UX study based on the shipped hi-fi screens. Replace timeline and ownership details once you validate the brief.\n\nMY ROLE — Product / UI designer for the marketing site, role gate, auth flows, and instructor suite.",
+          "images": []
+        },
+        {
+          "key": "problem",
+          "title": "Problem",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "PROBLEM — Prospective learners meet a marketing site, while instructors live in a console. If those surfaces feel like different products, trust drops before the first lesson.\n\nEXAMPLE — A visitor finds a course on the public grid, then hits a login path that never asks whether they are a student or a teacher. The instructor later opens a flat list of courses with no earnings or rating context.\n\nIMPACT — Learners bounce. Teachers cannot see whether a course is healthy. The platform looks unfinished even when the screens exist.\n\nPROBLEM — Instructor work is multi-signal: enrollments, ratings, revenue, messages. Spreading those signals across disconnected pages slows every morning check-in.\n\nEXAMPLE — Revenue lives on one page, ratings on another, and recent comments nowhere near the course list.\n\nIMPACT — Teachers manage by inbox and guesswork instead of a single cockpit.",
+          "images": []
+        },
+        {
+          "key": "goals",
+          "title": "Goals",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "BUSINESS GOALS — Present BryTek as a credible online learning brand, then convert visitors into the right account type without confusion.\n\nGive instructors a workspace that makes course health and earnings visible in the first scroll.\n\nUSER GOALS — Learners: find courses, events, and articles quickly, then sign in or sign up as a student.\n\nTeachers: land on a dashboard that answers what happened overnight before diving into course detail, earnings, or messages.",
+          "images": []
+        },
+        {
+          "key": "impact",
+          "title": "Impact",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "This draft measures design scope, not invented platform revenue. The instructor dashboard shows large sample KPI figures for UI realism; those numbers are not claimed as live business results.\n\nThe outcome of this study is a coherent system: public discovery, role-aware entry, and an instructor suite that can be handed to engineering as one visual language.",
+          "images": []
+        },
+        {
+          "key": "users",
+          "title": "Our Users",
+          "layout": "split",
+          "imageLayout": "stack",
+          "body": "BryTek starts with three seats at the role gate.\n\nAdmin / Owner — Needs oversight and platform control. Entry must feel official, not like a student signup.\n\nTeacher — Needs courses, ratings, earnings, and messages in one daily loop.\n\nJOB TO BE DONE — When I open BryTek in the morning, I want a clear view of enrollments, ratings, and revenue so I know which course needs attention today.\n\nStudent — Needs a simple path into learning after discovering courses on the public site.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-role-gate.jpg",
+              "alt": "BryTek role selection modal for Admin, Teacher, and Student",
+              "caption": "Role gate: choose the seat before the form."
+            }
+          ]
+        },
+        {
+          "key": "process-ia",
+          "title": "Process: Two surfaces, one brand",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "I treated BryTek as one information architecture with two modes.\n\nPublic mode sells the platform: About, Courses, Events, Blogs, Contact. Logged-in instructor mode runs the business of teaching: Dashboard, My Courses, Earnings, Messages, Settings.\n\nThe join point is the role gate and auth modals. Get that wrong and the rest of the UI cannot recover trust.",
+          "images": []
+        },
+        {
+          "key": "final-public",
+          "title": "Final: Public discovery",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "The public site is a dark editorial layout: strong hero, search, featured cards, and newsletter capture. Courses, events, and blogs reuse the same rhythm so discovery feels familiar across content types.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-about.jpg",
+              "alt": "BryTek About us page",
+              "caption": "About: brand story on the public surface."
+            },
+            {
+              "src": "/images/case_studies/brytek-courses.jpg",
+              "alt": "BryTek Our Courses listing page",
+              "caption": "Courses: featured cards plus a dense list."
+            },
+            {
+              "src": "/images/case_studies/brytek-events.jpg",
+              "alt": "BryTek Upcoming events page",
+              "caption": "Events: time-bound discovery."
+            },
+            {
+              "src": "/images/case_studies/brytek-blogs.jpg",
+              "alt": "BryTek blogs and articles page",
+              "caption": "Blogs: editorial depth beside courses."
+            },
+            {
+              "src": "/images/case_studies/brytek-contact.jpg",
+              "alt": "BryTek Contact us page",
+              "caption": "Contact: low-friction outreach."
+            }
+          ]
+        },
+        {
+          "key": "final-entry",
+          "title": "Final: Getting in",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Entry is explicit. Visitors pick Admin, Teacher, or Student, then move into trainer login or trainee sign-in / sign-up modals with Google and email paths.\n\nOne polish note for validation: a modal headline spells BryTeck while the logo reads BryTek. Worth aligning before handoff.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-role-gate.jpg",
+              "alt": "BryTek login role selection",
+              "caption": "Tell us who you are first."
+            },
+            {
+              "src": "/images/case_studies/brytek-login-trainer.jpg",
+              "alt": "BryTek trainer sign-up modal",
+              "caption": "Trainer path: welcome carousel plus form."
+            },
+            {
+              "src": "/images/case_studies/brytek-signin-trainee.jpg",
+              "alt": "BryTek trainee sign-in modal",
+              "caption": "Trainee path: sign in with the same dark system."
+            }
+          ]
+        },
+        {
+          "key": "final-cockpit",
+          "title": "Final: Instructor cockpit",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "The instructor dashboard is the product thesis: KPI cards first, then ratings, course overview, recent activity, and revenue. Teachers should feel the health of their catalog before opening a single course.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-instructor-dashboard.jpg",
+              "alt": "BryTek instructor dashboard with KPI cards and charts",
+              "caption": "Dashboard: enrollments, ratings, revenue, and activity in one morning view."
+            },
+            {
+              "src": "/images/case_studies/brytek-trainee.jpg",
+              "alt": "BryTek trainee overview screen",
+              "caption": "Learner-side depth: the other half of the marketplace."
+            }
+          ]
+        },
+        {
+          "key": "final-courses",
+          "title": "Final: Courses and earnings",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "My Courses and course detail keep teaching work concrete. Earnings closes the loop for instructors who need money and performance in the same product voice as the catalog.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-my-courses.jpg",
+              "alt": "BryTek My Courses instructor page",
+              "caption": "My Courses: catalog management without leaving the cockpit."
+            },
+            {
+              "src": "/images/case_studies/brytek-course-detail.jpg",
+              "alt": "BryTek course detail for instructors",
+              "caption": "Course detail: depth when a title needs attention."
+            },
+            {
+              "src": "/images/case_studies/brytek-earnings.jpg",
+              "alt": "BryTek instructor earnings page",
+              "caption": "Earnings: revenue as a first-class instructor job."
+            }
+          ]
+        },
+        {
+          "key": "final-comms",
+          "title": "Final: Stay in the loop",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Messages and settings keep the instructor suite complete. Communication and account control sit in the same navigation as teaching and money, not as orphan pages.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-messages.jpg",
+              "alt": "BryTek instructor messages page",
+              "caption": "Messages: comments and conversations next to teaching work."
+            },
+            {
+              "src": "/images/case_studies/brytek-settings.jpg",
+              "alt": "BryTek instructor settings page",
+              "caption": "Settings: account control in the same system."
+            }
+          ]
+        },
+        {
+          "key": "learnings",
+          "title": "What we learned",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Role before form reduces auth confusion in multi-sided products. Asking Admin, Teacher, or Student first is cheaper than recovering from a wrong account type later.\n\nInstructor dashboards should lead with decisions, not chrome. KPI cards and ratings belong above course lists.\n\nPublic and private surfaces must share one visual voice, or EdTech products feel like a brochure stapled to an admin tool.",
+          "images": []
+        },
+        {
+          "key": "future",
+          "title": "Future",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Validate the real brief: client, timeline, and whether Admin flows need dedicated screens beyond the role gate.\n\nNext design depth: learner course-taking flows after trainee sign-in, empty states for new instructors, and a pass to align BryTek spelling across modals.\n\nUsability testing with one teacher and one student would pressure-test the morning dashboard and the discovery-to-signup path.",
+          "images": []
+        }
+      ],
+      "nextSteps": "Validate brief details, align BryTek spelling, and deepen learner post-login flows after the trainee gate."
+    },
+    {
+      "slug": "brytek-learning-analytics",
+      "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+      "title": "BryTek | Learning Analytics for Instructor Decisions",
+      "tools": [
+        "Python",
+        "pandas",
+        "Matplotlib",
+        "Learning analytics",
+        "OULAD",
+        "VLE engagement"
+      ],
+      "impact": "On OULAD (32,593 enrollments across 7 modules), 53% end Fail or Withdrawn. Silent starters (14% with zero VLE clicks in the first 14 days) reach 91% at-risk. Lowest early-engagement quintile: 86% at-risk vs 28% in the highest.",
+      "problem": "An instructor cockpit that only shows enrollments and revenue still leaves teachers guessing who needs help this week. BryTek's dashboard UX needs a data story that turns engagement into an intervention queue.",
+      "summary": "Data lens companion to the BryTek UX study. I use the public Open University Learning Analytics Dataset (OULAD, CC BY 4.0) as a real EdTech stand-in: demographics, assessments, and VLE click summaries for 32k+ students. The question is the same one a BryTek teacher dashboard should answer: who needs outreach before they fail or withdraw. Honest framing: this is public OU data, not BryTek production telemetry.",
+      "tagline": "OULAD learning analytics framed for BryTek instructor intervention decisions.",
+      "approach": "Start from the BryTek instructor job (morning course health), ground it in OULAD outcomes and early VLE activity, then leave with a decision mix: silent starters first, then low-engagement bands, with module-level health as context.",
+      "category": "Data analysis",
+      "highlights": [
+        "Paired with the BryTek UX case: same instructor cockpit question, measured on real public LMS data.",
+        "Grounded in OULAD (Nature Scientific Data / UCI), CC BY 4.0, not synthetic grades.",
+        "Early VLE silence (first 14 days) as the primary risk signal for Fail or Withdrawn.",
+        "Module health view so teachers see which courses need staffing attention, not only which students."
+      ],
+      "externalUrl": "https://analyse.kmi.open.ac.uk/open_dataset",
+      "externalLabel": "OULAD source",
+      "timeline": "Portfolio data study · OULAD (2013 - 2014 presentations)",
+      "platform": "Learning analytics (Python / pandas / EdTech decision framing)",
+      "role": "Data analyst",
+      "roleBody": "Owned the analytical narrative for a BryTek-framed instructor decision: source honesty, early-engagement risk signal, module health, and an intervention queue a teacher could act on. Validate how this sits beside your Formation Data and BI craft and the BryTek UX entry.",
+      "goal": "Show that BryTek's instructor cockpit is not only a UI: it should surface who is going silent early enough to intervene, using real public learning analytics as proof of method.",
+      "metrics": [
+        {
+          "value": "32,593",
+          "label": "Enrollments",
+          "detail": "28,785 students across 22 module presentations."
+        },
+        {
+          "value": "53%",
+          "label": "At-risk rate",
+          "detail": "Share ending Fail or Withdrawn."
+        },
+        {
+          "value": "91%",
+          "label": "Silent starters",
+          "detail": "At-risk among the 14% with zero clicks in the first 14 days."
+        },
+        {
+          "value": "86% vs 28%",
+          "label": "Q1 vs Q5 risk",
+          "detail": "Lowest vs highest early-engagement quintiles."
+        }
+      ],
+      "sections": [
+        {
+          "key": "introduction",
+          "title": "Introduction",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "This is the data lens beside BryTek Online Learning (UX). The design study gives teachers a cockpit for enrollments, ratings, and earnings. This study asks what that cockpit should prioritize when the signal is learning behaviour, not revenue.\n\nI use the Open University Learning Analytics Dataset (OULAD): anonymized course, student, assessment, and Virtual Learning Environment (VLE) interaction data from Open University presentations in 2013 and 2014. License: CC BY 4.0. Citation: Kuzilek, Hlosta, Zdrahal, Nature Scientific Data 4:170171 (2017).\n\nFraming rule: OULAD is a public EdTech proxy. It is not BryTek production data. The point is transferable decisions a BryTek-style instructor dashboard should surface.\n\nMY ROLE - Data analyst framing the instructor question, early-engagement risk, module health, and intervention narrative.",
+          "images": []
+        },
+        {
+          "key": "problem",
+          "title": "Problem",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "PROBLEM - A teacher opens BryTek and sees headcount and money. Without engagement risk, the morning view cannot say who needs a message today.\n\nEXAMPLE - Two courses can show similar enrollment counts while one is filled with learners who never opened the VLE in the first two weeks.\n\nIMPACT - Outreach waits until after the first failed assessment. Retention work arrives too late.\n\nPROBLEM - Public LMS logs are noisy: withdrawals, fails, distinctions, and silent accounts sit in the same table until you define an outcome and a time window.\n\nEXAMPLE - OULAD labels final_result as Distinction, Pass, Fail, or Withdrawn, and stores daily VLE click summaries that only help if you pick an early window.\n\nIMPACT - Without those definitions, 'engagement' stays a vague chart instead of a queue.",
+          "images": []
+        },
+        {
+          "key": "goals",
+          "title": "Goals",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "BUSINESS GOALS - Prove that BryTek's instructor product can be backed by a real learning-analytics decision story, not only UI fiction on the dashboard cards.\n\nUSER GOALS - Give an instructor a shortlist: silent starters first, then low early engagement, with module context so staffing attention follows course risk.\n\nGive a portfolio reader an honest source trail (OULAD / UCI / OU Analyse) they can verify.",
+          "images": []
+        },
+        {
+          "key": "impact",
+          "title": "Impact",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Computed on public OULAD after joining studentInfo to early VLE activity (days 0 to 14).\n\nScale: 32,593 enrollments, 28,785 students, 7 modules, 22 presentations.\n\nOutcomes: Distinction 3,024, Pass 12,361, Fail 7,052, Withdrawn 10,156. Combined Fail + Withdrawn: 53%.\n\nSilent starters (14% with zero early clicks): 91% at-risk. Lowest early-engagement quintile 86% at-risk vs 28% in the highest. Highest-risk module in this cut: CCC (62% at-risk, 45% withdrawn).",
+          "images": []
+        },
+        {
+          "key": "stakeholders",
+          "title": "Stakeholders",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Primary reader: a BryTek Teacher using the instructor cockpit from the UX case.\n\nJOB TO BE DONE - When I open BryTek in the morning, I want a clear queue of learners going silent so I message the right people before they withdraw.\n\nSecondary reader: a platform owner comparing course health across modules, and an analyst who must defend the early-window definition in that same review.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-instructor-dashboard.jpg",
+              "alt": "BryTek instructor dashboard from the UX case study",
+              "caption": "UX companion: the cockpit this data story is meant to feed."
+            }
+          ]
+        },
+        {
+          "key": "scenario",
+          "title": "Scenario: who needs outreach",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "DATA QUESTION - In the first two weeks of a presentation, which enrollments should enter an instructor intervention queue because early VLE silence predicts Fail or Withdrawn?\n\nHugging Face check before locking the source: edu-interactions is AI-tutor oriented; student-engagement-and-performance is only ~50 rows; OULAD-derived HF artifacts are prompts or benchmarks, not the raw LMS tables. OULAD via OU Analyse / UCI remains the best public fit for a BryTek instructor story.\n\nThe storyboard: define outcomes, measure early clicks, rank risk bands, read module health, then leave with a decision mix tied to the BryTek teacher job.",
+          "images": []
+        },
+        {
+          "key": "process-outcomes",
+          "title": "Process: define the risk outcome",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Grain is student x module presentation (enrollment). Final result is the outcome label.\n\nINSIGHT - Pass and Distinction are success. Fail and Withdrawn are the at-risk bucket for intervention planning (53% of enrollments in this extract).\n\nThat binary is deliberate for a teacher queue. Finer grading can come later; the first cockpit job is who needs a human touch.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-oulad-outcomes.jpg",
+              "alt": "OULAD final outcome counts",
+              "caption": "Outcomes: Pass 12,361 · Withdrawn 10,156 · Fail 7,052 · Distinction 3,024."
+            }
+          ]
+        },
+        {
+          "key": "process-early",
+          "title": "Process: early VLE engagement",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Early window: days 0 to 14 in OULAD's relative course calendar. Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\nINSIGHT - Risk falls as early activity rises: 86% at-risk in the lowest quintile vs 28% in the highest. Silent starters (14% of enrollments) hit 91% Fail or Withdrawn.\n\nThis is the signal BryTek's recent-activity and course-health widgets should amplify.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-oulad-early-risk.jpg",
+              "alt": "At-risk rate by early VLE engagement quintile",
+              "caption": "Q1 86% at-risk vs Q5 28% (first 14 days)."
+            },
+            {
+              "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+              "alt": "At-risk rate for silent starters versus learners with early activity",
+              "caption": "Zero early clicks: 91% at-risk (14% of enrollments)."
+            }
+          ]
+        },
+        {
+          "key": "process-modules",
+          "title": "Process: course health by module",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Teachers do not only triage people. They also need to know which courses are structurally harder.\n\nINSIGHT - Module CCC shows the highest at-risk rate in this cut (62%, withdraw 45%, 4,434 enrollments). Module AAA leads success at 71%.\n\nOn BryTek, that belongs next to My Courses: a health stripe, not only a title list.",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-oulad-module-health.jpg",
+              "alt": "Pass and withdrawal rates by OULAD module",
+              "caption": "Module health: success vs withdrawal side by side."
+            }
+          ]
+        },
+        {
+          "key": "decision",
+          "title": "Decision storyboard",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "DECISION - Week-2 outreach queue: message every silent starter first (14% of enrollments, 91% at-risk), then prioritize the lowest early-engagement quintile (86% at-risk). Staffing review: inspect module CCC for content or support gaps before the next presentation.\n\nINSIGHT - The BryTek dashboard earns its KPI row when those queues exist. Enrollments and earnings without an intervention list are still a pretty empty morning.\n\nDATA QUESTION - After two weeks of outreach, did silent starters return to the VLE, and did Fail + Withdrawn fall in the next assessment window?",
+          "images": [
+            {
+              "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+              "alt": "Silent starter risk for the intervention decision",
+              "caption": "Decision anchor: silent starters enter the queue first."
+            }
+          ]
+        },
+        {
+          "key": "learnings",
+          "title": "What we learned",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Hugging Face is useful for discovery, but the best BryTek-shaped public table set is still OULAD from OU Analyse / UCI, not a 50-row engagement toy set.\n\nSay the source out loud. Claiming OULAD as BryTek production data would break trust.\n\nEarly windows beat lifetime averages for instructor action. Teachers intervene in weeks, not after the final result lands.\n\nPair the UX and data entries. Design shows the cockpit; analytics shows what should fill it.",
+          "images": []
+        },
+        {
+          "key": "future",
+          "title": "Future",
+          "layout": "stack",
+          "imageLayout": "stack",
+          "body": "Next depth on the same question: first-assessment timing, weekly engagement trajectories, and a lightweight risk score that could sit behind BryTek's recent-activity panel. Keep Retail KPI Storytelling as the separate commerce data study.",
+          "images": []
+        }
+      ]
+    },
+    {
       "slug": "friends-of-figma-tunis",
       "image": "/images/project-fof.jpg",
       "title": "Friends of Figma (FoF) Tunisia",
@@ -903,6 +1503,18 @@
       "slug": "chetek-sports-ux",
       "image": "/images/case_studies/Welcome.jpg",
       "title": "Chetek Sports: tennis referee companion UX"
+    },
+    {
+      "slug": "brytek-online-learning",
+      "image": "/images/case_studies/brytek-instructor-dashboard.jpg",
+      "title": "BryTek: EdTech marketing + instructor cockpit",
+      "meta": "UX design"
+    },
+    {
+      "slug": "brytek-learning-analytics",
+      "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+      "title": "BryTek data: early VLE risk for instructor outreach",
+      "meta": "Data analysis · OULAD · Learning analytics"
     },
     {
       "meta": "Community lead · Config · Speakers",
