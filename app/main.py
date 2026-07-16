@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,11 +13,14 @@ from .db import Base, get_db, get_engine
 from .schemas import ContentUpdateRequest, LoginRequest, LoginResponse
 from .uploads import save_upload, uploads_dir
 
+STATIC_IMAGES_DIR = Path(__file__).resolve().parent.parent / "static" / "images"
+
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     Base.metadata.create_all(bind=get_engine())
     uploads_dir()
+    STATIC_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
     yield
 
 
@@ -34,6 +38,7 @@ app.add_middleware(
 )
 
 app.mount("/uploads", StaticFiles(directory=str(uploads_dir())), name="uploads")
+app.mount("/images", StaticFiles(directory=str(STATIC_IMAGES_DIR)), name="images")
 
 
 @app.get("/api/health")

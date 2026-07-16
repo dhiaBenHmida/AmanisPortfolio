@@ -189,7 +189,7 @@
   "projects": [
     {
       "slug": "retail-kpi-storytelling",
-      "image": "/images/case_studies/retail-monthly-revenue.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-monthly-revenue.jpg",
       "title": "Retail KPI Storytelling",
       "tools": [
         "SQL",
@@ -299,7 +299,7 @@
           "body": "Online Retail II is useful because it is messy in the ways production retail data is messy.\n\nCleaning rules in this draft: drop rows without CustomerID for customer analytics, treat invoices starting with C as cancellations, compute line revenue as Quantity times UnitPrice, and keep returns visible when they matter for quality checks.\n\nINSIGHT — If you skip this step, RFM and YTD totals inherit fiction.",
           "images": [
             {
-              "src": "/images/case_studies/retail-cleaning-funnel.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-cleaning-funnel.jpg",
               "alt": "Cleaning funnel from raw Online Retail II rows to positive sales lines",
               "caption": "Funnel: 1,067,371 raw rows down to 805,620 positive sales lines with CustomerID."
             }
@@ -313,7 +313,7 @@
           "body": "After cleaning, the analysis moves to invoice and customer grains: joins and aggregations that answer revenue, order counts, and AOV over time.\n\nFormation craft shows up here: CTEs, window functions, and views that make YTD/MTD reusable instead of one-off notebook cells.",
           "images": [
             {
-              "src": "/images/case_studies/retail-top-countries.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-top-countries.jpg",
               "alt": "Top countries by cleaned revenue",
               "caption": "Country mix after cleaning: UK concentration with international wholesale tails."
             }
@@ -327,12 +327,12 @@
           "body": "Per customer:\n\nRecency — days since last purchase.\n\nFrequency — count of invoices.\n\nMonetary — sum of revenue.\n\nScores become labeled segments such as Champions, Loyal, Potential, At Risk, and Lost. Labels matter more than cluster IDs in a business review because they imply action.\n\nThis approach follows the retail RFM tradition associated with Online Retail analyses (including Chen et al. on RFM for online retail), adapted for a clear portfolio narrative.",
           "images": [
             {
-              "src": "/images/case_studies/retail-rfm-customers.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-rfm-customers.jpg",
               "alt": "Customers by RFM segment",
               "caption": "Champions 1,482 · Loyal 1,222 · At Risk 824."
             },
             {
-              "src": "/images/case_studies/retail-rfm-revenue.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-rfm-revenue.jpg",
               "alt": "Revenue share by RFM segment",
               "caption": "Champions hold 69% of cleaned revenue with 25% of customers."
             }
@@ -346,12 +346,12 @@
           "body": "Time KPIs answer the other half of the briefing: how are we doing this month versus the year so far.\n\nYTD and MTD views sit beside RFM so segment decisions are grounded in current trading pace, not only lifetime value.",
           "images": [
             {
-              "src": "/images/case_studies/retail-monthly-revenue.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-monthly-revenue.jpg",
               "alt": "Monthly cleaned revenue over Online Retail II period",
               "caption": "Monthly pulse with peak in 2010-11 at £1.2M."
             },
             {
-              "src": "/images/case_studies/retail-ytd-mtd.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-ytd-mtd.jpg",
               "alt": "YTD versus MTD revenue bars",
               "caption": "YTD 2011 £8.3M vs MTD 2011-12 £518k."
             }
@@ -365,7 +365,7 @@
           "body": "DECISION - Protect Champions (1,482 customers, 69% of revenue) with white-glove retention, keep Loyal (1,222) in a steady nurture track, and run a focused reactivation offer for At Risk (824 customers, 9% of revenue) who used to spend.\n\nINSIGHT - The point of RFM is not prettier colors. It is a shorter meeting: fewer customers discussed, clearer owners, and a mix you can defend with recency and spend evidence.\n\nDATA QUESTION - After the campaign window, which At Risk customers returned, and did Champions hold their share of YTD revenue?",
           "images": [
             {
-              "src": "/images/case_studies/retail-rfm-revenue.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/retail-rfm-revenue.jpg",
               "alt": "Revenue concentration by RFM segment for decision mix",
               "caption": "Decision mix follows revenue concentration, not equal customer counts."
             }
@@ -885,7 +885,7 @@
     },
     {
       "slug": "brytek-online-learning",
-      "image": "/images/case_studies/brytek-instructor-dashboard.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-instructor-dashboard.jpg",
       "title": "BryTek | Online Learning Platform",
       "tools": [
         "Figma",
@@ -976,7 +976,7 @@
           "body": "BryTek starts with three seats at the role gate.\n\nAdmin / Owner — Needs oversight and platform control. Entry must feel official, not like a student signup.\n\nTeacher — Needs courses, ratings, earnings, and messages in one daily loop.\n\nJOB TO BE DONE — When I open BryTek in the morning, I want a clear view of enrollments, ratings, and revenue so I know which course needs attention today.\n\nStudent — Needs a simple path into learning after discovering courses on the public site.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-role-gate.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-role-gate.jpg",
               "alt": "BryTek role selection modal for Admin, Teacher, and Student",
               "caption": "Role gate: choose the seat before the form."
             }
@@ -998,27 +998,27 @@
           "body": "The public site is a dark editorial layout: strong hero, search, featured cards, and newsletter capture. Courses, events, and blogs reuse the same rhythm so discovery feels familiar across content types.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-about.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-about.jpg",
               "alt": "BryTek About us page",
               "caption": "About: brand story on the public surface."
             },
             {
-              "src": "/images/case_studies/brytek-courses.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-courses.jpg",
               "alt": "BryTek Our Courses listing page",
               "caption": "Courses: featured cards plus a dense list."
             },
             {
-              "src": "/images/case_studies/brytek-events.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-events.jpg",
               "alt": "BryTek Upcoming events page",
               "caption": "Events: time-bound discovery."
             },
             {
-              "src": "/images/case_studies/brytek-blogs.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-blogs.jpg",
               "alt": "BryTek blogs and articles page",
               "caption": "Blogs: editorial depth beside courses."
             },
             {
-              "src": "/images/case_studies/brytek-contact.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-contact.jpg",
               "alt": "BryTek Contact us page",
               "caption": "Contact: low-friction outreach."
             }
@@ -1032,17 +1032,17 @@
           "body": "Entry is explicit. Visitors pick Admin, Teacher, or Student, then move into trainer login or trainee sign-in / sign-up modals with Google and email paths.\n\nOne polish note for validation: a modal headline spells BryTeck while the logo reads BryTek. Worth aligning before handoff.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-role-gate.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-role-gate.jpg",
               "alt": "BryTek login role selection",
               "caption": "Tell us who you are first."
             },
             {
-              "src": "/images/case_studies/brytek-login-trainer.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-login-trainer.jpg",
               "alt": "BryTek trainer sign-up modal",
               "caption": "Trainer path: welcome carousel plus form."
             },
             {
-              "src": "/images/case_studies/brytek-signin-trainee.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-signin-trainee.jpg",
               "alt": "BryTek trainee sign-in modal",
               "caption": "Trainee path: sign in with the same dark system."
             }
@@ -1056,12 +1056,12 @@
           "body": "The instructor dashboard is the product thesis: KPI cards first, then ratings, course overview, recent activity, and revenue. Teachers should feel the health of their catalog before opening a single course.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-instructor-dashboard.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-instructor-dashboard.jpg",
               "alt": "BryTek instructor dashboard with KPI cards and charts",
               "caption": "Dashboard: enrollments, ratings, revenue, and activity in one morning view."
             },
             {
-              "src": "/images/case_studies/brytek-trainee.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-trainee.jpg",
               "alt": "BryTek trainee overview screen",
               "caption": "Learner-side depth: the other half of the marketplace."
             }
@@ -1075,17 +1075,17 @@
           "body": "My Courses and course detail keep teaching work concrete. Earnings closes the loop for instructors who need money and performance in the same product voice as the catalog.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-my-courses.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-my-courses.jpg",
               "alt": "BryTek My Courses instructor page",
               "caption": "My Courses: catalog management without leaving the cockpit."
             },
             {
-              "src": "/images/case_studies/brytek-course-detail.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-course-detail.jpg",
               "alt": "BryTek course detail for instructors",
               "caption": "Course detail: depth when a title needs attention."
             },
             {
-              "src": "/images/case_studies/brytek-earnings.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-earnings.jpg",
               "alt": "BryTek instructor earnings page",
               "caption": "Earnings: revenue as a first-class instructor job."
             }
@@ -1099,12 +1099,12 @@
           "body": "Messages and settings keep the instructor suite complete. Communication and account control sit in the same navigation as teaching and money, not as orphan pages.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-messages.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-messages.jpg",
               "alt": "BryTek instructor messages page",
               "caption": "Messages: comments and conversations next to teaching work."
             },
             {
-              "src": "/images/case_studies/brytek-settings.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-settings.jpg",
               "alt": "BryTek instructor settings page",
               "caption": "Settings: account control in the same system."
             }
@@ -1131,7 +1131,7 @@
     },
     {
       "slug": "brytek-learning-analytics",
-      "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
       "title": "BryTek | Learning Analytics for Instructor Decisions",
       "tools": [
         "Python",
@@ -1223,7 +1223,7 @@
           "body": "Primary reader: a BryTek Teacher using the instructor cockpit from the UX case.\n\nJOB TO BE DONE - When I open BryTek in the morning, I want a clear queue of learners going silent so I message the right people before they withdraw.\n\nSecondary reader: a platform owner comparing course health across modules, and an analyst who must defend the early-window definition in that same review.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-instructor-dashboard.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-instructor-dashboard.jpg",
               "alt": "BryTek instructor dashboard from the UX case study",
               "caption": "UX companion: the cockpit this data story is meant to feed."
             }
@@ -1245,7 +1245,7 @@
           "body": "Grain is student x module presentation (enrollment). Final result is the outcome label.\n\nINSIGHT - Pass and Distinction are success. Fail and Withdrawn are the at-risk bucket for intervention planning (53% of enrollments in this extract).\n\nThat binary is deliberate for a teacher queue. Finer grading can come later; the first cockpit job is who needs a human touch.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-oulad-outcomes.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-outcomes.jpg",
               "alt": "OULAD final outcome counts",
               "caption": "Outcomes: Pass 12,361 · Withdrawn 10,156 · Fail 7,052 · Distinction 3,024."
             }
@@ -1259,12 +1259,12 @@
           "body": "Early window: days 0 to 14 in OULAD's relative course calendar. Sum of VLE clicks per enrollment. Missing VLE rows count as zero early clicks.\n\nINSIGHT - Risk falls as early activity rises: 86% at-risk in the lowest quintile vs 28% in the highest. Silent starters (14% of enrollments) hit 91% Fail or Withdrawn.\n\nThis is the signal BryTek's recent-activity and course-health widgets should amplify.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-oulad-early-risk.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
               "alt": "At-risk rate by early VLE engagement quintile",
               "caption": "Q1 86% at-risk vs Q5 28% (first 14 days)."
             },
             {
-              "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-silent-starters.jpg",
               "alt": "At-risk rate for silent starters versus learners with early activity",
               "caption": "Zero early clicks: 91% at-risk (14% of enrollments)."
             }
@@ -1278,7 +1278,7 @@
           "body": "Teachers do not only triage people. They also need to know which courses are structurally harder.\n\nINSIGHT - Module CCC shows the highest at-risk rate in this cut (62%, withdraw 45%, 4,434 enrollments). Module AAA leads success at 71%.\n\nOn BryTek, that belongs next to My Courses: a health stripe, not only a title list.",
           "images": [
             {
-              "src": "/images/case_studies/brytek-oulad-module-health.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-module-health.jpg",
               "alt": "Pass and withdrawal rates by OULAD module",
               "caption": "Module health: success vs withdrawal side by side."
             }
@@ -1292,7 +1292,7 @@
           "body": "DECISION - Week-2 outreach queue: message every silent starter first (14% of enrollments, 91% at-risk), then prioritize the lowest early-engagement quintile (86% at-risk). Staffing review: inspect module CCC for content or support gaps before the next presentation.\n\nINSIGHT - The BryTek dashboard earns its KPI row when those queues exist. Enrollments and earnings without an intervention list are still a pretty empty morning.\n\nDATA QUESTION - After two weeks of outreach, did silent starters return to the VLE, and did Fail + Withdrawn fall in the next assessment window?",
           "images": [
             {
-              "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-silent-starters.jpg",
               "alt": "Silent starter risk for the intervention decision",
               "caption": "Decision anchor: silent starters enter the queue first."
             }
@@ -1506,13 +1506,13 @@
     },
     {
       "slug": "brytek-online-learning",
-      "image": "/images/case_studies/brytek-instructor-dashboard.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-instructor-dashboard.jpg",
       "title": "BryTek: EdTech marketing + instructor cockpit",
       "meta": "UX design"
     },
     {
       "slug": "brytek-learning-analytics",
-      "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/brytek-oulad-early-risk.jpg",
       "title": "BryTek data: early VLE risk for instructor outreach",
       "meta": "Data analysis · OULAD · Learning analytics"
     },

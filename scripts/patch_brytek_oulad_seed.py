@@ -8,6 +8,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SEED = ROOT / "backend" / "app" / "seed_data.json"
 METRICS = ROOT / "data" / "derived" / "brytek_oulad_metrics.json"
+# Served from the API static mount so Netlify credits are not required for new assets.
+MEDIA_BASE = "https://amanisportfolio-production.up.railway.app"
+
+
+def media(path: str) -> str:
+    if path.startswith("http://") or path.startswith("https://"):
+        return path
+    return f"{MEDIA_BASE}{path}"
 
 
 def pct(x: float) -> str:
@@ -21,7 +29,7 @@ def build_project(m: dict) -> dict:
 
     return {
         "slug": "brytek-learning-analytics",
-        "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+        "image": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
         "title": "BryTek | Learning Analytics for Instructor Decisions",
         "tools": [
             "Python",
@@ -194,7 +202,7 @@ def build_project(m: dict) -> dict:
                 ),
                 "images": [
                     {
-                        "src": "/images/case_studies/brytek-instructor-dashboard.jpg",
+                        "src": media("/images/case_studies/brytek-instructor-dashboard.jpg"),
                         "alt": "BryTek instructor dashboard from the UX case study",
                         "caption": "UX companion: the cockpit this data story is meant to feed.",
                     }
@@ -231,7 +239,7 @@ def build_project(m: dict) -> dict:
                 ),
                 "images": [
                     {
-                        "src": "/images/case_studies/brytek-oulad-outcomes.jpg",
+                        "src": media("/images/case_studies/brytek-oulad-outcomes.jpg"),
                         "alt": "OULAD final outcome counts",
                         "caption": (
                             f"Outcomes: Pass {oc.get('Pass', 0):,} · Withdrawn {oc.get('Withdrawn', 0):,} · "
@@ -256,7 +264,7 @@ def build_project(m: dict) -> dict:
                 ),
                 "images": [
                     {
-                        "src": "/images/case_studies/brytek-oulad-early-risk.jpg",
+                        "src": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
                         "alt": "At-risk rate by early VLE engagement quintile",
                         "caption": (
                             f"Q1 {pct(m['q1_at_risk'])} at-risk vs Q5 {pct(m['q5_at_risk'])} "
@@ -264,7 +272,7 @@ def build_project(m: dict) -> dict:
                         ),
                     },
                     {
-                        "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+                        "src": media("/images/case_studies/brytek-oulad-silent-starters.jpg"),
                         "alt": "At-risk rate for silent starters versus learners with early activity",
                         "caption": (
                             f"Zero early clicks: {pct(m['zero_early_at_risk'])} at-risk "
@@ -288,7 +296,7 @@ def build_project(m: dict) -> dict:
                 ),
                 "images": [
                     {
-                        "src": "/images/case_studies/brytek-oulad-module-health.jpg",
+                        "src": media("/images/case_studies/brytek-oulad-module-health.jpg"),
                         "alt": "Pass and withdrawal rates by OULAD module",
                         "caption": "Module health: success vs withdrawal side by side.",
                     }
@@ -312,7 +320,7 @@ def build_project(m: dict) -> dict:
                 ),
                 "images": [
                     {
-                        "src": "/images/case_studies/brytek-oulad-silent-starters.jpg",
+                        "src": media("/images/case_studies/brytek-oulad-silent-starters.jpg"),
                         "alt": "Silent starter risk for the intervention decision",
                         "caption": "Decision anchor: silent starters enter the queue first.",
                     }
@@ -364,7 +372,7 @@ def main() -> None:
 
     highlight = {
         "slug": "brytek-learning-analytics",
-        "image": "/images/case_studies/brytek-oulad-early-risk.jpg",
+        "image": media("/images/case_studies/brytek-oulad-early-risk.jpg"),
         "title": "BryTek data: early VLE risk for instructor outreach",
         "meta": "Data analysis · OULAD · Learning analytics",
     }

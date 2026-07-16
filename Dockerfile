@@ -9,7 +9,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
-RUN mkdir -p /app/uploads
+COPY static ./static
+RUN mkdir -p /app/uploads /app/static/images
 
 EXPOSE 8000
 

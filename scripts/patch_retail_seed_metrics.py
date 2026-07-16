@@ -8,6 +8,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SEED = ROOT / "backend" / "app" / "seed_data.json"
 METRICS = ROOT / "data" / "derived" / "retail_metrics.json"
+MEDIA_BASE = "https://amanisportfolio-production.up.railway.app"
+
+
+def media(path: str) -> str:
+    if path.startswith("http://") or path.startswith("https://"):
+        return path
+    return f"{MEDIA_BASE}{path}"
 
 
 def gbp(n: float) -> str:
@@ -27,7 +34,7 @@ def main() -> None:
     at_risk = next(s for s in m["segments"] if s["Segment"] == "At Risk")
     loyal = next(s for s in m["segments"] if s["Segment"] == "Loyal")
 
-    retail["image"] = "/images/case_studies/retail-monthly-revenue.jpg"
+    retail["image"] = media("/images/case_studies/retail-monthly-revenue.jpg")
     retail["impact"] = (
         f"On cleaned Online Retail II sales ({m['date_min']} to {m['date_max']}), the analysis covers "
         f"{m['customers']:,} customers, {m['orders']:,} orders, and {gbp(m['total_revenue_gbp'])} revenue "
@@ -72,7 +79,7 @@ def main() -> None:
 
     sections["process-clean"]["images"] = [
         {
-            "src": "/images/case_studies/retail-cleaning-funnel.jpg",
+            "src": media("/images/case_studies/retail-cleaning-funnel.jpg"),
             "alt": "Cleaning funnel from raw Online Retail II rows to positive sales lines",
             "caption": (
                 f"Funnel: {m['raw_rows']:,} raw rows down to {m['clean_line_rows']:,} "
@@ -84,7 +91,7 @@ def main() -> None:
 
     sections["process-sql"]["images"] = [
         {
-            "src": "/images/case_studies/retail-top-countries.jpg",
+            "src": media("/images/case_studies/retail-top-countries.jpg"),
             "alt": "Top countries by cleaned revenue",
             "caption": "Country mix after cleaning: UK concentration with international wholesale tails.",
         }
@@ -92,7 +99,7 @@ def main() -> None:
 
     sections["process-rfm"]["images"] = [
         {
-            "src": "/images/case_studies/retail-rfm-customers.jpg",
+            "src": media("/images/case_studies/retail-rfm-customers.jpg"),
             "alt": "Customers by RFM segment",
             "caption": (
                 f"Champions {champ['customers']:,} · Loyal {loyal['customers']:,} · "
@@ -100,7 +107,7 @@ def main() -> None:
             ),
         },
         {
-            "src": "/images/case_studies/retail-rfm-revenue.jpg",
+            "src": media("/images/case_studies/retail-rfm-revenue.jpg"),
             "alt": "Revenue share by RFM segment",
             "caption": (
                 f"Champions hold {champ['share_revenue'] * 100:.0f}% of cleaned revenue "
@@ -112,7 +119,7 @@ def main() -> None:
 
     sections["process-kpi"]["images"] = [
         {
-            "src": "/images/case_studies/retail-monthly-revenue.jpg",
+            "src": media("/images/case_studies/retail-monthly-revenue.jpg"),
             "alt": "Monthly cleaned revenue over Online Retail II period",
             "caption": (
                 f"Monthly pulse with peak in {m['peak_month']} at "
@@ -120,7 +127,7 @@ def main() -> None:
             ),
         },
         {
-            "src": "/images/case_studies/retail-ytd-mtd.jpg",
+            "src": media("/images/case_studies/retail-ytd-mtd.jpg"),
             "alt": "YTD versus MTD revenue bars",
             "caption": (
                 f"YTD {m['ytd_year']} {gbp(m['ytd_revenue_gbp'])} vs "
@@ -143,7 +150,7 @@ def main() -> None:
     )
     sections["decision"]["images"] = [
         {
-            "src": "/images/case_studies/retail-rfm-revenue.jpg",
+            "src": media("/images/case_studies/retail-rfm-revenue.jpg"),
             "alt": "Revenue concentration by RFM segment for decision mix",
             "caption": "Decision mix follows revenue concentration, not equal customer counts.",
         }
