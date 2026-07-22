@@ -1353,7 +1353,72 @@
       "roleBody": "Founded and lead Friends of Figma Tunisia: meetups, Config watch parties, speaker programs, and partnerships with WTM and GDG.",
       "goal": "Build an official Figma-affiliated community space in Tunisia where designers and builders learn together in public.",
       "metrics": [],
-      "sections": [],
+      "sections": [
+        {
+          "key": "config-watch-party",
+          "title": "Config Watch Party",
+          "layout": "stack",
+          "imageLayout": "row",
+          "body": "Photos from the Friends of Figma Tunisia Config Watch Party: designers and builders gathering to follow Config together, share takes in the room, and grow the local chapter in public.",
+          "images": [
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-01.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-02.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-03.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-04.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-05.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-06.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-07.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-08.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-09.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-10.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-11.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            }
+          ]
+        }
+      ],
       "nextSteps": ""
     }
   ],
