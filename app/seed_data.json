@@ -1326,7 +1326,7 @@
     },
     {
       "slug": "friends-of-figma-tunis",
-      "image": "/images/project-fof.jpg",
+      "image": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-02.jpg",
       "title": "Friends of Figma (FoF) Tunisia",
       "tools": [
         "Community building",
@@ -1363,11 +1363,6 @@
           "images": [
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-01.jpg",
-              "alt": "Friends of Figma Tunisia Config Watch Party",
-              "caption": ""
-            },
-            {
-              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-02.jpg",
               "alt": "Friends of Figma Tunisia Config Watch Party",
               "caption": ""
             },
