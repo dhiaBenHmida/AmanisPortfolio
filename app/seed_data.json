@@ -1362,11 +1362,6 @@
           "body": "Photos from Friends of Figma Tunisia Config Watch Parties. The chapter has hosted Config gatherings in 2024, 2025, and 2026: designers and builders following Config together, sharing takes in the room, and growing the local chapter in public.",
           "images": [
             {
-              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-01.jpg",
-              "alt": "Friends of Figma Tunisia Config Watch Party",
-              "caption": ""
-            },
-            {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-03.jpg",
               "alt": "Friends of Figma Tunisia Config Watch Party",
               "caption": ""
@@ -1408,6 +1403,11 @@
             },
             {
               "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-11.jpg",
+              "alt": "Friends of Figma Tunisia Config Watch Party",
+              "caption": ""
+            },
+            {
+              "src": "https://amanisportfolio-production.up.railway.app/images/case_studies/fof-config-watch-party/fof-config-01.jpg",
               "alt": "Friends of Figma Tunisia Config Watch Party",
               "caption": ""
             }
